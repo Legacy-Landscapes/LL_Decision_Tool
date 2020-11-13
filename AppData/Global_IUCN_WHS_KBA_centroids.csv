@@ -1,0 +1,1353 @@
+"","PAname","x","y"
+"1","Paleski Radyaytsina-Ekalagichny",29.75,51.5
+"2","Ustyurtskiy",54.5,43
+"3","Kurgal'dzhinskiy",69.25,50.5
+"4","Issyk-Kul",77.36,42.47
+"5","Khoridol Saridag",99.83,50.83
+"6","Zed-Khantai-Buteeliin nuruu",103.86,50.03
+"7","Altan Els",95,50
+"8","Great Gobi",96.17,44.05
+"9","Uvs Nuur Basin",92.69,50.31
+"10","Addax Sanctuary",9.53,19.31
+"11","Extension to Majami‘ al-Hadb",44,21.5
+"12","Mahazat as-Sayd",41.85,22.25
+"13","Harrat al-Harrah",38.87,30.83
+"14","Thungyai Naresuan",98.83,15.33
+"15","Huai Kha Khaeng",99.12,15.25
+"16","Um Phang",99,16
+"17","Kaplangurskiy",57.11,41.04
+"18","Bukit Sapat Hawung",114.65,0.55
+"19","Enarotali",136.35,-3.95
+"20","Pegunungan Tamrau Selatan",133.31,-1.19
+"21","Pegunungan Wayland",136,-3.75
+"22","La Payunia",-68.89,-36.61
+"23","Sichuan Changshahongma Wetlands",98,33.75
+"24","Tibet Selincuo Wetlands",89.62,31.29
+"25","2001071 Sjaunja",19.2,67.55
+"26","Sian Ka'an",-87.67,19.58
+"27","Calakmul",-89.5,18.25
+"28","El Vizcaíno",-114.03,27.31
+"29","El Pinacate y Gran Desierto de Altar",-113.75,31.92
+"30","Witchelina Nature Reserve",138,-30.25
+"31","Mamungari",129.79,-28.94
+"32","Ngarkat",140.58,-35.58
+"33","Simpson Desert",137.75,-26
+"34","Jilbadji",120,-31.75
+"35","Nuytsland",125.52,-32.55
+"36","Great Victoria Desert",127.82,-29.71
+"37","Queen Victoria Spring",123.5,-30.5
+"38","Neale Junction",126,-28.5
+"39","Plumridge Lakes",125,-29.5
+"40","Gibson Desert",125.5,-24.75
+"41","Yeo Lake",124.25,-28
+"42","Karroun Hill",118.25,-30
+"43","Dundas",122.75,-32.5
+"44","Toolonga",115,-27
+"45","Estacao Ecologica Serra Geral Do Tocantins",-46.69,-10.81
+"46","Estação Ecológica De Niquiá",-61.45,1.15
+"47","Estação Ecológica De Jutaí-Solimões",-67.5,-3
+"48","Reserva Biológica Do Uatumã",-59.58,-1.19
+"49","Estação Ecológica Do Grão Pará",-56.75,0.92
+"50","Reserva Biológica Do Jaru",-61.62,-9.75
+"51","Reserva Biológica Do Guaporé",-62.89,-12.54
+"52","Reserva Biológica Do Lago Piratuba",-50.25,1.5
+"53","Estação Ecológica Alto Maués",-58.31,-5.69
+"54","Reserva Biológica De Maicuru",-54.21,0.75
+"55","Reserva Biológica Do Gurupi",-46.62,-3.75
+"56","Reserva Biológica Do Rio Trombetas",-56.85,-1.05
+"57","Estação Ecológica Da Terra Do Meio",-53.54,-5.77
+"58","Estação Ecológica Juami-Japurá",-68.47,-2.31
+"59","Estação Ecológica Do Jari",-53,-0.5
+"60","Reserva Biológica Do Abufari",-63,-5
+"61","Reserva Biológica Nascentes Serra Do Cachimbo",-54.5,-9
+"62","Reserva Biológica Do Manicoré",-61,-7
+"63","Polar Bear Pass National Wildlife Area",-98.93,75.66
+"64","Yangambi",24.58,0.92
+"65","Khutse",24.15,-23.45
+"66","Chobe",24.43,-18.48
+"67","Central Kalahari",23.88,-22.34
+"68","Nxai Pan",24.75,-20
+"69","Gemsbok",21.13,-25.19
+"70","Moremi",23.18,-19.39
+"71","Makgadikgadi Pans",24.75,-20.5
+"72","Numrug",119.5,47
+"73","Gobiin baga /A/, /B/",106.85,42.37
+"74","Khan Khentii",108.38,48.88
+"75","Eastern Mongolian Steppe",117.06,46.56
+"76","Ulaan Taiga",98.39,50.75
+"77","Harrat Khaybar / Wadi Hadiyah",39.67,25.58
+"78","Harrat ‘Uwayrid",37.65,26.95
+"79","Death Valley",-117.08,36.42
+"80","Mojave",-115.54,35.18
+"81","Sequoia-Kings Canyon",-118.5,36.75
+"82","Yosemite",-119.55,37.85
+"83","Frank Church - River of No Return",-115,45
+"84","Cabeza Prieta",-113.17,32.33
+"85","Absaroka-Beartooth",-110.11,45.32
+"86","Mollie Beattie",-143.5,69.05
+"87","Boundary Waters Canoe Area",-91.25,48
+"88","Becharof",-155.75,58
+"89","Bob Marshall",-113.19,47.69
+"90","Nellie Juan-College Fiord",-147.93,60.67
+"91","Denali",-150.51,63.28
+"92","Gates of the Arctic",-153.2,67.83
+"93","Gila",-108.5,33.25
+"94","Glacier Bay",-136.69,58.78
+"95","Glacier Peak",-121,48
+"96","Innoko",-158.52,63.11
+"97","John Muir",-118.69,37.12
+"98","Joshua Tree Wilderness (draft boundary)",-115.75,34
+"99","Katmai",-154.86,58.59
+"100","Kofa",-114,33.25
+"101","Lake Clark",-153.28,60.66
+"102","Noatak",-159.38,68.09
+"103","Pasayten",-120.5,48.75
+"104","Teton",-110.25,44
+"105","Chuck River",-133.58,56.53
+"106","Trinity Alps",-123.25,41
+"107","Washakie",-109.65,44.05
+"108","Weminuche",-107.25,37.5
+"109","Selway-Bitterroot",-114.69,46.19
+"110","Andreafsky",-162.4,62.75
+"111","Kootznoowoo",-134.36,57.58
+"112","Stephen Mather",-121.15,48.55
+"113","Unimak Island",-164.11,54.68
+"114","Tracy Arm-Fords Terror",-133.04,57.61
+"115","Andrew Simons",-150.69,59.86
+"116","Central Arctic Management Area",-155,68.75
+"117","Desert Nwr Propo",-115.19,36.81
+"118","Misty Fiords",-130.67,55.48
+"119","Kaldoaivin Erämaa",28.03,69.64
+"120","Käsivarren Erämaa",21.61,69.04
+"121","Lemmenjoen Kansallispuisto",25.5,68.5
+"122","Naravni Rezervat Ormoške Lagune",16.25,46.25
+"123","2001056 Torneträsk-Soppero Fjällurskog",21.2,68.05
+"124","2001842 Vindelfjällen",15.98,65.87
+"125","Wollemi",150.58,-32.97
+"126","Ilulissat Isfjord",-49.57,69.16
+"127","Yellabinna",133.75,-31
+"128","Danggali",140.5,-33.5
+"129","Nullarbor",130.07,-31.3
+"130","Tatshenshini-Alsek Park",-137.54,59.43
+"131","Huchsduwachsdu Nuyem Jees/Kitlope Heritage Conservancy",-127.65,53.05
+"132","Bay du Nord Wilderness Reserve",-54.85,48.05
+"133","Woodland Caribou Provincial Park (Wilderness Class)",-94.75,51
+"134","Wabakimi Provincial Park",-89.58,50.79
+"135","Quetico Provincial Park (Wilderness Class)",-91.5,48.5
+"136","Opasquia Provincial Park",-93,53.5
+"137","Polar Bear Provincial Park",-84.18,55.04
+"138","Numaykoos Lake Provincial Park",-96,58
+"139","Sand Lakes Provincial Park",-98.82,57.88
+"140","Caribou River Provincial Park",-96.75,59.5
+"141","Nueltin Lake Provincial Park",-99.61,59.54
+"142","Clearwater River Provincial Park",-109.04,56.89
+"143","Athabasca Sand Dunes Provincial Park",-108.75,59.06
+"144","Willmore Wilderness Park",-119.1,53.65
+"145","Pink Lake",-104.5,56.75
+"146","Kazan Wildland Provincial Park",-110.92,59.31
+"147","Richardson Wildland Provincial Park",-111,58.19
+"148","Caribou Mountains Wildland Provincial Park",-115,59
+"149","Wells Gray Park",-120.08,52.19
+"150","Mount Edziza Park",-130.67,57.67
+"151","Spatsizi Plateau Wilderness Park",-128.5,57.5
+"152","Northern Rocky Mountains Park",-124.33,58.25
+"153","Stikine River Park",-129,58
+"154","Dune Za Keyih Park [a.k.a. Frog-Gataga Park]",-126.25,58.3
+"155","Ts'ilOs Park (a.k.a. Ts'yl-os Park)",-123.92,51.08
+"156","Edéhzhíe Protected Area",-119.8,62.2
+"157","Purcell Wilderness Conservancy Park",-116.5,50
+"158","Ni'iinlii Njik (Fishing Branch)",-139.25,66.5
+"159","Banks Island Bird Sanctuary No. 1",-123.76,72.58
+"160","Thelon Wildlife Sanctuary",-104.21,63.86
+"161","Thelon Wildlife Sanctuary",-102.41,64.59
+"162","Bomu",24.2,4.7
+"163","Fiordland National Park",167.31,-45.43
+"164","Mount Aspiring National Park",168.97,-44.19
+"165","Kahurangi National Park",172.5,-41.25
+"166","National Park Iona",12.29,-16.58
+"167","National Park Quiçãma",13.69,-9.81
+"168","National Park Cameia",21.61,-11.89
+"169","National Park Bicuar",14.81,-15.31
+"170","National Park Mupa",15.58,-16
+"171","National Park Luengue-Luiana",22.58,-17.31
+"172","National Park Mavinga",20.89,-15.54
+"173","Boucle de la Pendjari",1.5,11
+"174","W (Benin)",2.69,11.81
+"175","Kabore-Tambi",-1.25,11.5
+"176","W du Burkina Faso",2.05,11.85
+"177","Viruá National Park",-61.12,1.25
+"178","Environmental Protection Area of Cananéia-Iguape-Peruíbe",-47.75,-24.75
+"179","Wangchuck Centennial Park",90.75,28
+"180","Jigme Dorji",89.75,28
+"181","Parc Culturel du Tassili (Illizi)",8.97,25.05
+"182","Yabello",38.5,5
+"183","Mole",-1.75,9.75
+"184","Digya",-0.25,7.5
+"185","Hemis",77.33,33.58
+"186","Desert",70.75,26.25
+"187","Gangotri",79.08,31.08
+"188","Kavir",52.5,34.58
+"189","Urumieh lake",45.5,37.75
+"190","Daisetsuzan",143,43.5
+"191","Altun Emel",78.75,44
+"192","Ele Alatau",77.85,43.05
+"193","Tsavo East",38.8,-2.93
+"194","Tsavo West",38.25,-3.45
+"195","Virachey",107.11,14.46
+"196","Altai Tavan range",88.6,48.55
+"197","Namib-Naukluft",15.34,-24.64
+"198","Orxoni xundii",102.75,47.5
+"199","Ai-Ais Hot Springs",17.31,-27.81
+"200","Khao Yai",101.42,14.42
+"201","Khan Khukhii-Khyragas Lake",93.35,49.05
+"202","Shey-Phoksundo",82.95,29.35
+"203","Ulaagchini khar nuur",95.5,48.42
+"204","Khuvsgul",100.82,51.14
+"205","Tengis-Shishged",98.67,51.5
+"206","Myangan-Ugalzat",92.88,46.25
+"207","Khangai nuruu",101.32,46.92
+"208","Gobi Gurvansaikhan range",101.6,43.72
+"209","Onon - Balj /A/",111.25,49
+"210","Gorkhi - Terelj",107.65,48.05
+"211","Tarvagatai nuruu",98.14,48.14
+"212","Onon - Balj river /B/",112,49
+"213","Ix Bogd mountain",100.5,45
+"214","Mongol Els",95,47.5
+"215","Munkhkhairkhan uul-Uenchiin khavtsal",91.75,46.75
+"216","Khan-Khokhi Khyargas mountain",94.75,49.5
+"217","Har Us Nuur",92.71,47.88
+"218","Nyika National Park",34,-10.5
+"219","Kasungu National Park",33,-13
+"220","Khaudum",20.75,-18.75
+"221","Skeleton Coast Park",12.72,-19.14
+"222","Etosha",15.75,-19
+"223","Parc W Niger",2.45,12.35
+"224","Cross River",8.65,5.65
+"225","Kainji Lake",4.39,9.96
+"226","Old Oyo",4,8.75
+"227","Yankari",10.42,9.92
+"228","Gashaka-Gumti",11.75,7.39
+"229","Al Wusta Wildlife Reserve",57.25,20
+"230","Jabal Samhan Nature Reserve",55,17.5
+"231","Kirthar",67.5,25.75
+"232","Khunjerab",75.33,36.67
+"233","Darién",-77.69,7.88
+"234","Samar Island",125.17,11.75
+"235","Jabal Aja",41.35,27.45
+"236","Ibex Reserve (Hawtat Bani Tamin)",46.5,23.5
+"237","Dinder",35.31,12.36
+"238","Niokolo Koba",-13,13
+"239","Southern",28.78,6.09
+"240","Boma",34.06,6.34
+"241","Badingilo",32.19,5.31
+"242","Badingilo Extension",32.6,5.85
+"243","Boma Extension",34,7.12
+"244","Central Suriname",-56.38,4.04
+"245","Thap Lan",102.25,14.38
+"246","Kaengkrachan Forest Complex",99.5,12.75
+"247","Khuen Si Nakarin",99,14.75
+"248","Таджикский Национальный парк",72.44,38.54
+"249","Podolskie Tovtry",26.67,48.83
+"250","Kobuk Valley",-159,67.31
+"251","Kenai Fjords",-150.25,59.75
+"252","Big Bend",-103.25,29.25
+"253","Great Smoky Mountains",-83.65,35.55
+"254","Wrangell-St. Elias",-142.58,61.24
+"255","Yellowstone",-110.65,44.75
+"256","Glacier",-113.75,48.5
+"257","Grand Canyon",-112.65,36.1
+"258","Ugam-Chatkal",70.2,41.7
+"259","Soufriere",-61.25,13.25
+"260","Canaima",-61.81,5.49
+"261","Duida-Marahuaca",-65.5,3.5
+"262","Serranía de la Neblina",-65.92,1.14
+"263","Jaua Sarisariñama",-64.45,4.85
+"264","Cinaruco-Capanaparo",-67.9,6.85
+"265","Parima-Tapirapecó",-64.62,2.45
+"266","Yapacana",-66.88,3.75
+"267","Aguaro-Guariquito",-66.5,8.25
+"268","Sierra Nevada",-71,8.5
+"269","Perijá",-72.95,9.65
+"270","Sierra de la Culata",-71,8.75
+"271","Ciénagas del Catatumbo",-72,9.5
+"272","Mariusa",-61.5,9.5
+"273","Gonarezhou",31.75,-21.75
+"274","Hwange",26.5,-19.15
+"275","Mana Pools",29.5,-16
+"276","Midongy du sud",47,-23.5
+"277","Makira",49.39,-15.25
+"278","Mikea",43.5,-22.25
+"279","Masoala",50,-15.5
+"280","Taman Negara",102.5,4.5
+"281","Tanjung Puting",111.95,-3.15
+"282","Tinfunque",-60,-24
+"283","Defensores del Chaco",-60.31,-20.19
+"284","Medanos del Chaco",-61.61,-20.46
+"285","Complejo de Humedales Cuyabeno Lagartococha Yasuní",-75.75,-0.5
+"286","Yangudi Rassa",40.75,11
+"287","Omo",35.83,6
+"288","Alatish",35.55,12.15
+"289","Bale Mountains",39.62,6.75
+"290","Gambella",33.75,8
+"291","Babile Elephant",42.4,8.65
+"292","Betung Kerihun",113.15,1.3
+"293","Bogani Nani Wartabone",123.75,0.5
+"294","Bukit Baka -  Bukit Raya",112.58,-0.58
+"295","Bukit Barisan Selatan",104,-5.25
+"296","Kayan Mentarang",115.67,3.17
+"297","Lorentz",138.03,-4.42
+"298","Sebangau",113.65,-2.5
+"299","Kerinci Seblat",101.68,-2.36
+"300","Lore Lindu",120.08,-1.42
+"301","Gunung Leuser",97.75,3.43
+"302","Réserve de parc national des Monts-de-Puvirnituq",-77.32,61.04
+"303","Parc national Kuururjuaq",-64.61,58.61
+"304","San Guillermo",-69.58,-29.03
+"305","Corcovado",-72.75,-43.5
+"306","Torres del Paine",-73,-51
+"307","Alberto De Agostini",-70.57,-54.71
+"308","Vicente Perez Rosales",-72.15,-41.05
+"309","Bernardo O'Higgins",-74.12,-49.49
+"310","Laguna San Rafael",-73.95,-46.92
+"311","Llullaillaco",-68.85,-24.95
+"312","Pumalín Douglas Tompkins",-72.45,-42.65
+"313","parc national Ulittaniujalik",-65.1,57.85
+"314","Réserve de parc national de la Baie-aux-Feuilles",-69.8,58.84
+"315","Réserve de parc national Assinica",-75.69,50.64
+"316","Sierra del Divisor",-74.04,-7.21
+"317","Yaguas",-71.42,-2.81
+"318","del Río Abiseo",-77.17,-7.67
+"319","Nahuel Huapi",-71.5,-41
+"320","Réserve de territoire pour fins d'aire protégée du Lac-Burton-Rivière-Roggan-et-la-Pointe-Louis-XIV",-78.61,54.48
+"321","Réserve de biodiversité projetée du Lac-Sérigny",-69.75,55.5
+"322","Réserve aquatique projetée de la rivière Moisie",-66.75,51.75
+"323","Réserve de biodiversité projetée Albanel-Témiscamie-Otish",-72.75,51.56
+"324","Réserve de biodiversité projetée de la Rivière-Delay",-71,56.25
+"325","Réserve de biodiversité projetée des basses collines du lac Guernesé",-58,51.75
+"326","Réserve de biodiversité projetée de la Rivière-Vachon",-72.25,60.5
+"327","Réserve de biodiversité projetée de la vallée de la rivière Natashquan",-61.61,51.32
+"328","Réserve de territoire pour fins d'aire protégée de la Rivière-George",-65.22,56.97
+"329","Parc national Tursujuq",-74.91,56.38
+"330","Réserve de biodiversité projetée Paakumshumwaau-Maatuskaau",-77.75,52.94
+"331","del Manu",-71.68,-12.11
+"332","Huascarán",-77.45,-9.45
+"333","de Cutervo",-78.75,-6.25
+"334","Patagonia",-72.25,-47
+"335","Alto Purus",-71.48,-10.83
+"336","Cordillera Azul",-76.04,-7.61
+"337","Bahuaja - Sonene",-69.4,-13.35
+"338","Otishi",-73.67,-11.75
+"339","Güeppi-Sekime",-75.15,-0.45
+"340","Lanín",-71.45,-39.85
+"341","Talampaya",-67.92,-29.92
+"342","Urho Kekkosen Kansallispuisto",28.46,68.11
+"343","Vatnajökulsþjóðgarður",-16.92,64.66
+"344","Hardangervidda",7.39,60.04
+"345","Saltfjellet-Svartisen",14.5,66.58
+"346","South Luangwa",31.6,-13.15
+"347","North Luangwa",32.17,-11.83
+"348","Lukusuzi",32.55,-12.85
+"349","Mweru Wantipa",29.5,-8.5
+"350","Nsumbu",30.38,-8.75
+"351","Hkakaborazi National Park",97.85,28.05
+"352","Nationalparken i Nord- og Østgrønland",-34.28,78.19
+"353","Guyane (Parc Amazonien)",-53.39,3.18
+"354","Alpine",147.5,-37
+"355","Garig Gunak Barlu",132.35,-11.45
+"356","Kafue",25.92,-15.39
+"357","Liuwa Plain",22.5,-14.5
+"358","Sioma Ngwezi",23.5,-17.25
+"359","Lower Zambezi",29.75,-15.5
+"360","Hamelin Station",114.5,-26.5
+"361","Newhaven",131.08,-22.92
+"362","Kalamurina",137.61,-27.96
+"363","Bon Bon Station",135.5,-30.5
+"364","Kakadu",132.3,-12.93
+"365","Watarru",129.85,-27.25
+"366","Walalkara",131.75,-27.65
+"367","Silver Plains",143.5,-14
+"368","Meenthena Station",120.5,-21.5
+"369","Credo",120.55,-30.15
+"370","Moolgoolool",119.31,-26.19
+"371","Waldburg",117.25,-24.62
+"372","Giralia",114.55,-22.65
+"373","Wanna",116.85,-23.55
+"374","Kosciuszko",148.53,-36.14
+"375","Morton",150.25,-34.88
+"376","Sturt",141.88,-29.38
+"377","Blue Mountains",150.25,-33.75
+"378","Carnarvon",147.82,-24.96
+"379","Great Sandy",153.04,-25.61
+"380","Girringun",145.75,-18.5
+"381","Jardine River",142.55,-11.15
+"382","Staaten River",142.85,-16.55
+"383","Oyala Thumotang (Cape York Peninsula Aboriginal Land)",142.67,-13.67
+"384","Boodjamulla (Lawn Hill)",138.25,-18.75
+"385","Currawinya",144.5,-28.5
+"386","Diamantina",141.19,-23.81
+"387","Parque Nacional Das Nascentes Do Rio Parnaiba",-45.97,-9.92
+"388","Rinyirru (Lakefield) (Cape York Peninsula Aboriginal Land)",144.12,-14.94
+"389","Munga-Thirri",138.39,-24.96
+"390","Olkola (Cape York Peninsula Aboriginal Land)",143.25,-15.39
+"391","Franklin-Gordon Wild Rivers",145.75,-42.5
+"392","Southwest",146.31,-43.19
+"393","Wyperfeld",141.85,-35.55
+"394","Murray - Sunset",141.35,-34.6
+"395","Cape Arid",123.33,-33.67
+"396","Prince Regent",125.33,-15.33
+"397","Millstream Chichester",117.5,-21.5
+"398","Karijini",118.31,-22.69
+"399","Fitzgerald River",119.65,-33.95
+"400","Drysdale River",127,-15
+"401","Karlamilyi",122.6,-22.35
+"402","Collier Range",119.35,-24.55
+"403","Purnululu",128.5,-17.5
+"404","King Leopold Ranges",125.25,-17.17
+"405","Walyarta",121.5,-19.75
+"406","Parque Nacional Montanhas Do Tumucumaque",-53,1.98
+"407","Parque Nacional Grande Sertão Veredas",-46,-15
+"408","Parque Estadual De Guajará-Mirim",-64.35,-10.55
+"409","Parque Estadual Do Matupiri",-61.15,-5.05
+"410","Parque Estadual De Corumbiara",-61.83,-13.17
+"411","Parque Nacional De Anavilhanas",-60.75,-2.75
+"412","Parque Nacional Do Acari",-59.25,-6.25
+"413","Parque Estadual Chandless",-70.31,-9.97
+"414","Parque Nacional Dos Campos Amazônicos",-61.25,-8.43
+"415","Parque Nacional Da Serra Da Cutia",-64.15,-11.55
+"416","Parque Estadual Sucunduri",-58.9,-8.15
+"417","Parque Nacional Do Pico Da Neblina",-65.98,0.44
+"418","Parque Nacional Do Jamanxim",-55.75,-5.75
+"419","Parque Nacional De Pacaás Novos",-63.5,-11.12
+"420","Parque Estadual Da Serra Do Mar",-46,-23.75
+"421","Parque Nacional Serra Da Mocidade",-62.05,1.05
+"422","Parque Nacional Mapinguari",-64.66,-8.51
+"423","Parque Nacional Da Serra Do Pardo",-53,-5.75
+"424","Parque Nacional Da Serra Do Divisor",-73.25,-8.15
+"425","Parque Nacional Serra Das Confusões",-43.81,-9
+"426","Parque Estadual Serra Do Aracá",-63.39,1.5
+"427","Parque Nacional Do Juruena",-58.44,-8.08
+"428","Parque Estadual Igarapés Do Juruena",-58.75,-8.88
+"429","Parque Nacional Do Jaú",-62.64,-2.21
+"430","Parque Nacional Da Chapada Dos Veadeiros",-47.35,-13.95
+"431","Parque Nacional Do Rio Novo",-56.53,-7.69
+"432","Parque Nacional Do Araguaia",-50.04,-10.61
+"433","Parque Nacional Da Amazônia",-56.58,-4.25
+"434","Parque Nacional Nascentes Do Lago Jari",-62.75,-5.75
+"435","Parque Estadual Do Araguaiaa",-50.75,-12.25
+"436","Parque Nacional Do Boqueirão Da Onça",-41.5,-10
+"437","Comoe National Park",-3.75,9.25
+"438","Taï National Park",-7,5.75
+"439","Strathcona Park",-125.81,49.69
+"440","Algonquin Provincial Park (Natural Environment Class)",-78.5,45.85
+"441","Atikaki Provincial Park",-95.94,51.62
+"442","Kaskatamagan Wildlife Management Area",-90.5,57
+"443","Asatiwisipe Aki Traditional Use Planning Area",-96.61,52.98
+"444","Pauingassi First Nation Traditional Use Planning Area",-95.65,52.45
+"445","Lac La Ronge Provincial Park",-104.75,55.25
+"446","Akami–Uapishku - Kakkasuak - Mealy Mountains National Park Reserve Of Canada",-58.45,53.52
+"447","Nahanni National Park Reserve Of Canada",-125.99,61.66
+"448","Mount Robson Park",-118.85,52.95
+"449","Tweedsmuir Park",-126.29,52.92
+"450","Nááts'Ihch'Oh National Park Reserve Of Canada",-128.5,62.67
+"451","Torngat Mountains National Park Of Canada",-63.9,59.13
+"452","Murchison Falls",31.75,2.25
+"453","Atlin/A Teix Gi Aan Tlein Park",-133.83,59.17
+"454","Tuktut Nogait National Park Of Canada",-121.75,68.72
+"455","Vuntut National Park Of Canada",-139.75,68.5
+"456","Wapusk National Park Of Canada",-93.13,57.87
+"457","Neah Conservancy",-128.68,59.39
+"458","Tombstone",-138.75,64.5
+"459","Asi Keyi",-140.25,61.5
+"460","Kusawa",-136.25,60.5
+"461","Aulavik National Park Of Canada",-119.62,73.67
+"462","Auyuittuq National Park Of Canada",-66.05,67.39
+"463","Banff National Park Of Canada",-116.12,51.54
+"464","Ivvavik National Park Of Canada",-139.62,69.19
+"465","Jasper National Park Of Canada",-117.98,52.82
+"466","Kluane National Park Reserve Of Canada",-139.18,60.68
+"467","Prince Albert National Park Of Canada",-106.5,54
+"468","Quttinirpaaq National Park Of Canada",-71.56,82.18
+"469","Riding Mountain National Park Of Canada",-100.39,50.96
+"470","Sirmilik National Park Of Canada",-79.71,73.04
+"471","Wood Buffalo National Park Of Canada",-113.12,59.12
+"472","Wood Buffalo National Park Of Canada",-114.37,60.48
+"473","Serengeti National Park",34.75,-2.38
+"474","Tarangire National Park",36.05,-4.15
+"475","Ruaha National Park",34.58,-7.58
+"476","Mikumi National Park",37.25,-7.35
+"477","Katavi National Park",31.35,-6.95
+"478","Bassin de la Lufira",26.99,-9.57
+"479","Odzala Kokoua",14.85,1
+"480","Mbam et Djerem",12.85,5.95
+"481","Lobéké",16,2.25
+"482","Boumba Bek",15,2.5
+"483","Nki",14.5,2.5
+"484","Udzungwa Mountain",36.55,-7.85
+"485","Salonga",21.33,-2.21
+"486","Manovo-Gounda-Saint Floris",21.36,8.96
+"487","Okapis",28.5,1.5
+"488","Bamingui-Bangoran",19.69,8.08
+"489","Bouba Ndjida",14.5,8.5
+"490","Faro",12.67,8.17
+"491","Campo-Ma'an",10.25,2.5
+"492","Kahuzi-Biega",28.12,-2.25
+"493","Maiko",27.65,-0.25
+"494","Garamba",29.5,4.19
+"495","Bomu",25.85,5.05
+"496","Nouabalé-Ndoki",16.5,2.75
+"497","Virunga",29.57,-0.39
+"498","Monte Alén",10,1.5
+"499","Azul Meámbar",-87.75,14.75
+"500","Zakouma",19.5,11
+"501","Queen Elizabeth",29.95,-0.15
+"502","Serrania de Chiribiquete",-73.01,0.84
+"503","El Cocuy",-72,6.5
+"504","Tinigua",-74,2.5
+"505","Sierra de la Macarena",-73.53,2.69
+"506","Rio Pure",-70.11,-1.96
+"507","Cordillera de los Picachos",-74.5,3
+"508","Sumapaz",-74,4
+"509","Paramillo",-76.11,7.75
+"510","Talamanca Range-La Amistad Reserves / La Amistad National Park",-83.12,9.38
+"511","Noel Kempff Mercado National Park",-60.95,-14.22
+"512","Río Plátano Biosphere Reserve",-85.17,15.33
+"513","Lut Desert",58.84,30.34
+"514","Mount Kenya National Park/Natural Forest",37.5,0
+"515","Landscapes of Dauria",115.28,49.93
+"516","Cliff of Bandiagara (Land of the Dogons)",-3.25,14.5
+"517","Olympic National Park",-123.94,47.88
+"518","Great Smoky Mountains National Park",-83.5,35.5
+"519","Three Parallel Rivers of Yunnan Protected Areas",99.29,27.6
+"520","Xinjiang Tianshan",82.44,42.62
+"521","Qinghai Hoh Xil",92.03,35.5
+"522","Sichuan Giant Panda Sanctuaries - Wolong, Mt Siguniang and Jiajin Mountains",102.93,30.66
+"523","Central Sikhote-Alin",136.35,45.25
+"524","Golden Mountains of Altai",87.68,50.41
+"525","Lake Baikal",107.57,53.36
+"526","Lena Pillars Nature Park",126.93,60.91
+"527","Putorana Plateau",94.14,68.94
+"528","Virgin Komi Forests",58.99,63.71
+"529","Volcanoes of Kamchatka",158.96,54.34
+"530","Western Caucasus",40.15,43.95
+"531","The Ahwar of Southern Iraq: Refuge of Biodiversity and the Relict Landscape of the Mesopotamian Cities",46.9,31.05
+"532","Sangay National Park",-78.38,-1.88
+"533","Los Glaciares National Park",-73.2,-49.93
+"534","Península Valdés",-64.15,-42.45
+"535","Wet Tropics of Queensland",145.69,-17.5
+"536","Gondwana Rainforests of Australia",152.28,-29.98
+"537","Willandra Lakes Region",143.11,-33.68
+"538","Ngorongoro Conservation Area",35.19,-3.19
+"539","Selous Game Reserve",37.47,-8.84
+"540","Dja Faunal Reserve",13.11,3.04
+"541","Ecosystem and Relict Cultural Landscape of Lopé-Okanda",11.5,-0.75
+"542","Ennedi Natural and Cultural Reserve",22.42,16.82
+"543","Maloti-Drakensberg Park",29.33,-29.25
+"544","Heden",-24,71
+"545","Tuz Lake",33.5,38.69
+"546","Polis'kyi Nature Reserve",28.5,51.5
+"547","Syvash Bay",34.75,45.75
+"548","Novograd-Volunskoe Game Reserve",27.61,50.75
+"549","North Pennine Moors",-2.19,54.31
+"550","Niedere Tauern",14.45,47.35
+"551","Cuelei",17.25,-15.5
+"552","Luachimo River (Chitato)",20.75,-8
+"553","Luando Strict Nature Reserve",17.3,-10.98
+"554","Ouémé river basin",2.08,9
+"555","South-east Botswana",25.35,-25.1
+"556","Bombo-Lumene Game Reserve",16,-4.5
+"557","Ngiri",18.55,1.02
+"558","Lomako - Yekokora",21.25,1
+"559","LaLuama - Katanga - Mount Kabobo",29.05,-5.15
+"560","André Félix National Park complex",23.5,9.25
+"561","Bozoum",16,6.5
+"562","Zémongo Faunal Reserve",25.15,6.6
+"563","Ngotto",17.08,3.92
+"564","Léfini Faunal Reserve",15.46,-2.89
+"565","Conkouati National Park",11.5,-4
+"566","Parc National de l'Ahaggar",5.46,23.46
+"567","Lake Nasser",32.48,22.89
+"568","St Katherine Protectorate",33.92,28.42
+"569","Western Plain: Barka river",37.45,16.15
+"570","Shire lowlands in the Tekeze valley",38,14
+"571","Bahir Dar - Lake Tana",37.25,12
+"572","Mid-Abbay (Blue Nile) river basin",37.25,10.2
+"573","Metu - Gore - Tepi forests",35.19,7.47
+"574","Anferara forests",38.75,6
+"575","Lower Wabi Shebelle river and Warder",43.93,5.57
+"576","Bogol Manyo - Dolo",41.75,4.5
+"577","Gamba Protected Areas Complex",10.08,-2.42
+"578","Minkébé Forest Reserve",12.82,1.61
+"579","Léconi grasslands",14.08,-1.92
+"580","Mafou",-10.5,10.5
+"581","Dulombi",-14.58,11.58
+"582","Dida Galgalu desert",38.25,3
+"583","Lake Turkana",36.15,3.5
+"584","Masai Mara",35.25,-1.39
+"585","Mau forest complex",35.65,-0.55
+"586","Dakhla area",-15.81,22.14
+"587","Aguelhok",0.75,19
+"588","Boucle du Baoulé",-8.85,13.95
+"589","Zambezi River Delta",35.42,-18.69
+"590","Eastern Caprivi wetlands",24.1,-18.05
+"591","Tsumkwe pan system",20.5,-19.75
+"592","Dilia de Lagané",12.5,15
+"593","Hadejia-Nguru wetlands",10.65,12.55
+"594","Falgore and Lame Burra Game Reserves",9.15,10.75
+"595","Gezira",33,14.42
+"596","En Nahud",28.5,12.5
+"597","Radom",24.08,9.25
+"598","Imatong mountains",32.47,4.08
+"599","Kidepo",33.31,4.31
+"600","Ferlo North",-13.89,15.68
+"601","Ferlo South",-13.89,14.75
+"602","Delta du Saloum",-16.5,14
+"603","Daalo",47.5,11
+"604","Saylac",43.55,10.85
+"605","Lascaanod - Taleex - Ceel Chebet",48.29,8.79
+"606","Ceel Hammure",47.75,7
+"607","Xarardheere - Awale Rugno",47.92,4.58
+"608","War Harqaan - isha Dolondole",44.25,3.75
+"609","Laag Dheere",41.5,0.5
+"610","Far Waamo",42.5,0.25
+"611","Tibesti massif",18.25,20.39
+"612","Ouadi Rimé - Ouadi Achim",19.21,15.52
+"613","Lake Chad",14.33,13.54
+"614","Chott Djerid",8.8,33.84
+"615","Burigi - Biharamulo Game Reserves",31.25,-2.39
+"616","Maswa Game Reserve",34.45,-2.85
+"617","Mkomazi Game Reserve",38.25,-4.17
+"618","Moyowosi - Kigosi Game Reserves",31.25,-4.25
+"619","Ugalla River Game Reserve",31.85,-5.95
+"620","Kilombero Valley",36.15,-8.65
+"621","Lake Natron and Engaruka basin",36.05,-2.65
+"622","Lake Rukwa",31.97,-7.81
+"623","Wembere steppe",34,-4.75
+"624","West Lunga National Park and Lukwakwa Game Manage*",24.68,-12.89
+"625","Barotse Floodplains",23.07,-15.2
+"626","Machile",25.35,-17.05
+"627","Kafue Flats",27.19,-15.69
+"628","Lukanga Swamp",27.85,-14.45
+"629","Bangweulu Swamps",30.25,-11.75
+"630","North-western steppe",62.25,35.1
+"631","Safed Koh",69.65,34.05
+"632","Registan desert",65.07,30.65
+"633","Touran",56.17,35.67
+"634","Rud-i Jowin and Rud-i Kalshur",57.25,36.75
+"635","Mooteh Protected Area",51,33.5
+"636","Shadegan marshes and tidal mudflats of Khor-al Am*",48.75,30.5
+"637","Kalmand Protected Area",54.75,31.5
+"638","Lake Bakhtegan, Lake Tashk and Kamjan marshes",53.75,29.5
+"639","Hormod Protected Area",55,27.5
+"640","Bahram-e-Gour Protected Area",54.75,29.25
+"641","Kuh-i Bazman",60,28
+"642","Hamoun-i Sabari and Hamoun-i Hirmand",61.17,30.75
+"643","Bahu Kalat (Gandu) Protected Area",61.5,25.75
+"644","Jabal al Akhdar",57.58,23.08
+"645","Barr al Hikman",58.35,20.45
+"646","Empty Quarter",53.52,19.05
+"647","Tadmur desert and mountains",38.35,34.55
+"648","Ma'rib - Naqil Fardah - Baraqish",45.18,15.61
+"649","Mittlere Schwäbische Alb with Albuch, Härtsfeld",9.65,48.55
+"650","Reserva de la Biósfera Sierra Gorda",-99.67,21.33
+"651","Centro de Veracruz",-96.75,19.5
+"652","Annapurna Conservation Area",83.89,28.75
+"653","Kanchenjungha Conservation Area",88,27.5
+"654","Langtang National Park",85.5,28
+"655","Makalu Barun National Park",87,27.5
+"656","Jamuna-Brahmaputra river",89.75,24.75
+"657","Hutan Rawa Gambut Siak-Kampar",102.75,0.5
+"658","Kepulauan Lingga",104.5,-0.25
+"659","Dataran Banjir Ogan Komering",104.88,-3.25
+"660","Bukit Panjang - Bukit Siguntang",102.15,-1.05
+"661","Rawa di Pesisir Kapuas",109.75,-0.61
+"662","Sangkulirang",117.96,1.32
+"663","Long Bangun",115.5,0.5
+"664","Kutai",117.15,0.45
+"665","Belum-Temenggor",101.5,5.5
+"666","Danum Valley Conservation Area",117.5,5
+"667","Lanjak Entimau Wildlife Sanctuary",112,1.5
+"668","Hose-Laga mountains",114,2.5
+"669","Danum-Linau",115,2.75
+"670","Hingol National Park",65.5,25.75
+"671","Deosai National Park",75.5,35
+"672","Nara Desert Wildlife Sanctuary",69.5,27
+"673","Rann of Kutch Wildlife Sanctuary",70,24.5
+"674","Rajiv Ghandi Wildlife Sanctuary (Nagarjunasagar -*",78.81,16.19
+"675","Kurseala River Course and Diyara Floodplain",87,25.5
+"676","Banni Grassland and Chhari Dhand",69.75,23.5
+"677","Bhal area",72,22.25
+"678","Wild Ass Wildlife Sanctuary",71.12,23.56
+"679","Jawaharlal Nehru Bustard Sanctuary",75.42,18.12
+"680","Simlipal National Park",86.45,21.85
+"681","Khangchendzonga National Park and Biosphere Reser*",88.5,27.5
+"682","Askot Wildlife Sanctuary and Goriganga Basin",80.25,30.25
+"683","Gangotri National Park",79,31
+"684","Golfo de los Mosquitos Forests",-80.65,8.95
+"685","Irgiz-Turgay Lakes",62.25,48.75
+"686","Parque Nacional da Chapada Diamantina",-41.5,-12.75
+"687","Rio Arrojado",-45.39,-13.54
+"688","Ilhéus / Itabuna",-39.45,-14.65
+"689","Estação Ecológica de Uruçuí-Una",-45.25,-8.88
+"690","Campos do Planalto das Araucárias",-50.25,-28.5
+"691","Campos de Cima da Serra",-50.25,-29
+"692","Região dos Aparados da Serra",-49.92,-29.17
+"693","Médio Rio Camaquã",-53,-31
+"694","Maya - Lacandón",-90.18,17.21
+"695","Lachuá - Ik'bolay",-90.5,16
+"696","Guatemalan Caribbean Slope",-88.75,15.5
+"697","Atitlan",-91.25,14.75
+"698","Río Negro - Pantanal",-58.5,-20
+"699","Nicoya Peninsula",-85.35,9.95
+"700","Caribbean lowlands and wetlands",-83.75,10.5
+"701","Bosawas",-85,14.25
+"702","Wawashan",-84,12.5
+"703","Silva Hill",-83.95,11.85
+"704","Indio Maíz",-83.95,11.15
+"705","Zhusandala",74.89,44.46
+"706","Ili River Delta",74.69,45.69
+"707","Saiga Nature Sanctuary",57.75,44.75
+"708","Mugodzhary",58.75,48.75
+"709","Turkmenbashy Bay",53.31,39.81
+"710","Sumbar",56.35,38.45
+"711","Sarygamysh",57.39,41.75
+"712","Lower reaches of the Ashchyozek River",48.35,49.05
+"713","Urda Sands",48.3,48.66
+"714","Maya Mountains and southern reserves",-88.81,16.81
+"715","Northeastern Belize",-88.15,18.05
+"716","North-western cliff faces of the Ustyurt Plateau",55.33,45.83
+"717","Western cliff faces of the Ustyurt Plateau",53.92,44.83
+"718","Eastern Wetlands",-53.79,-33.21
+"719","Karagie Depression",51.75,43.5
+"720","Serranias del Este",-55.12,-34.12
+"721","Western and northern foothills of the Kalba Range",81.75,49.75
+"722","Kazakhstan portion of the river Volga's Delta - Z*",49.25,46.5
+"723","Donyz-Tau cliff faces",56.86,46.47
+"724","Aktau cliff faces",51.39,44.46
+"725","El Tapado Grasslands",-56.85,-31.55
+"726","Lower reaches of the Emba River",53.75,47
+"727","Ereymentau Mountains",73.19,51.5
+"728","Ortau upland massif",72,47.75
+"729","Ayak-Bestau Hills",70.5,47.75
+"730","Lower reaches of the Sarysu River",67.17,46.42
+"731","Frostviken",14.42,64.69
+"732","Badhyz",61.75,35.75
+"733","Ertis Ormany (Shaldai Forest)",78.69,51.81
+"734","Semey Ormany (Semipalatinsk Forest)",79.81,50.84
+"735","Tuchola Forest",17.89,53.96
+"736","Buzaubay",62.55,41.85
+"737","Eastern Kazakhstan uplands",81.25,48
+"738","Chingiztau Mountains",79.58,48.5
+"739","Serra dos Carajás",-50.57,-6.2
+"740","Alto Juruá",-72.5,-9
+"741","Tabocais",-69.62,-8.95
+"742","Savanas do Amapá",-51.08,0.69
+"743","Mamirauá",-65.91,-2.47
+"744","Várzeas do Médio Rio Amazonas",-57.68,-2.81
+"745","Terra Ronca",-46.69,-13.69
+"746","Baixada Maranhense",-44.84,-2.87
+"747","Barragem de Boa Esperança",-43.5,-6.5
+"748","Delta do Parnaíba",-41.65,-2.95
+"749","Reentrâncias Maranhenses / Paraenses",-45.8,-1.49
+"750","Campos do Encanto",-59.58,-15.08
+"751","Reserva Particular do Patrimônio Natural SESC Pan",-56.12,-16.75
+"752","Pantanal de Nabileque",-57.95,-20.35
+"753","Rios Negro e Aquidauana",-56,-20
+"754","Baixo Rio Xingu",-52,-3.75
+"755","Caxiuanã / Portel",-50.8,-2.7
+"756","Ilha de Marajó",-49.61,-0.95
+"757","Rio Capim",-48.41,-3.72
+"758","Várzeas de Monte Alegre",-53.75,-1.93
+"759","Jamari",-62.75,-9
+"760","Tepuis de Roraima",-60.35,5.05
+"761","Aurora do Tocantins / Taguatinga",-46.5,-12.5
+"762","Cerrados do Nordeste de Tocantins",-47.13,-8.37
+"763","Vale do Rio Palmeiras",-46.5,-12
+"764","Interflúvio dos Rios Tocantins e Paranã",-48.05,-12.85
+"765","Manyrak Mountains",84.25,47.5
+"766","Alto Rio Juruena",-58.75,-13
+"767","Tirecatinga / Utiariti",-58.25,-13.39
+"768","Anson Bay, Daly and Reynolds River Floodplains",130.25,-13.61
+"769","Adelaide and Mary River Floodplains",131.5,-12.5
+"770","Limmen Bight",135.33,-14.83
+"771","Tiwi Islands",130.89,-11.46
+"772","Buckley River",139.31,-20.19
+"773","Bakhuys mountains",-56.89,4.32
+"774","Kabalebo / Arapahu",-57.45,4.15
+"775","North-West Suriname",-57,5.5
+"776","Bulloo Floodplain",143,-28.67
+"777","Central NSW Mallee",145.75,-32.75
+"778","Pilliga",149.19,-30.69
+"779","Riverina Plains",145.43,-34.8
+"780","Gregory National Park",130.44,-16.29
+"781","Gulf Plains",140.78,-16.81
+"782","Parque Nacional do Cabo Orange",-51.18,3.46
+"783","Parque Nacional da Serra da Bodoquena e Entorno",-56.75,-21
+"784","Lizarda",-47,-9.25
+"785","Kangaroo Island",137.39,-35.96
+"786","Iron and McIlwraith Ranges",143.25,-13
+"787","Munzur Mountains",39.25,39.44
+"788","Lake Télé Community Reserve",17.25,1.25
+"789","Ntokou Pikounda  Reserve",16,0.89
+"790","Ogooué Leketi  National Park",14.25,-2.25
+"791","Bundarra-Barraba",150.85,-30.55
+"792","Podişul Hârtibaciului",24.75,46
+"793","Danube Delta",29.06,44.94
+"794","Lake Eyre",137.29,-28.71
+"795","Macquarie Marshes",147.54,-30.89
+"796","Southern NSW Mallee",143.05,-34.05
+"797","Barmah-Millewa",145.11,-35.75
+"798","Lake Sylvester System",135.65,-18.95
+"799","South-west Slopes of NSW",148.18,-34.39
+"800","Strzelecki Desert Lakes",139.3,-29.11
+"801","North-west Tasmanian Coast",145.25,-41.7
+"802","South-east Tasmania",147.25,-43.17
+"803","Cooloola and Fraser Coast",153.04,-25.61
+"804","Lake Torrens",137.75,-31
+"805","Lakes Muncoonie, Mumbleberry and Torquinie",138.55,-24.85
+"806","Mornington Sanctuary",126.5,-17.5
+"807","Mount Gibson and Charles Darwin",117.15,-29.55
+"808","Karara and Lochada",116.85,-29.05
+"809","Goyder Lagoon",139.12,-26.88
+"810","Lake Gregory/Paraku",127.5,-20
+"811","Diamantina Floodplain",140.35,-25.55
+"812","Murrumbidgee Red Gums",146,-34.5
+"813","Northern Swan Coastal Plain",115.75,-31.65
+"814","Ulladulla to Merimbula",150.08,-36.17
+"815","Harena-Kokosa",39.08,6.58
+"816","Yob Wildlife Reserve",37.65,17.05
+"817","Irangi Forest",28.25,-1
+"818","Koffole (Arsi) Forest",39.34,7.52
+"819","Qafta-Shiraro National Park",37.25,14
+"820","Yayu Coffee Forest Biosphere Reserve",35.65,8.45
+"821","Wadela (Wadila)",39,11.5
+"822","Greater Mahale",30.25,-6
+"823","Grampian Mountains",-3.39,56.96
+"824","El Qasr desert",26.65,31.05
+"825","The Abraq area",34.69,23.19
+"826","Gebel Elba",36.25,22.25
+"827","Western Negev",34.5,31
+"828","Outer Indus delta",67.68,24.11
+"829","Gorongosa Mountain and National Park",34.33,-18.75
+"830","Lower Central Basin",100.25,14.25
+"831","Nam Et",103.5,20.5
+"832","Nam Ha",101.25,21
+"833","Khammouan Limestone",104.75,17.75
+"834","Upper Stung Sen Catchment",104.75,14
+"835","Chhep",105.5,14
+"836","Mondulkiri - Kratie Lowlands",106.75,12.61
+"837","Snoul / Keo Sema / O Reang",107.08,12.25
+"838","Dong Phou Vieng",106,16.5
+"839","Central Cardamoms",103.5,12
+"840","Central Oddar Meanchey",104,14
+"841","Lomphat",106.75,13.5
+"842","Nakai-Nam Theun",105.5,18
+"843","Eastern Bolikhamxay Mountains",104.75,18.67
+"844","Upper Srepok Catchment",107.25,13
+"845","Xe Pian",106.15,14.55
+"846","Southern Cardamoms",103.53,11.53
+"847","Nam San Valley",97.95,21.35
+"848","Kyaukphyu (Wunbike)",93.83,19.25
+"849","Mali Hka Area",98,26.75
+"850","Myinmoletkhat",98.69,13.69
+"851","Paunglaung Catchment Area",96.5,20.25
+"852","Central Bago Yoma",96.05,18.35
+"853","Momeik - Mabein",96.5,23.5
+"854","Hukaung Valley extension",96.47,26.41
+"855","Hukaung Valley",96.81,26.81
+"856","Bumphabum",97.55,26.35
+"857","Tanintharyi National Park",99,12.75
+"858","Hponkanrazi",97.25,27.62
+"859","Ayeyarwady Delta (including Meinmahla Kyun)",95,16
+"860","Kalahari-Gemsbok National Park",20.46,-25.61
+"861","Overberg Wheatbelt",20.18,-34.39
+"862","Magaliesberg",27.65,-25.95
+"863","Soutpansberg",29.89,-22.96
+"864","Kruger National Park and adjacent areas",31.5,-24.08
+"865","Amersfoort - Bethal - Carolina District",29.75,-26.61
+"866","Kouga - Baviaanskloof Complex",23.83,-33.58
+"867","Rooiberge-Riemland",28.39,-28.25
+"868","Platberg-Karoo Conservancy",24.35,-30.5
+"869","Grasslands",30.07,-27.3
+"870","Dovrefjell",9.25,62.5
+"871","Uzkaya Steppe",80.25,51.64
+"872","Anuyskaya",84.5,51.85
+"873","Kanskaya Steppe",84.85,50.95
+"874","Talduair mountain",89.35,49.95
+"875","Kuznetsky Alatau Zapovednik",88.25,54.5
+"876","Baganskiye Lakes",78,54
+"877","Pelymsky Tuman",63.35,60.05
+"878","Watershed of the Mulym'ya and Bolshoy Tap rivers",65.25,60.75
+"879","East slope of the Northern Ural",59.54,63.39
+"880","Verkhne-Kondinsky zakaznik",63.56,61.06
+"881","Sources of the Bolshaya Karaganka and Syntasty ri*",59.85,52.55
+"882","Basins of the Schuchya and Khadytayakha rivers",68.84,67.41
+"883","Dvuob'ye",65.25,65.21
+"884","Lower Ob'",69.25,66.65
+"885","Upper and Middle Yuribey",71.5,68.25
+"886","Suzunsky pine forest",82.8,53.7
+"887","Kondo-Alymskaya",67.75,59
+"888","Upper streams of Ob' river",67.71,61.54
+"889","Zaonezh'ye",34.92,62.31
+"890","Vodlozero",37,62.75
+"891","Khaypudyrskaya Bay (Islands of B. Zelenets, Dolgi*",59.33,68.75
+"892","Rybinsk reservoir",38.15,58.4
+"893","Chudsko-Pskovski Lake and the adjacent areas",27.85,58.5
+"894","Lakes of northern Karelia",32.84,65.66
+"895","Kenozer'ye",38.25,62
+"896","Lapland Biosphere Reserve",32,68
+"897","Ponoiskaya depression",37.3,67.3
+"898","Adovo-Chugrumski wetland",52.75,60.5
+"899","Irendyk ridge",58.5,53
+"900","Yamantau mountain",58.25,54.33
+"901","Agriculture lands of south and east of Novouzensk*",48.35,50.45
+"902","Archedinskiye sands",43.15,49.55
+"903","Sarpinskaya lake-system",45.08,47.58
+"904","Erdniyevskaya area",46.5,47
+"905","Volga Delta",48.7,45.84
+"906","Western Ilmen area",47.31,45.81
+"907","Vaygach island",59.5,70
+"908","Kolguev island",49.21,69.12
+"909","Nerussa - Desna woodland",34,52.5
+"910","Russki Zavorot Peninsula and eastern part of Malo*",53.7,68.66
+"911","Verkhnevisherski mountain",59,61.25
+"912","Watershed of the Rivers Strelna and Varzuga",37.61,66.48
+"913","Kamsko-Bakaldinskiye marshes",45.39,56.46
+"914","Nothern part of Gor'koe reservoir with spurs",43.25,57.5
+"915","Kunovatski",66.75,65
+"916","Apalachicola River and Forests",-84.83,30.17
+"917","Big Cypress Swamp Watershed",-81.07,25.57
+"918","Sand Ridge - Tulare Lake Bed (incl. Pixley and Ke*",-119.5,36
+"919","Imperial Valley",-115.5,33
+"920","Outer Continental Shelf",-75,35.5
+"921","Gunnison Basin",-106.85,38.45
+"922","Craters of the Moon National Monument and Preserve",-113.5,43.25
+"923","Delaware Coastal Zone",-75.42,39.17
+"924","Idaho National Laboratory (INL)",-112.83,43.67
+"925","Owyhee Uplands",-116.75,42.5
+"926","Bilk Creek - Montana Mountains",-118,41.5
+"927","Sheldon NWR",-119.25,41.75
+"928","Central Seward Peninsula",-165.25,65.5
+"929","Central Yukon - Kuskokwim",-165.27,61.63
+"930","Kuskokwim River Delta",-163.46,60.14
+"931","Upper Blue Ridge Mountains",-78.71,38.25
+"932","Gilbert Bay/South Arm UT05",-112.5,41
+"933","Current / Jack's Fork Watershed-45",-91.31,37.19
+"934","Upper / Middle Meramec River Watershed-46",-91.12,37.88
+"935","Red Desert",-108.3,42.16
+"936","Saginaw Bay",-83.31,43.81
+"937","South Hills",-114.25,42
+"938","Teshekpuk Lake-E. Dease Inlet",-153.78,70.59
+"939","Catahoula-Dewey Wills-Three Rivers",-91.75,31.25
+"940","North Valley Grasslands",-106.85,48.55
+"941","Southern Blue Ridge",-83.25,35.75
+"942","Lac Qui Parle - Big Stone IBA",-96.35,45.45
+"943","Charles M. Russell National Wildlife Refuge",-107.35,47.65
+"944","Upper Tanana River Valley",-143.14,63.48
+"945","Active Delta (Mississippi River Birdsfoot Delta)",-89.25,29.12
+"946","Ozark National Forest",-93.33,35.58
+"947","Powder/Carter Sage-steppe",-104.75,45.5
+"948","Leahy Junction - Moses Coulee",-119.39,47.75
+"949","Chenier Plain",-92.61,29.8
+"950","West Kisatchie",-92.89,31.25
+"951","Barataria Terrebonne",-90.4,29.48
+"952","East Kisatchie",-92.75,31.75
+"953","Beaverhead Sage-steppe",-112.55,44.95
+"954","Mussellshell Sage-steppe",-108.25,46.83
+"955","Glaciated Prairie Sage-steppe",-107.64,47.97
+"956","Flint Hills Region",-96.54,38.44
+"957","Red Hills Region",-98.89,37.32
+"958","Canyonlands Area",-110.06,38.12
+"959","Coastal Prairie",-92.71,30.12
+"960","Catskills Peaks Area",-74.89,42.04
+"961","North Auckland Seabird Flyway",174.5,-36.75
+"962","At-Tubayq",37.53,29.69
+"963","Al-Habrow al-Arabi",41.45,18.65
+"964","Najran Mountains",43.85,17.55
+"965","Northern Everglades",-80.45,26.15
+"966","Northeast Svalbard Nature Reserve",24.9,79.77
+"967","Southeast Svalbard Nature Reserve",22.46,77.79
+"968","South Spitsbergen National Park",15.58,77.06
+"969","Lesser Slave Lake PP",-115.5,55.5
+"970","Saskatchewan River Delta",-101.07,53.8
+"971","Mackenzie River Delta",-135.4,69.29
+"972","Kugaluk River",-131,69.25
+"973","Lower Mackenzie River Islands",-130.44,67.03
+"974","Middle Mackenzie River Islands",-126.22,65.02
+"975","North Arm, Great Slave Lake",-114.13,62.29
+"976","Coats Island/Cape Pembroke",-82.25,62.88
+"977","Rasmussen Lowlands",-93.17,68.67
+"978","Queen Maud Gulf",-101.59,67.2
+"979","Foxe Basin Islands",-75.42,67.92
+"980","Inglefield Mountains",-79.2,77.43
+"981","McConnell River",-94.52,61.07
+"982","Boas River and associated wetlands",-85.47,63.83
+"983","East Bay/Native Bay",-82.36,64.03
+"984","Akimiski Island",-81.5,53
+"985","Eastern Devon Island Nunataks",-80.86,75.33
+"986","Lancaster Sound Polynya",-79.66,74.18
+"987","Northwestern Brodeur Peninsula",-87.5,73.5
+"988","Great Plain of the Koukdjuak",-73.32,66.1
+"989","Northeast James Bay Coast",-79.19,54.03
+"990","Cumberland Marshes",-102.53,53.81
+"991","Mambuliling",119.45,-2.85
+"992","Mekongga",121.44,-3.62
+"993","Pegunungan Tokalekaju",119.92,-1
+"994","North-west Isabel",158.35,-7.45
+"995","Hidaka mountains",142.69,42.69
+"996","Northern Japan Alps",137.5,36.5
+"997","Okutadami-Okunikko-Mt. Ohsabi",139.5,37
+"998","Termit Mountains",11.5,16.25
+"999","Boni and Dodori National Reserves",41.25,-1.62
+"1000","NM Lesser-Prairie Chicken Complex",-103.65,34
+"1001","Wetlands of the Tsiribihina delta and upper Tsiri*",45,-20
+"1002","Daraina Forest",49.58,-13.08
+"1003","Bidia - Bezavona Classified Forest",49,-17
+"1004","Kirindy Mite National Park and extension",43.95,-21.15
+"1005","Reserva Forestal Sipapo",-66.97,4.88
+"1006","Monumento Natural Cerro Urutaní",-63,4
+"1007","Zona Protectora San Rafael de Guasare",-72.55,10.85
+"1008","Yungas Superiores de Madidi",-68.65,-14.45
+"1009","Cuencas de Ríos Caine y Mizque",-65.08,-18.19
+"1010","Bajo Río Beni, Región Tacana",-67,-13.25
+"1011","Lagunas de Agua Dulce del Sureste de Potosí",-67.05,-22.35
+"1012","Lagunas Salinas del Suroeste de Potosí",-67.81,-22.03
+"1013","Yungas Inferiores de Amboró",-64,-17.58
+"1014","Lago Poopó y Río Laka Jahuira",-67.05,-18.85
+"1015","Loreto",-64.5,-15.25
+"1016","Área Natural de Manejo Integrado San Matías",-58.6,-17.53
+"1017","Yungas Inferiores de Madidi",-68.67,-13.83
+"1018","Reserva de Inmovilización Iténez",-63.31,-13
+"1019","Reserva Nacional Amazónica Manuripi Heath",-68.03,-11.69
+"1020","Tahuamanu",-69,-11.5
+"1021","KAA-IYA del Gran Chaco",-61.43,-19
+"1022","Reserva Nacional de Flora y Fauna Tariquía",-64.5,-22
+"1023","Yungas Inferiores de Pilón Lajas",-67.5,-15
+"1024","Yungas Superiores de Amboró",-64.12,-17.88
+"1025","Yungas Superiores de Carrasco",-65.15,-17.45
+"1026","Yungas Superiores de Mosetenes y Cocapata",-66.42,-16.42
+"1027","Yungas Inferiores de Isiboro-Sécure / Altamachi",-66.25,-16.25
+"1028","Lagunas Rogaguado y Ginebra",-65.75,-13
+"1029","Reserva Forestal Alto Paraguá",-60.96,-15.61
+"1030","Yungas Inferiores de Carrasco",-64.83,-17.42
+"1031","Otuquis Integrated Management Natural Area",-58.62,-19.46
+"1032","Oeste de Río Mamoré",-65.88,-13.75
+"1033","Este de Río Mamoré",-64.89,-13.75
+"1034","Cotapata",-68.19,-15.88
+"1035","Villa Iris, Chasicó, Napostá",-62.75,-38.5
+"1036","Caldenal del Sudoeste  de Buenos Aires",-63.05,-38.35
+"1037","Estepas arbustivas del Sur de Buenos Aires",-62.75,-40.75
+"1038","Cuenca del Río Salado",-59.35,-35.35
+"1039","Reserva Provincial y de la Biosfera Laguna Blanca",-66.88,-26.56
+"1040","Salinas Grandes",-65.19,-29.81
+"1041","Reserva de Uso Múltiple Bañados del Río Dulce y",-62.94,-30.13
+"1042","Bañado La Estrella Este",-60.44,-24.31
+"1043","Bañado La Estrella Oeste",-61.75,-23.25
+"1044","San Antonio Oeste",-64.75,-40.5
+"1045","Extensión Límite Este y Sur del Parque Nacional",-71.15,-41.55
+"1046","Valle del río Paraguay-Paraná",-58.67,-27.25
+"1047","La Fidelidad",-61,-25
+"1048","Cuenca del río Aguapey",-56.5,-28.25
+"1049","Reserva Provincial Olaroz-Cauchari",-66.88,-23.75
+"1050","Sistema de lagunas de Vilama-Pululos",-66.96,-23.11
+"1051","Parque Nacional Los Alerces y Laguna Terraplén",-72,-43
+"1052","Lago La Plata - Fontana",-71.5,-45
+"1053","Bañados del Río Atuel",-66.63,-37.33
+"1054","Reserva Provincial Laguna Brava",-69.15,-28.45
+"1055","Luracatao y Valles Calchaquíes",-66.38,-25.25
+"1056","Valle Fluvial del Río Paraguay",-58.11,-26.11
+"1057","Salinas de Ambargasta",-64.5,-29.25
+"1058","Parque Nacional Copo",-62,-26
+"1059","Bajos Submeridionales",-60.75,-28.75
+"1060","Dorso Occidental Subhúmedo de Santa Fe",-61.89,-29.46
+"1061","San Javier",-60,-30.25
+"1062","Pastizales de La Travesía y Buena Esperanza",-66,-34.25
+"1063","Reserva Costa Atlántica de Tierra del Fuego y zon",-68.03,-53.53
+"1064","Reserva de la Biósfera Yabotí",-54,-27
+"1065","Reserva Nacional Pacaya Samiria",-74.66,-5.16
+"1066","Tambopata",-69.5,-13
+"1067","Reserva Nacional Salinas y Aguada Blanca",-71.25,-16
+"1068","Cotahuasi",-72.82,-15.11
+"1069","Laguna de los Cóndores",-77.5,-7
+"1070","Parque Nacional Natural Amacayacu",-70,-3.5
+"1071","Complejo de Humedales Costeros de la Guajira",-72.61,11.75
+"1072","Parque Nacional Natural El Tuparro",-68.46,5.32
+"1073","Serranía de San Lucas",-74.39,7.82
+"1074","Río Conambo-Bobonaza",-77.03,-1.81
+"1075","Territorio Achuar",-77.12,-2.25
+"1076","Manglares del golfo de Guayaquil",-80.05,-2.65
+"1077","Verde-Ónzole-Cayapas-Canandé",-79.08,0.58
+"1078","Gran Yasuní",-76.28,-1.05
+"1079","Tierras altas de Isabela",-91.33,-0.25
+"1080","Parque Nacional Llanganates",-78.08,-1.08
+"1081","Cordillera del Cóndor",-78.5,-3.75
+"1082","Parque Nacional Cayambe-Coca",-77.85,0.05
+"1083","Reserva Ecológica Cotacachi-Cayapas",-78.75,0.5
+"1084","Greater Addo complex",25.61,-33.46
+"1085","Mountain Zebra National Park complex",25.12,-32.12
+"1086","Northern Eastern Cape",28.83,-30.62
+"1087","Licuati Forests and Eastern Swazi Lebombo",32.25,-26.5
+"1088","Ponto do Ouro",32.55,-26.85
+"1089","Magude - Muomba",32.61,-24.75
+"1090","Hluhluwe - Mkhuze lowveld",32.19,-27.81
+"1091","Udzungwa Mountains",36,-8.1
+"1092","Azas Nature Reserve",97.61,52.48
+"1093","Tunkin valley",102.25,51.5
+"1094","Aginskiye lakes",115,50.75
+"1095","Bain-Tsaganskiye lakes",115.33,50.33
+"1096","Murukta depression",102.35,67.6
+"1097","Gusikha river basin and lower Balakhnya river",106.42,73.83
+"1098","Lower Leningradskaya river",101.8,76.39
+"1099","Pyasina delta",87.02,73.78
+"1100","Oleniy island and Yuratskaya bay",77.92,72.42
+"1101","Kurluska lake and middle Boganida valley",97.13,71.44
+"1102","Volochanka river basin",93.94,70.56
+"1103","Brekhovskiye islands",82.1,70.55
+"1104","Parapol'skiy valley",166.23,61.91
+"1105","Dudypta river plains",93.64,71.54
+"1106","Lena delta",126.74,72.72
+"1107","Kolyma delta",160.17,69.29
+"1108","Terpyey-Tumus",117,73.5
+"1109","Muna-Besyuke",124.28,69.11
+"1110","Forty islands",125.39,64.75
+"1111","Anabar",112.89,70.54
+"1112","Yana delta",138.89,71.29
+"1113","San-Yuryakh",141.37,72.49
+"1114","Kytalyk",146.7,71.29
+"1115","Keremesit-Sundrun watershed",156.41,70.34
+"1116","Abyy lowland",144.38,68.18
+"1117","Novosibirski archipelago",142.26,75.06
+"1118","Kolyma-Alazeya lowland",153.13,68.44
+"1119","Pura river basin",87.24,72.08
+"1120","West Chaun plain",167.5,69.5
+"1121","Cape Billings",175.8,69.65
+"1122","Lower Anadyr lowlands",177.9,63.96
+"1123","Lebediny refuge (Markovo depression)",171.53,65.19
+"1124","Bolon' lake",135.75,49.5
+"1125","Dal'dzi lake",139.25,53
+"1126","Udyl' lake",139.75,52
+"1127","Evoron-Chukchagirskoye depression",136.5,51.75
+"1128","Khanka plain",132.57,44.93
+"1129","Kievka and Chernaya river basins",133.92,43.19
+"1130","Chelomdzha valley and Kava-Chelomdzha interfluve",147.69,59.81
+"1131","Upper and middle Nizhnyaya Baikha river",86.93,64.8
+"1132","Middle Onon",112.25,49.7
+"1133","Lowland swamps in the valley of Tungur and Nenyug*",121.19,54.92
+"1134","Nordenshel'da archipelago",96.05,76.68
+"1135","Huma He Nature Reserve",125.83,52.08
+"1136","Nanweng He Nature Reserve",125.25,51.39
+"1137","Changbai Shan Nature Reserve",128,42
+"1138","Shuangtai (Shuangtaizi) Estuary and Inner Gulf of*",121.92,40.83
+"1139","Orqohan",121.62,49.56
+"1140","Dalai Nur Nature Reserve",117.47,48.92
+"1141","Dali Nur Nature Reserve",116.88,43.25
+"1142","Xilin Gol Nature Reserve",116.19,44.19
+"1143","Damaoqi",110.22,41.88
+"1144","Bosten Lake",87,41.92
+"1145","Tarim Euphrates Poplar Forest Nature Reserve",84.75,41
+"1146","Xayar forest and wetland",83,41
+"1147","Lower reaches of Tarim River",87.47,40.69
+"1148","Aksu River basin",80.71,40.56
+"1149","Markit-Yarkant Oasis",77.55,38.65
+"1150","Qiemo Oasis and Qarqan River",86,38.5
+"1151","Ayark Kol and alpine grassland",89.95,37.45
+"1152","Changtang plateau",85.99,34.12
+"1153","Nam Co",90.39,30.54
+"1154","Yamdrok Co",90.65,28.95
+"1155","Yinchuan plain",106.42,38.47
+"1156","Jinta",99,40.25
+"1157","Minqin",103,38.81
+"1158","Eastern Qilian Shan mountains",100.82,37.96
+"1159","Heshui",108.5,36
+"1160","Jonê",103.25,34.5
+"1161","Qinghai Hu (Koko Nor)",100.25,37
+"1162","Xishuangbanna",101.18,21.82
+"1163","Yellow River Delta Nature Reserve",118.75,37.61
+"1164","Qingdao-Rizhao coastal wetland and islands",120,36
+"1165","Yancheng Nature Reserve",120.39,33.61
+"1166","Dongting Hu wetlands",112.67,29.17
+"1167","Longlin-Xilin",105.11,24.54
+"1168","Karamay Mountains",89.88,44.88
+"1169","Altay forest and steppe",88.75,47.9
+"1170","Lindian County Xinxing Horse Ranch and Julang Pas*",125,47
+"1171","Mangui",122.18,52.18
+"1172","Ulgai",117.75,45.58
+"1173","Loess Plateau in western Gansu",104.42,35.44
+"1174","Dunhuang Nature Reserve and Western Qilian Shan m*",94.25,40.12
+"1175","Area delle Murge e delle Gravine",16.62,40.88
+"1176","Gargano Promontory and Capitanata Wetlands",15.85,41.55
+"1177","Mount Velebit",15.45,44.45
+"1178","Gorski Kotar and Northern Lika",14.97,45.19
+"1179","Tierra de Campos steppes",-5.25,42
+"1180","Tierra de Campiñas steppes",-5,41
+"1181","El Escorial-San Martín de Valdeiglesias",-4.25,40.5
+"1182","Rivers Cabriel and Júcar canyons",-1.35,39.45
+"1183","Toledo mountains-Cabañeros",-4.25,39.5
+"1184","Alcudia valley and mountain range",-4.65,38.55
+"1185","Madrona and Andújar mountain ranges",-3.85,38.45
+"1186","Cazorla and Segura mountain ranges",-2.83,38.17
+"1187","Sierra Nevada mountain range",-3.25,37
+"1188","Mountain ranges south of Jaén",-3.75,37.62
+"1189","Guadalquivir marshes",-6.25,37
+"1190","San Pedro mountain range",-6.85,39.45
+"1191","Aladağlar",35.35,37.95
+"1192","Amanos Mountains",36.39,36.89
+"1193","Datça and Bozburun Peninsula",28.11,36.96
+"1194","Geyik Mountains",32.25,37
+"1195","Southern Euphrates Valley and Birecik Plains",38,37.25
+"1196","Boz Mountains",28,38.42
+"1197","Ceylanpınar",39.75,37
+"1198","Mardin Threshold",41.15,37.45
+"1199","Sündiken Mountains",31.25,40
+"1200","Région Fouchal - Matarka",-2.25,33.5
+"1201","Msseyed",-10.35,28.25
+"1202","Oued Mird",-5.68,30.39
+"1203","Cyrenaican Peninsula",21.56,32.06
+"1204","Chaîne du Dahra",0.75,36.17
+"1205","Djebel Aissa",-0.25,32.75
+"1206","El Kala - Tarf",8.15,36.55
+"1207","Nefhusa",12.59,32.12
+"1208","Jabal al Akhdar",21.17,32.42
+"1209","Chott Ech Chergui",0.5,34.25
+"1210","Aures - Chelia",6.38,35.12
+"1211","Djebel Amour",1.75,33.75
+"1212","Hisma Basin - Rum",35.5,29.5
+"1213","Wad Lakhdar",-6.5,32
+"1214","Wulianfeng",103.81,28.19
+"1215","Baishui Jiang Nature Reserve",104.65,32.95
+"1216","Ganligahai-Zecha Nature Reserve",102.5,34.25
+"1217","Huang He Shouqu Nature Reserve",101.75,33.75
+"1218","Gongbo Nature Reserve",93.88,29.56
+"1219","Yarlung Zangbo Daxiagu Nature Reserve",95.4,29.65
+"1220","Zayü",97.17,28.83
+"1221","Yanboyezeshan Nature Reserve",101.5,32.75
+"1222","Gonggaishan Nature Reserve (Kangding)",102,29.75
+"1223","Pingwu Panda habitat",104.25,32.5
+"1224","Sanjiangyuan Nature Reserve",97.2,33.47
+"1225","Gonjo",98.5,30.75
+"1226","Min Shan mountains",104,33.75
+"1227","Unai",-47.19,-16.19
+"1228","Sochinsky National Park",39.88,43.75
+"1229","Eastern Black Sea Mountains [incl Karcal Mountain*",41.17,41.02
+"1230","Maku and Iran west border",44.5,38.75
+"1231","Arasbaran Protected Area",47,38.92
+"1232","Adjara-Imereti Ridge",43,41.75
+"1233","Svaneti",42.75,43
+"1234","Iori Region",45.83,41.42
+"1235","Alborz-e Markazi Protected Area",51.61,36.25
+"1236","Gissar State Nature Reserve",67.62,38.88
+"1237","Eastern Alai",72.75,39.5
+"1238","Small Pamir",74.11,37.04
+"1239","Arys-Karaktau State Reserved Zone",68.18,42.39
+"1240","Yabassi",10.5,4.5
+"1241","Lofa-Gola-Mano Complex",-10.61,7.68
+"1242","Cestos - Senkwen",-9.15,5.55
+"1243","Grebo",-7.5,5.5
+"1244","Fazao-Malfakassa National Park",0.88,8.88
+"1245","Cestos Gbi",-8.65,6.05
+"1246","Krahn Bassa South",-8.95,5.85
+"1247","Kpelle Forest",-10.15,7.45
+"1248","Dibang Wildlife Sanctuary",96,29
+"1249","Mechuka - Monigong - Jorgging",94.25,28.75
+"1250","Area between Qinghai Hu and A'nyêmaqên",99.91,36.16
+"1251","Eastern Middle Atlas Mountains",-4,33.5
+"1252","Mount Hilong-hilong",125.95,9.15
+"1253","Mount Kaluayan - Mount Kinabalian Complex",125.25,8.35
+"1254","Malampaya Sound Protected Landscape and Seascape",119.42,10.92
+"1255","North Eastern Cagayan Protected Landscape and Sea*",122.05,18.15
+"1256","Northern Sierra Madre Natural Park",122.25,17.25
+"1257","Liguasan marsh",124.58,7.08
+"1258","Balbalasang-Balbalan National Park and proposed e*",121.19,17.81
+"1259","Amatole - Katberg Mountain",27.11,-32.54
+"1260","iSimangaliso Wetland Park",32.58,-27.67
+"1261","South Georgia - mainland, islands, islets and sta*",-37.02,-54.34
+"1262","Anhui Chinese Alligator National Nature Reserve",118.8,30.84
+"1263","Anindilyakwa",136.5,-14
+"1264","Arroyo El Mimbre area",-101.25,25.88
+"1265","Between Balsa Puerto and Moyabamba",-77,-6
+"1266","Biak Island",135.85,-0.95
+"1267","Bintang Range",100.95,5.35
+"1268","Bolkar Mountains",34.39,37.25
+"1269","Carpish",-76,-9.5
+"1270","Cayambe-Coca Ecological Reserve and surrounding a*",-77.85,0.05
+"1271","Cedarberg - Koue Bokkeveld complex",19.19,-32.42
+"1272","Ciénaga de Zapata",-81.5,22.42
+"1273","Coquimbo desert scrub",-71.25,-30.25
+"1274","Zona Protectora Macizo Montañoso del Turimiquire",-64,10
+"1275","Cordillera del Cóndor",-77.98,-3.9
+"1276","Cosolapa, Acatlan, Tepexic",-97,18.5
+"1277","Cuenca Río Nanay",-73.83,-3.92
+"1278","Daraina - Loky - Manambato NPA",49.58,-13.08
+"1279","Dayao Shan Nature Reserve",110,24
+"1280","Dunas e Veredas do Baixo Médio São Francisco",-43,-10.5
+"1281","El Cielo",-99.5,23
+"1282","El Colorado",-59.5,-26.5
+"1283","Selva Zoque I",-94.45,17
+"1284","Farallones de Cali Natural National Park",-77,3.5
+"1285","Guadalcanal Watersheds",160.15,-9.55
+"1286","Htamanthi",95.5,25.5
+"1287","Huasco-Totoral coastal hills",-71,-28
+"1288","Itombwe Mountains",28.32,-3.39
+"1289","Kelabit Highlands",115.5,3.5
+"1290","Kokolopori",23,0.25
+"1291","Lendu Plateau",30.65,2.05
+"1292","Lower Congo River right bank",16.5,-1.17
+"1293","Mahavavy - Kinkony wetlands NPA",46,-16
+"1294","Manusela",129.5,-3
+"1295","Mar Muerto - Pereyra",-94.5,16.38
+"1296","Marungu highlands",29.75,-7.5
+"1297","Meseta de Somuncura Provincial Natural Protected *",-66.86,-41.44
+"1298","Mikea Protected Area",43.5,-22.25
+"1299","Cuchumatanes",-91.5,15.75
+"1300","Morowali",121.5,-1.5
+"1301","Mountains of Southeast Vancouver Island",-124.47,48.92
+"1302","Muli (Ma'an Shan)",101.05,28.35
+"1303","Namdapha - Kamlang",96.5,27.5
+"1304","Ankeniheny Zahamena Corridor NPA (CAZ)",48.75,-18.25
+"1305","Tsaratanana-Marojejy Corridor NPA (COMATSA)",49.25,-14
+"1306","Santiago pampas",-54.95,-29.15
+"1307","Tsimanampetsotsa National Park and extension",44,-24.5
+"1308","Parque Nacional Sumaco-Napo Galeras",-77.5,-0.5
+"1309","North ""Quebradas"" and grasslands",-55.69,-31.31
+"1310","Río Abiseo National Park buffer zone",-77.25,-7.75
+"1311","Serranía de los Yariguíes",-73.5,6.75
+"1312","Lake Sevan and environs",45.15,40.45
+"1313","Sierpe Wetlands and Osa Peninsula",-83.55,8.65
+"1314","Sierra de Arteaga",-100.33,25.33
+"1315","Sierra de Juárez",-96.55,17.65
+"1316","Sierra de las Minas - Motagua",-89.75,15
+"1317","Sierra de Miahuatlán",-96.5,16
+"1318","Sierra de San Pedro Mártir",-115.33,30.75
+"1319","Sierra Gorda de Guanajuato",-100,21.5
+"1320","Sierra Nevada de Santa Marta National Natural Par*",-73.75,10.89
+"1321","Sierra Norte de Oaxaca II",-96,17.25
+"1322","Tchabal-Mbabo",12.17,7.33
+"1323","Telefomin",141.5,-5
+"1324","Upper Vacacai pampas",-53.92,-30.33
+"1325","Valle de Tehuacán-Cuicatlán",-97.25,18.25
+"1326","Waterberg System",28.07,-24.3
+"1327","Wolkberg Forest Belt",29.85,-24.05
+"1328","Yungas Superiores de Apolobamba",-68.85,-15.05
+"1329","Jowhar - Warshiikh",46,2.5
+"1330","Raso da Catarina",-38.65,-10.05
+"1331","Chapada do Araripe",-39.35,-7.55
+"1332","Waigeo Utara / Timur",130.75,-0.25
+"1333","Poyang Hu wetlands",116.32,29.04
+"1334","Ciénaga Grande, Isla de Salamanca and Sabana Gran",-74.5,11
+"1335","Sudd (Bahr-el-Jebel system)",30.66,8.09
+"1336","May Hka Area",98.5,26.75
+"1337","Pulau Nias",97.45,1.15
+"1338","Reserva Comunal El Sira",-74.45,-9.82
+"1339","Reserva Forestal Imataca",-61.15,7.61
+"1340","Njesi plateau",35.08,-12.58
+"1341","Central Titiwangsa Range",101.46,4.39
+"1342","Ramis y Arapa (Lago Titicaca, sector Peruano)",-69.69,-15.69
+"1343","Lago Titicaca (Sector Boliviano)",-69,-16.25
+"1344","Tharthar Lake and Al-Dhebaeji Fields",43.35,34.05
+"1345","Sperrgebiet",15.9,-27.51
+"1346","Chad Basin National Park: Chingurmi - Duguma Sect*",13.81,13.03
+"1347","Pradera de Tokio",-100.75,24.75
+"1348","Rio Tacutu",-60.43,3.81
+"1349","Pompeu",-45,-19
+"1350","Caruachi",-63,7.25
+"1351","Abra Patricia - Alto Mayo",-77.5,-5.75
+"1352","Bosques Secos del Valle del Río Chicamocha",-73.05,6.65
