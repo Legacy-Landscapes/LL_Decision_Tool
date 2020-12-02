@@ -1,6 +1,6 @@
 Package: LLDecisionTool
 Title: Legacy Landscapes Decision Tool
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: 
     person(given = "Alke",
            family = "Vosskamp",
@@ -12,3 +12,6 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Depends: R (>=4.0.0)
+Imports:
+    
