@@ -1,27 +1,32 @@
 
 #-#-# load data functions #-#-#
 
-load_weight_data <- function(filename, columns_positive, columns_negative) {
+load_weight_data <- function(filename) { #removed columns_positive, columns_negative
   data <- read.csv(data_file)
-  data <- data[c(
-    columns_positive,
-    columns_negative
-  )]
-
-  # scale negative columns
-  data[columns_negative] <- normalize(data[columns_negative])
-  data$id <- seq(nrow(data)) # why is this necessary?
-  data <- data[order(data["Int_Name"], decreasing = FALSE), ]
-  colnames(data) <- c(
-    "int_name",
-    "biodiversity",
-    "area",
-    "climate_protection",
-    "climatic_stability",
-    "land_use_stability",
-    "wilderness",
-    "id"
-  )
+  data <- data[c("Int_Name","RealmNr","Biodiversity","Wilderness","ClimateStability","LandUseStability","Area","ClimateProtection")]
+  data$id <- seq(nrow(data)) # Actually we might not need an ID in the end
+  colnames(data) <- c("int_name","RealmNr","biodiversity","wilderness","climatic_stability","land_use_stability","area","climate_protection","id")
+  data <- data[c("id","RealmNr","int_name","biodiversity","wilderness","climatic_stability","land_use_stability","area","climate_protection")]
+  
+  # data <- data[c(
+  #   columns_positive,
+  #   columns_negative
+  # )]
+  # 
+  # # scale negative columns
+  # data[columns_negative] <- normalize(data[columns_negative])
+  # data$id <- seq(nrow(data)) # why is this necessary?
+  # data <- data[order(data["Int_Name"], decreasing = FALSE), ]
+  # colnames(data) <- c(
+  #   "int_name",
+  #   "biodiversity",
+  #   "area",
+  #   "climate_protection",
+  #   "climatic_stability",
+  #   "land_use_stability",
+  #   "wilderness",
+  #   "id"
+  # )
 
   return(data)
 }
