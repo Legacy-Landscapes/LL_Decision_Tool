@@ -17,19 +17,19 @@ weight_text <-
 
 
 # data sources:
-data_file <- "/path/to/Final_dataset_IUCN_WHS_KBA_for_weighting_Afrotropical.csv" # nolint
-site_maps_file <- "/path/to/Combined_data_global_IUCN_WHS_KBA.shp" # nolint
-worldmap_file <- "/path/to/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp" # nolint
+data_file <- "/Users/alkevoskamp/Documents/GitHub/LL_Decision_Tool/AppData/Final_dataset_IUCN_WHS_KBA_for_weighting_global.csv" # nolint
+site_maps_file <- "/Users/alkevoskamp/Documents/GitHub/LL_Decision_Tool/AppData/Combined_data_global_IUCN_WHS_KBA.shp" # nolint
+worldmap_file <- "/Users/alkevoskamp/Documents/GitHub/LL_Decision_Tool/AppData/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp" # nolint
 
 
 # variables:
-columns_positive <- c("Int_Name",
-                      "Biodiversity",
-                      "Area",
-                      "ClimateProtection")
-columns_negative <- c("ClimateStability",
-                      "LandUseStability",
-                      "Wilderness")
+# columns_positive <- c("Int_Name",
+#                       "Biodiversity",
+#                       "Area",
+#                       "ClimateProtection")
+# columns_negative <- c("ClimateStability",
+#                       "LandUseStability",
+#                       "Wilderness")
 
 n_top_sites <- 10
   
