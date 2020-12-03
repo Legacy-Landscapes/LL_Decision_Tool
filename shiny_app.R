@@ -6,7 +6,7 @@ source("load_data.R")
 
 
 # load data
-weight_data <- load_weight_data(data_file, columns_positive, columns_negative)
+weight_data <- load_weight_data(data_file) #removed positive negative columns
 site_polygons <- load_site_maps(site_maps_file)
 worldmap <- load_worldmap(worldmap_file)
 
