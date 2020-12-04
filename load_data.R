@@ -1,35 +1,15 @@
 
 #-#-# load data functions #-#-#
 
-load_weight_data <- function(filename) { #removed columns_positive, columns_negative
+load_weight_data <- function(filename) {
   data <- read.csv(filename)
   data <- data[c("Int_Name","RealmNr","Biodiversity","Wilderness","ClimateStability","LandUseStability","Area","ClimateProtection")]
-  data$id <- seq(nrow(data)) # Actually we might not need an ID in the end
-  colnames(data) <- c("int_name","RealmNr","biodiversity","wilderness","climatic_stability","land_use_stability","area","climate_protection","id")
-  data <- data[c("id","RealmNr","int_name","biodiversity","wilderness","climatic_stability","land_use_stability","area","climate_protection")]
-  
-  # data <- data[c(
-  #   columns_positive,
-  #   columns_negative
-  # )]
-  # 
-  # # scale negative columns
-  # data[columns_negative] <- normalize(data[columns_negative])
-  # data$id <- seq(nrow(data)) # why is this necessary?
-  # data <- data[order(data["Int_Name"], decreasing = FALSE), ]
-  # colnames(data) <- c(
-  #   "int_name",
-  #   "biodiversity",
-  #   "area",
-  #   "climate_protection",
-  #   "climatic_stability",
-  #   "land_use_stability",
-  #   "wilderness",
-  #   "id"
-  # )
+  colnames(data) <- c("int_name","RealmNr","biodiversity","wilderness","climatic_stability","land_use_stability","area","climate_protection")
+  data <- data[c("RealmNr","int_name","biodiversity","wilderness","climatic_stability","land_use_stability","area","climate_protection")]
 
   return(data)
 }
+
 
 load_PA_centroids <- function(filename) { #load the centroid file
   data <- read.csv(filename)
@@ -38,25 +18,12 @@ load_PA_centroids <- function(filename) { #load the centroid file
 }
 
 
-# load_site_maps <- function(filename) {   ## replaced by load centroids
-#   data <- sf::st_read(filename)
-#   sf::st_crs(data) <- "+proj=longlat +datum=WGS84 +no_defs"
-#   data <- simplify_polygons(data)
-#   return(data)
-# }
-
-
 load_worldmap <- function(filename) {
   worldmap <- sf::st_read(filename, layer = "ne_50m_admin_0_countries")
   worldmap <- simplify_polygons(worldmap)
   return(worldmap)
 }
 
-# load_worldmap <- function(filename){
-#   url <- "https://www.naturalearthdata.com/downloads/10m-physical-vectors/"
-#   download.file(url, destfile = "/Users/alkevoskamp/Documents/GitHub/LL_Decision_Tool/AppData/",cacheOK=TRUE) 
-#   data <- sf::st_read("/Users/alkevoskamp/Documents/GitHub/LL_Decision_Tool/AppData/ne_10m_land.shp",header=T,stringsAsFactors = FALSE)
-# }
 
 simplify_polygons <- function(sf_data, tolerance = 0.1) {
   return(

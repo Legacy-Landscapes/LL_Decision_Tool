@@ -8,7 +8,6 @@ source("load_data.R")
 # load data
 pa_centroids <- load_PA_centroids(centroids)
 weight_data <- load_weight_data(data_file) #removed positive negative columns
-site_polygons <- load_site_maps(site_maps_file)
 worldmap <- load_worldmap(worldmap_file)
 
 
