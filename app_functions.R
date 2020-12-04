@@ -22,24 +22,20 @@ plot_maps <- function(selected_polygons) {
   
   selected_polygons <- merge(selected_polygons,pa_centroids,by="int_name",all.x=T)
   
-  ggplot(nba, aes(x= MIN, y= PTS, colour="green", label=Name))+
-    geom_point() +geom_text(aes(label=Name),hjust=0, vjust=0)
-  
-  
   plot <- ggplot(selected_polygons) +
   #plot <- ggplot(selected_polygons,aes(x= x, y= y, shape = 8, size = 1, colour="red", label=int_name))
-    #geom_sf(data = worldmap, fill = NA) +
+    geom_sf(data = worldmap, fill = NA) +
     #geom_sf(data = selected_polygons, fill = "red", color = "red") +
-    geom_point(data=selected_polygons,aes(x=x, y=y,label=int_name), shape=8, size = 1,colour="red")
-    coord_sf(xlim = c(-30, 60), ylim = c(-40, 40), expand = FALSE) +
+    geom_point(data=selected_polygons,aes(x=x, y=y), shape=8, size = 1,colour="red") +
+    coord_sf(xlim = c(-170, 180), ylim = c(-60, 90), expand = FALSE) +
     # Add shortened equator line
     geom_segment(
-      aes(x = -30, xend = 60, y = 0, yend = 0),
+      aes(x = -180, xend = 180, y = 0, yend = 0),
       colour = "black",
       linetype = "dashed"
     ) +
     theme(legend.position = "none") +
-    theme(axis.title = element_text(size = 28)) +
+    theme(axis.title = element_text(size = 16)) +
     theme(panel.background = element_rect(fill = "white", colour = "white")) +
     labs(x = "", y = "", title = "") +
     theme(
@@ -48,7 +44,7 @@ plot_maps <- function(selected_polygons) {
       axis.ticks.x = element_blank(),
       axis.text.x = element_blank()
     ) +
-    ggtitle("Top 10 sites") +
+    ggtitle("Top 10 sites globally") +
     theme(plot.title = element_text(size = 21, face = "bold", hjust = 0))
 
   return(plot)
@@ -83,3 +79,4 @@ rank_data <- function(data_table, weights, max_sites = 20) {
   ranked$rank <- seq(nrow(ranked))
   return(ranked[1:max_sites, ])
 }
+
