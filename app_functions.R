@@ -17,12 +17,20 @@ get_slider_values <- function(input) {
 
 
 plot_maps <- function(selected_polygons) {
-  centroids <- project_for_sf(sf::st_centroid, selected_polygons)
-  selected_polygons <- cbind(selected_polygons, sf::st_coordinates(centroids))
-
+  #centroids <- project_for_sf(sf::st_centroid, selected_polygons)
+  #selected_polygons <- cbind(selected_polygons, sf::st_coordinates(centroids))
+  
+  selected_polygons <- merge(selected_polygons,pa_centroids,by="int_name",all.x=T)
+  
+  ggplot(nba, aes(x= MIN, y= PTS, colour="green", label=Name))+
+    geom_point() +geom_text(aes(label=Name),hjust=0, vjust=0)
+  
+  
   plot <- ggplot(selected_polygons) +
-    geom_sf(data = worldmap, fill = NA) +
-    geom_sf(data = selected_polygons, fill = "red", color = "red") +
+  #plot <- ggplot(selected_polygons,aes(x= x, y= y, shape = 8, size = 1, colour="red", label=int_name))
+    #geom_sf(data = worldmap, fill = NA) +
+    #geom_sf(data = selected_polygons, fill = "red", color = "red") +
+    geom_point(data=selected_polygons,aes(x=x, y=y,label=int_name), shape=8, size = 1,colour="red")
     coord_sf(xlim = c(-30, 60), ylim = c(-40, 40), expand = FALSE) +
     # Add shortened equator line
     geom_segment(
@@ -47,9 +55,9 @@ plot_maps <- function(selected_polygons) {
 }
 
 
-select_polygons <- function(ranked_data, all_polygons, n = 10) {
-  return(all_polygons[all_polygons$SP_ID %in% ranked_data$id[1:n], ])
-}
+#select_polygons <- function(ranked_data, all_polygons, n = 10) {
+#  return(all_polygons[all_polygons$SP_ID %in% ranked_data$id[1:n], ])
+#}
 
 
 calculate_weights <- function(slider_values) {
