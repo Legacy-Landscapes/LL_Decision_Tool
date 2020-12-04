@@ -38,12 +38,12 @@ load_PA_centroids <- function(filename) { #load the centroid file
 }
 
 
-load_site_maps <- function(filename) {
-  data <- sf::st_read(filename)
-  sf::st_crs(data) <- "+proj=longlat +datum=WGS84 +no_defs"
-  data <- simplify_polygons(data)
-  return(data)
-}
+# load_site_maps <- function(filename) {   ## replaced by load centroids
+#   data <- sf::st_read(filename)
+#   sf::st_crs(data) <- "+proj=longlat +datum=WGS84 +no_defs"
+#   data <- simplify_polygons(data)
+#   return(data)
+# }
 
 
 load_worldmap <- function(filename) {
@@ -52,6 +52,11 @@ load_worldmap <- function(filename) {
   return(worldmap)
 }
 
+# load_worldmap <- function(filename){
+#   url <- "https://www.naturalearthdata.com/downloads/10m-physical-vectors/"
+#   download.file(url, destfile = "/Users/alkevoskamp/Documents/GitHub/LL_Decision_Tool/AppData/",cacheOK=TRUE) 
+#   data <- sf::st_read("/Users/alkevoskamp/Documents/GitHub/LL_Decision_Tool/AppData/ne_10m_land.shp",header=T,stringsAsFactors = FALSE)
+# }
 
 simplify_polygons <- function(sf_data, tolerance = 0.1) {
   return(
