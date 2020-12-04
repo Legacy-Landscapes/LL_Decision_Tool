@@ -3,7 +3,7 @@ Title: Legacy Landscapes Decision Tool
 Version: 0.0.1
 Authors@R: 
     person(given = "Alke",
-           family = "Vosskamp",
+           family = "Voskamp",
            role = c("aut", "cre"),
            email = " alke.voskamp@senckenberg.de")
 Description: Decision support tool for the Legacy Landscapes project.
