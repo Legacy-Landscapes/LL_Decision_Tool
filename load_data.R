@@ -2,7 +2,7 @@
 #-#-# load data functions #-#-#
 
 load_weight_data <- function(filename) { #removed columns_positive, columns_negative
-  data <- read.csv(data_file)
+  data <- read.csv(filename)
   data <- data[c("Int_Name","RealmNr","Biodiversity","Wilderness","ClimateStability","LandUseStability","Area","ClimateProtection")]
   data$id <- seq(nrow(data)) # Actually we might not need an ID in the end
   colnames(data) <- c("int_name","RealmNr","biodiversity","wilderness","climatic_stability","land_use_stability","area","climate_protection","id")
@@ -28,6 +28,12 @@ load_weight_data <- function(filename) { #removed columns_positive, columns_nega
   #   "id"
   # )
 
+  return(data)
+}
+
+load_PA_centroids <- function(filename) { #load the centroid file
+  data <- read.csv(filename)
+  colnames(data) <- c("C_ID","int_name","x","y")
   return(data)
 }
 
@@ -75,3 +81,4 @@ project_for_sf <- function(func, sf_data, ...) {
   sf_data <- sf::st_transform(sf_data, crs)
   return(sf_data)
 }
+
