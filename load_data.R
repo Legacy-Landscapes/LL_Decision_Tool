@@ -1,36 +1,19 @@
 
 #-#-# load data functions #-#-#
 
-load_weight_data <- function(filename, columns_positive, columns_negative) {
-  data <- read.csv(data_file)
-  data <- data[c(
-    columns_positive,
-    columns_negative
-  )]
-
-  # scale negative columns
-  data[columns_negative] <- normalize(data[columns_negative])
-  data$id <- seq(nrow(data)) # why is this necessary?
-  data <- data[order(data["Int_Name"], decreasing = FALSE), ]
-  colnames(data) <- c(
-    "int_name",
-    "biodiversity",
-    "area",
-    "climate_protection",
-    "climatic_stability",
-    "land_use_stability",
-    "wilderness",
-    "id"
-  )
+load_weight_data <- function(filename) {
+  data <- read.csv(filename)
+  data <- data[c("Int_Name","RealmNr","Biodiversity","Wilderness","ClimateStability","LandUseStability","Area","ClimateProtection")]
+  colnames(data) <- c("int_name","RealmNr","biodiversity","wilderness","climatic_stability","land_use_stability","area","climate_protection")
+  data <- data[c("RealmNr","int_name","biodiversity","wilderness","climatic_stability","land_use_stability","area","climate_protection")]
 
   return(data)
 }
 
 
-load_site_maps <- function(filename) {
-  data <- sf::st_read(filename)
-  sf::st_crs(data) <- "+proj=longlat +datum=WGS84 +no_defs"
-  data <- simplify_polygons(data)
+load_PA_centroids <- function(filename) { #load the centroid file
+  data <- read.csv(filename)
+  colnames(data) <- c("C_ID","int_name","x","y")
   return(data)
 }
 
@@ -70,3 +53,4 @@ project_for_sf <- function(func, sf_data, ...) {
   sf_data <- sf::st_transform(sf_data, crs)
   return(sf_data)
 }
+

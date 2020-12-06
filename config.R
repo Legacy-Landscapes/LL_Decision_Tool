@@ -17,19 +17,9 @@ weight_text <-
 
 
 # data sources:
-data_file <- "/path/to/Final_dataset_IUCN_WHS_KBA_for_weighting_Afrotropical.csv" # nolint
-site_maps_file <- "/path/to/Combined_data_global_IUCN_WHS_KBA.shp" # nolint
-worldmap_file <- "/path/to/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp" # nolint
-
-
-# variables:
-columns_positive <- c("Int_Name",
-                      "Biodiversity",
-                      "Area",
-                      "ClimateProtection")
-columns_negative <- c("ClimateStability",
-                      "LandUseStability",
-                      "Wilderness")
+centroids <- "AppData/Global_IUCN_WHS_KBA_centroids.csv" #centroid data path
+data_file <- "AppData/Final_dataset_IUCN_WHS_KBA_for_weighting_global.csv" # nolint
+site_maps_file <- "AppData/Combined_data_global_IUCN_WHS_KBA.shp" # nolint
+worldmap_file <- "AppData/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp" # nolint
 
 n_top_sites <- 10
-  
