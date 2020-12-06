@@ -5,7 +5,7 @@
 if (!requireNamespace("remotes"))
   install.packages("remotes")
 
-remotes::install_github("rstudio/renv")  ## Error 'install of package KernSmooth failed'
+remotes::install_github("rstudio/renv")
 
 # restore packages from lockfile
 renv::restore()
