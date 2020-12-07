@@ -1,0 +1,38 @@
+---
+
+name: R
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v1
+
+      - name: Install system dependencies
+        run: sudo ./install_sys_dependencies.sh
+
+      - name: Cache R-packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.local/share/renv
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: ${{ runner.os }}-renv-
+
+      - name: Restore packages
+        run: Rscript install_dependencies.R
+
+      - name: Deploy app to shinyapps.io
+        env: 
+          SHINYAPPSIO_NAME: ${{ secrets.SHINYAPPSIO_NAME }}
+          SHINYAPPSIO_TOKEN: ${{ secrets.SHINYAPPSIO_TOKEN }}
+          SHINYAPPSIO_SECRET: ${{ secrets.SHINYAPPSIO_SECRET }}
+        run: Rscript deploy_app.R
