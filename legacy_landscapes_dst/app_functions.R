@@ -17,7 +17,6 @@ get_slider_values <- function(input) {
 
 
 plot_maps <- function(selected_polygons) {
-  selected_polygons <- merge(selected_polygons,pa_centroids,by="int_name",all.x=T)
   
   plot <- ggplot(selected_polygons) +
     geom_sf(data = worldmap, fill = NA) +
