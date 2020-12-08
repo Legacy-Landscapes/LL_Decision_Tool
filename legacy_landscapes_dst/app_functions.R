@@ -16,7 +16,7 @@ get_slider_values <- function(input) {
 }
 
 
-plot_maps <- function(selected_polygons) {
+plot_maps <- function(selected_polygons, worldmap) {
   
   plot <- ggplot(selected_polygons) +
     geom_sf(data = worldmap, fill = NA) +
