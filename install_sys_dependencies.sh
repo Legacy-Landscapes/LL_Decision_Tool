@@ -3,7 +3,6 @@
 set -o errexit
 
 apt-get -y update
-apt-get -y dist-upgrade
 apt-get -y install\
  gdal-bin\
  libgdal-dev\
