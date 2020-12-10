@@ -3,14 +3,11 @@
 name: R
 
 on:
-  push:
-    branches: 
-      - master
+  - push
 
 jobs:
   deployment:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
 
@@ -29,8 +26,12 @@ jobs:
 
       - name: Restore packages
         run: Rscript install_dependencies.R
+        
+      - name: Linting
+        run: Rscript lint.R
 
       - name: Deploy app to shinyapps.io
+        if: contains( github.ref, 'master')
         env: 
           SHINYAPPSIO_NAME: ${{ secrets.SHINYAPPSIO_NAME }}
           SHINYAPPSIO_TOKEN: ${{ secrets.SHINYAPPSIO_TOKEN }}
