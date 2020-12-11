@@ -17,10 +17,14 @@ get_slider_values <- function(input) {
 
 
 plot_maps <- function(selected_polygons, worldmap) {
-  
+
   plot <- ggplot(selected_polygons) +
     geom_sf(data = worldmap, fill = NA) +
-    geom_point(data=selected_polygons,aes(x=x, y=y), shape=8, size = 1,colour="red") +
+    geom_point(data = selected_polygons,
+               aes(x = x, y = y),
+               shape = 8,
+               size = 1,
+               colour = "red") +
     coord_sf(xlim = c(-170, 180), ylim = c(-60, 90), expand = FALSE) +
     # Add shortened equator line
     geom_segment(
@@ -68,4 +72,3 @@ rank_data <- function(data_table, weights, max_sites = 20) {
   ranked$rank <- seq(nrow(ranked))
   return(ranked[1:max_sites, ])
 }
-

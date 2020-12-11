@@ -5,4 +5,4 @@ rsconnect::setAccountInfo(name = Sys.getenv("SHINYAPPSIO_NAME"),
                           secret = Sys.getenv("SHINYAPPSIO_SECRET"))
 
 # Deploy the app
-rsconnect::deployApp(appDir="legacy_landscapes_dst")
+rsconnect::deployApp(appDir = "legacy_landscapes_dst")
