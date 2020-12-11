@@ -2,18 +2,24 @@
 #-#-# load data functions #-#-#
 
 load_weight_data <- function(filename) {
+  colnames_mapping <- list("Int_Name" = "int_name",
+                           "RealmNr" = "RealmNr",
+                           "Biodiversity" = "biodiversity",
+                           "Wilderness" = "wilderness",
+                           "ClimateStability" = "climatic_stability",
+                           "LandUseStability" = "land_use_stability",
+                           "Area" = "area",
+                           "ClimateProtection" = "climate_protection")
   data <- read.csv(filename)
-  data <- data[c("Int_Name","RealmNr","Biodiversity","Wilderness","ClimateStability","LandUseStability","Area","ClimateProtection")]
-  colnames(data) <- c("int_name","RealmNr","biodiversity","wilderness","climatic_stability","land_use_stability","area","climate_protection")
-  data <- data[c("RealmNr","int_name","biodiversity","wilderness","climatic_stability","land_use_stability","area","climate_protection")]
-
+  data <- data[names(colnames_mapping)]  # select columns
+  colnames(data) <- colnames_mapping  # rename columns
   return(data)
 }
 
 
-load_PA_centroids <- function(filename) { #load the centroid file
+load_pa_centroids <- function(filename) {  # load the centroid file
   data <- read.csv(filename)
-  colnames(data) <- c("C_ID","int_name","x","y")
+  colnames(data) <- c("C_ID", "int_name", "x", "y")
   return(data)
 }
 
@@ -53,4 +59,3 @@ project_for_sf <- function(func, sf_data, ...) {
   sf_data <- sf::st_transform(sf_data, crs)
   return(sf_data)
 }
-

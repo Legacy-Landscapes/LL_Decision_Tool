@@ -9,5 +9,5 @@ append(lints, lintr::lint_dir("legacy_landscapes_dst/"))
 
 # stop if there are lints
 n_errors <- sum(unlist(lapply(lints, length)))
-if(n_errors > 0)
+if (n_errors > 0)
   stop("Found formatting errors.")

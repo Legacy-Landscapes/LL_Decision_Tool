@@ -6,7 +6,7 @@ source("load_data.R")
 
 
 # load data
-pa_centroids <- load_PA_centroids(centroids)
+pa_centroids <- load_pa_centroids(centroids)
 weight_data <- load_weight_data(data_file) #removed positive negative columns
 worldmap <- load_worldmap(worldmap_file)
 
@@ -114,11 +114,11 @@ server <- function(input, output) {
 
   plot_sites <- reactive({
     ranked_data <- weighing()
-    selected_polygons <- ranked_data[1:n_top_sites,]
+    selected_polygons <- ranked_data[1:n_top_sites, ]
     selected_polygons <- merge(selected_polygons,
                                pa_centroids,
-                               by="int_name",
-                               all.x=T)
+                               by = "int_name",
+                               all.x = T)
     return(plot_maps(selected_polygons, worldmap))
   })
 
