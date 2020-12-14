@@ -20,11 +20,26 @@ plot_maps <- function(selected_polygons, worldmap) {
 
   plot <- ggplot(selected_polygons) +
     geom_sf(data = worldmap, fill = NA) +
-    geom_point(data = selected_polygons,
+    # geom_point(data = selected_polygons[1:10,],
+    #            aes(x = x, y = y),
+    #            shape = 8,
+    #            size = 1,
+    #            colour = "red") +
+    geom_point(data = selected_polygons[1:10,],
                aes(x = x, y = y),
                shape = 8,
                size = 1,
                colour = "red") +
+    geom_point(data = selected_polygons[11:20,],
+               aes(x = x, y = y),
+               shape = 8,
+               size = 1,
+               colour = "orange") +
+    geom_point(data = selected_polygons[21:30,],
+               aes(x = x, y = y),
+               shape = 8,
+               size = 1,
+               colour = "yellow") +
     coord_sf(xlim = c(-170, 180), ylim = c(-60, 90), expand = FALSE) +
     # Add shortened equator line
     geom_segment(
@@ -42,7 +57,7 @@ plot_maps <- function(selected_polygons, worldmap) {
       axis.ticks.x = element_blank(),
       axis.text.x = element_blank()
     ) +
-    ggtitle("Top 10 sites globally") +
+    ggtitle("Top 30 sites globally") +
     theme(plot.title = element_text(size = 21, face = "bold", hjust = 0))
 
   return(plot)
@@ -58,7 +73,7 @@ calculate_weights <- function(slider_values) {
 }
 
 
-rank_data <- function(data_table, weights, max_sites = 20) {
+rank_data <- function(data_table, weights, max_sites = 30) {
   ranked <- data_table
   summed <- numeric(nrow(ranked)) # vector of zeros
   keys <- rownames(weights)
@@ -72,3 +87,4 @@ rank_data <- function(data_table, weights, max_sites = 20) {
   ranked$rank <- seq(nrow(ranked))
   return(ranked[1:max_sites, ])
 }
+
