@@ -20,11 +20,12 @@ plot_maps <- function(selected_polygons, worldmap) {
 
   plot <- ggplot(selected_polygons) +
     geom_sf(data = worldmap, fill = NA) +
-    # geom_point(data = selected_polygons[1:10,],
-    #            aes(x = x, y = y),
-    #            shape = 8,
-    #            size = 1,
-    #            colour = "red") +
+    # Three types of points to show all and selected sites
+    geom_point(data = pa_centroids,
+               aes(x = x, y = y),
+               shape = 8,
+               size = 0.2,
+               colour = "grey") +
     geom_point(data = selected_polygons[1:10,],
                aes(x = x, y = y),
                shape = 8,
