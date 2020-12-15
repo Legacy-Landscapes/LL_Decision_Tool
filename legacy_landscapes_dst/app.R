@@ -20,7 +20,7 @@ ui <- fluidPage(
   sidebarPanel(
     sliderInput(
       inputId = "biodiversity_weight",
-      label = "High biodiversity",
+      label = "Biodiversity",
       value = 0,
       min = 0,
       max = 1,
@@ -29,7 +29,7 @@ ui <- fluidPage(
     ),
     sliderInput(
       inputId = "wilderness_weight",
-      label = "High wilderness",
+      label = "Wilderness",
       value = 0,
       min = 0,
       max = 1,
@@ -38,7 +38,7 @@ ui <- fluidPage(
     ),
     sliderInput(
       inputId = "climatic_stability_weight",
-      label = "High climatic stability",
+      label = "Climatic stability",
       value = 0,
       min = 0,
       max = 1,
@@ -47,7 +47,7 @@ ui <- fluidPage(
     ),
     sliderInput(
       inputId = "land_use_stability_weight",
-      label = "High land-use stability",
+      label = "Land-use stability",
       value = 0,
       min = 0,
       max = 1,
@@ -56,7 +56,7 @@ ui <- fluidPage(
     ),
     sliderInput(
       inputId = "climate_protection_weight",
-      label = "High climate protection",
+      label = "Climate protection",
       value = 0,
       min = 0,
       max = 1,
@@ -65,7 +65,7 @@ ui <- fluidPage(
     ),
     sliderInput(
       inputId = "area",
-      label = "Large area",
+      label = "Size",
       value = 0,
       min = 0,
       max = 1,
