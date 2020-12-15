@@ -74,7 +74,7 @@ calculate_weights <- function(slider_values) {
 }
 
 
-rank_data <- function(data_table, weights, max_sites = 30) {
+rank_data <- function(data_table, weights, max_sites) {
   ranked <- data_table
   summed <- numeric(nrow(ranked)) # vector of zeros
   keys <- rownames(weights)
@@ -88,4 +88,3 @@ rank_data <- function(data_table, weights, max_sites = 30) {
   ranked$rank <- seq(nrow(ranked))
   return(ranked[1:max_sites, ])
 }
-
