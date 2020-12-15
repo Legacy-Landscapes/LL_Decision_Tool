@@ -114,12 +114,12 @@ server <- function(input, output) {
 
   plot_sites <- reactive({
     ranked_data <- weighing()
-    selected_polygons <- ranked_data[1:n_top_sites, ]
-    selected_polygons <- merge(selected_polygons,
+    selected_sites <- ranked_data[1:n_top_sites, ]
+    selected_sites <- merge(selected_sites,
                                pa_centroids,
                                by = "int_name",
                                all.x = T)
-    return(plot_maps(selected_polygons, worldmap))
+    return(plot_maps(selected_sites, worldmap))
   })
 
   # Show the changing percentages in an HTML table and annotate the table
