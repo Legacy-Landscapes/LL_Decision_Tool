@@ -119,7 +119,7 @@ server <- function(input, output) {
                                pa_centroids,
                                by = "int_name",
                                all.x = T)
-    return(plot_maps(selected_sites, worldmap))
+    return(plot_maps(selected_sites, pa_centroids, worldmap))
   })
 
   # Show the changing percentages in an HTML table and annotate the table
