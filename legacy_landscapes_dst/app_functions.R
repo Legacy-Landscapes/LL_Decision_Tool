@@ -16,31 +16,30 @@ get_slider_values <- function(input) {
 }
 
 
-plot_maps <- function(selected_polygons, worldmap) {
-
-  plot <- ggplot(selected_polygons) +
+plot_maps <- function(selected_sites, pa_centroids, worldmap) {
+  # split sites into three categories for coloring
+  n_sites <- nrow(selected_sites)
+  splits <- round(n_sites / 3)
+  selected_sites$ranks <- c(rep("1", splits),
+                               rep("2", splits),
+                               rep("3", n_sites - (2 * splits)))
+  
+  # plot
+  plot <- ggplot(selected_sites) +
     geom_sf(data = worldmap, fill = NA) +
-    # Three types of points to show all and selected sites
+    # Four types of points to show all and selected sites
     geom_point(data = pa_centroids,
                aes(x = x, y = y),
                shape = 8,
                size = 0.2,
                colour = "grey") +
-    geom_point(data = selected_polygons[1:10,],
-               aes(x = x, y = y),
+    geom_point(data = selected_sites,
+               aes(x = x, y = y, color = ranks),
                shape = 8,
-               size = 1,
-               colour = "red") +
-    geom_point(data = selected_polygons[11:20,],
-               aes(x = x, y = y),
-               shape = 8,
-               size = 1,
-               colour = "orange") +
-    geom_point(data = selected_polygons[21:30,],
-               aes(x = x, y = y),
-               shape = 8,
-               size = 1,
-               colour = "yellow") +
+               size = 1) +
+    scale_color_manual(values = c("1" = "red",
+                                  "2" = "orange",
+                                  "3" = "yellow")) +
     coord_sf(xlim = c(-170, 180), ylim = c(-60, 90), expand = FALSE) +
     # Add shortened equator line
     geom_segment(
@@ -58,9 +57,9 @@ plot_maps <- function(selected_polygons, worldmap) {
       axis.ticks.x = element_blank(),
       axis.text.x = element_blank()
     ) +
-    ggtitle("Top 30 sites globally") +
+    ggtitle(paste("Top", n_sites, "sites globally")) +
     theme(plot.title = element_text(size = 21, face = "bold", hjust = 0))
-
+  
   return(plot)
 }
 
