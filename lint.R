@@ -5,7 +5,9 @@ files <- list.files(pattern = ".R$")
 lints <- lapply(files, lintr::lint)
 
 # check app directory
-append(lints, lintr::lint_dir("legacy_landscapes_dst/"))
+lints <-append(lints, lintr::lint_dir("legacy_landscapes_dst/"))
+
+print(lints)
 
 # stop if there are lints
 n_errors <- sum(unlist(lapply(lints, length)))
