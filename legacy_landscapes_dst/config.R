@@ -22,4 +22,4 @@ data_file <- "AppData/Final_dataset_IUCN_WHS_KBA_for_weighting_global.csv" # nol
 site_maps_file <- "AppData/Combined_data_global_IUCN_WHS_KBA.shp" # nolint
 worldmap_file <- "AppData/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp" # nolint
 
-n_top_sites <- 10
+n_top_sites <- 30
