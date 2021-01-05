@@ -26,7 +26,7 @@ load_weight_data <- function(filename) {
 
 load_pa_centroids <- function(filename) {  # load the centroid file
   data <- read.csv(filename)
-  colnames(data) <- c("C_ID", "int_name", "x", "y")
+  colnames(data) <- c("C_ID", "International Name", "x", "y")
   return(data)
 }
 
