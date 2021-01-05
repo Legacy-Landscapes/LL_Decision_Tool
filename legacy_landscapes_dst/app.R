@@ -81,8 +81,12 @@ ui <- fluidPage(
       type = "tabs",
       tabPanel(
         "Background",
-        textOutput("heading"),
-        textOutput("intro")
+        sidebarLayout(
+        sidebarPanel(background_sidepanel),
+        mainPanel(intro_head),
+        position="right")
+        # textOutput("heading"),
+        # textOutput("intro")
       ),
       tabPanel(
         "Conservation objectives",
@@ -122,20 +126,20 @@ server <- function(input, output) {
     return(plot_maps(selected_sites, pa_centroids, worldmap))
   })
 
-  # Show the changing percentages in an HTML table and annotate the table
-  output$heading <- renderText({
-    htmltools::HTML(intro_head)
-  })
-
-  # This is the introduction text
-  output$intro <- renderText({
-    htmltools::HTML(intro_text)
-  })
-
-  # This is the explanation text above the table
-  output$selected_var <- renderText({
-    htmltools::HTML(weight_text)
-  })
+  # # Show the changing percentages in an HTML table and annotate the table
+  # output$heading <- renderText({
+  #   htmltools::HTML(intro_head)
+  # })
+  # 
+  # # This is the introduction text
+  # output$intro <- renderText({ 
+  #   htmltools::HTML(intro_text)
+  # })
+  # 
+  # # This is the explanation text above the table
+  # output$selected_var <- renderText({
+  #   htmltools::HTML(weight_text)
+  # })
 
   # This displays the changeable table
   output$values <- renderTable({
@@ -157,3 +161,4 @@ server <- function(input, output) {
 
 # run the app
 shinyApp(ui = ui, server = server)
+
