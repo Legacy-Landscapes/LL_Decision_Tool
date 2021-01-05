@@ -117,7 +117,7 @@ server <- function(input, output) {
     selected_sites <- ranked_data[1:n_top_sites, ]
     selected_sites <- merge(selected_sites,
                                pa_centroids,
-                               by = "int_name",
+                               by = "International Name", # this needs to be changed - easier if each site has a unique ID
                                all.x = T)
     return(plot_maps(selected_sites, pa_centroids, worldmap))
   })
