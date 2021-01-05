@@ -8,7 +8,7 @@ load_weight_data <- function(filename) {
                            "Wilderness" = "wilderness",
                            "ClimateStability" = "climatic_stability",
                            "LandUseStability" = "land_use_stability",
-                           "Area" = "area",
+                           "Size" = "area",
                            "ClimateProtection" = "climate_protection")
   data <- read.csv(filename)
   data <- data[names(colnames_mapping)]  # select columns
@@ -59,3 +59,4 @@ project_for_sf <- function(func, sf_data, ...) {
   sf_data <- sf::st_transform(sf_data, crs)
   return(sf_data)
 }
+
