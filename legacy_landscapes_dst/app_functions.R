@@ -1,5 +1,6 @@
 
 library(ggplot2)
+library(dplyr) # dplyr added to the functions
 
 
 get_slider_values <- function(input) {
@@ -75,6 +76,9 @@ calculate_weights <- function(slider_values) {
 
 rank_data <- function(data_table, weights, max_sites) {
   ranked <- data_table
+  ranked$ID <- c(1:nrow(ranked)) # add ID to merge original values and ranking later
+  rankedOrigVals <- ranked # keep original values to display
+  colnames(rankedOrigVals) <- colnames_display # add display names
   summed <- numeric(nrow(ranked)) # vector of zeros
   keys <- rownames(weights)
   for (key in keys) {
@@ -83,7 +87,11 @@ rank_data <- function(data_table, weights, max_sites) {
     summed <- summed + ranked[, key]
   }
   ranked <- data.frame(ranked, total_weight = summed)
-  ranked <- ranked[order(ranked$total_weight, decreasing = TRUE), ]
-  ranked$rank <- seq(nrow(ranked))
-  return(ranked[1:max_sites, ])
+  rankedOrigVals <- merge(rankedOrigVals,ranked[c("ID","total_weight")],by="ID") # merge original values with weight
+  rankedOrigVals <- rankedOrigVals[order(rankedOrigVals$total_weight, decreasing = TRUE), ] # order by weight
+  rankedOrigVals$Rank <- seq(nrow(rankedOrigVals)) # add rank for display
+  rankedOrigVals <- rankedOrigVals[c(12,10,2,4,5,6,7,9,8)] # select order and columns to display
+  rankedOrigVals %>% mutate_if(is.numeric, ~round(., 2)) # round to 2 decimals to display 
+  return(rankedOrigVals[1:max_sites, ])
 }
+
