@@ -13,6 +13,13 @@ load_weight_data <- function(filename) {
   data <- read.csv(filename)
   data <- data[names(colnames_mapping)]  # select columns
   colnames(data) <- colnames_mapping  # rename columns
+  data$RealmName <- 0
+  data$RealmName[data$RealmNr == 1] <- "Australasian"
+  data$RealmName[data$RealmNr == 3] <- "Afrotropic"
+  data$RealmName[data$RealmNr == 4] <- "Indomalaya"
+  data$RealmName[data$RealmNr == 5] <- "Nearctic"
+  data$RealmName[data$RealmNr == 6] <- "Neotropic"
+  data$RealmName[data$RealmNr == 8] <- "Palearctic"
   return(data)
 }
 
