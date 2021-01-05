@@ -83,15 +83,18 @@ ui <- fluidPage(
         "Background",
         sidebarLayout(
         sidebarPanel(background_sidepanel),
-        mainPanel(intro_head),
+        mainPanel(backround_mainpanel),
         position="right")
         # textOutput("heading"),
         # textOutput("intro")
       ),
       tabPanel(
         "Conservation objectives",
-        textOutput("selected_var"),
-        tableOutput("values")
+        sidebarLayout(
+        sidebarPanel(objectives_weigting,width=4),
+        mainPanel(tableOutput("values"))),
+        objectives_strategy,
+        img(src = figure1, height = 340, width = 550) 
       ),
       tabPanel("Ranking Table",
                tableOutput("table1")),
