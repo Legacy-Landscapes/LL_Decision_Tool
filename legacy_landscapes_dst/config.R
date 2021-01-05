@@ -16,10 +16,23 @@ weight_text <-
   always sum up to 100%."
 
 
+# displayed variable names
+colnames_display <- list("int_name" = "International Name",
+                         "RealmNr" = "RealmNr",
+                         "biodiversity" = "Biodiversity",
+                         "wilderness" = "Wilderness",
+                         "climatic_stability" = "Climatic stability",
+                         "land_use_stability" = "Land-use stability",
+                         "area" = "Size",
+                         "climate_protection" = "Climate protection",
+                         "RealmName" = "Realm",
+                         "ID" = "ID")
+
+
 # data sources:
 centroids <- "AppData/Global_IUCN_WHS_KBA_centroids.csv" #centroid data path
 data_file <- "AppData/Final_dataset_IUCN_WHS_KBA_for_weighting_global.csv" # nolint
-site_maps_file <- "AppData/Combined_data_global_IUCN_WHS_KBA.shp" # nolint
+#site_maps_file <- "AppData/Combined_data_global_IUCN_WHS_KBA.shp" # nolint
 worldmap_file <- "AppData/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp" # nolint
 
 n_top_sites <- 30
