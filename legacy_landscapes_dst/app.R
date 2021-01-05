@@ -80,12 +80,12 @@ ui <- fluidPage(
     tabsetPanel(
       type = "tabs",
       tabPanel(
-        "Conservation objectives",
+        "Background",
         textOutput("heading"),
         textOutput("intro")
       ),
       tabPanel(
-        "Weighting the objectives",
+        "Conservation objectives",
         textOutput("selected_var"),
         tableOutput("values")
       ),
