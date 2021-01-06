@@ -72,8 +72,7 @@ ui <- fluidPage(
       step = 0.1,
       ticks = F
     ),
-    width = 3
-  ),
+    width = 2),
 
   # Set the different tabs in the main panel
   mainPanel(
@@ -82,8 +81,8 @@ ui <- fluidPage(
       tabPanel(
         "Background",
         sidebarLayout(
-        sidebarPanel(background_sidepanel),
-        mainPanel(backround_mainpanel),
+        sidebarPanel(background_sidepanel,width = 4),
+        mainPanel(backround_mainpanel,width = 8),
         position="right")
         # textOutput("heading"),
         # textOutput("intro")
@@ -94,11 +93,14 @@ ui <- fluidPage(
         sidebarPanel(objectives_weigting,width=4),
         mainPanel(tableOutput("values"))),
         objectives_strategy,
-        img(src = figure1, height = 340, width = 550) 
+        img(src = figure1, height = 340, width = 550),
+        objectives_figure4
       ),
-      tabPanel("Ranking Table",
+      tabPanel("Ranking table",
+               Rtable_text,
                tableOutput("table1")),
       tabPanel("Ranking map",
+               Rmap_text,
                textOutput("site_name"),
                plotOutput("map1"))
     ),
