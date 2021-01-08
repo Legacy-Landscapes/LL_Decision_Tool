@@ -65,7 +65,7 @@ ui <- fluidPage(
       ticks = F
     ),
     sliderInput(
-      inputId = "area",
+      inputId = "area_weight",
       label = "Size",
       value = 0,
       min = 0,
@@ -82,17 +82,17 @@ ui <- fluidPage(
       tabPanel(
         "Background",
         sidebarLayout(
-        sidebarPanel(background_sidepanel,width = 4),
-        mainPanel(backround_mainpanel,width = 8),
-        position="right")
+        mainPanel(backround_mainpanel,width = 12),
+        sidebarPanel(background_sidepanel,width = 12),
+        position="left")
         # textOutput("heading"),
         # textOutput("intro")
       ),
       tabPanel(
         "Conservation objectives",
         sidebarLayout(
-        sidebarPanel(objectives_weigting,width=4),
-        mainPanel(tableOutput("values"))),
+        sidebarPanel(objectives_weigting,width=6),
+        mainPanel(tableOutput("values"),width=6)),
         objectives_strategy,
         img(src = figure1, height = 340, width = 550),
         objectives_figure4
@@ -121,6 +121,11 @@ server <- function(input, output) {
   get_weights <- reactive({
     slider_values <- get_slider_values(input = input)
     return(calculate_weights(slider_values))
+  })
+  
+  set_weights_table <- reactive({
+    slider_values <- get_slider_values(input = input)
+    return(calculate_weights_table(slider_values))
   })
 
   get_selection <- reactive({
@@ -166,8 +171,7 @@ server <- function(input, output) {
 
   # This displays the changeable table
   output$values <- renderTable({
-      weights <- get_weights()
-      as.data.frame(weights)
+     set_weights_table()
   }, rownames = TRUE)
 
   # Show the changing ranks in an HTML table
