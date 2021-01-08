@@ -14,7 +14,7 @@ load_weight_data <- function(filename) {
   data <- data[names(colnames_mapping)]  # select columns
   colnames(data) <- colnames_mapping  # rename columns
   data$RealmName <- 0
-  data$RealmName[data$RealmNr == 1] <- "Australasian"
+  data$RealmName[data$RealmNr == 1] <- "Australasia"
   data$RealmName[data$RealmNr == 3] <- "Afrotropic"
   data$RealmName[data$RealmNr == 4] <- "Indomalaya"
   data$RealmName[data$RealmNr == 5] <- "Nearctic"
@@ -50,11 +50,13 @@ simplify_polygons <- function(sf_data, tolerance = 0.1) {
 }
 
 
+
+
 #-#-# helper functions #-#-#
 
-normalize <- function(df) {
-  return(data.frame(lapply(df, function(x) scales::rescale(x, c(0, 1)))))
-}
+# normalize <- function(df) {
+#   return(data.frame(lapply(df, function(x) scales::rescale(x, c(0, 1)))))
+# }
 
 
 project_for_sf <- function(func, sf_data, ...) {
