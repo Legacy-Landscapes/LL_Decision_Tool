@@ -73,8 +73,18 @@ calculate_weights <- function(slider_values) {
   total <- sum(slider_values)
   one_percent <- total / 100
   weights <- slider_values / one_percent
-  weights <- as.data.frame(weights, col.names = "weight")
+  weights <- as.data.frame(weights, col.names = "weights")
   return(weights)
+}
+
+calculate_weights_table <- function(slider_values) {
+  total <- sum(slider_values)
+  one_percent <- total / 100
+  weightsT <- slider_values / one_percent
+  weightsT <- as.data.frame(weightsT)
+  row.names(weightsT) <- rownames_display
+  colnames(weightsT) <- "Percentage weight"
+  return(weightsT)
 }
 
 #add selected realm value into function
