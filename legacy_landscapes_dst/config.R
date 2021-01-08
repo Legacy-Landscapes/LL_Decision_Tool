@@ -41,8 +41,8 @@ objectives_weigting <-
   p("Use the sliders on the left to change the importance of the different 
      conservation objectives in the site ranking. The percentage weight allocated 
      to the different conservation objectives can be seen in the table on the right.", 
-     em("Note that combined allocated weights of the different objectives always sum 
-         up to 100%."))
+    p(em(strong("Note that combined allocated weights of the different conservation 
+      objectives always sum up to 100%.")),style = "color:red"),style = "color:red")
 
 objectives_strategy <-
   p(h4("The conservation objectives"),
@@ -89,8 +89,14 @@ Rtable_text <-
 
 ## Ranking map panel
 Rmap_text <- 
-  p("The ranking map shows the location of the top 30 sites ranked by their suitability 
-     based on the applied weights.")
+  p("The map shows the location of the top sites ranked by their suitability based on the applied weights 
+     across the six conservation objectives. Depending on the selection the map shows either the top 30 
+     sites globally or the top 10 sites for a biogeographic realm.",
+  p("The choice of biogeographic realm can be changed on the previous page by using the", em("Select focal realm"), 
+     "button. The white points show the locations for all sites included in the analysis. The red, orange and 
+     yellow points show the location of the top sites with red indication the sites of highest suitability.")
+     )
+     
 
 Rmap_disclaimer <- p("*The country boarders displayed in this map are derived from Natural Earth
     (version 4.1.0) and do not imply the expression of any opinion concerning the legal status of any
@@ -99,7 +105,7 @@ Rmap_disclaimer <- p("*The country boarders displayed in this map are derived fr
 
 
 #-#-# Set variable and subset names #-#-#
-## displayed variable names
+## displayed variable names table
 colnames_display <- list("int_name" = "International Name",
                          "RealmNr" = "RealmNr",
                          "biodiversity" = "Biodiversity",
@@ -110,6 +116,13 @@ colnames_display <- list("int_name" = "International Name",
                          "climate_protection" = "Climate protection",
                          "RealmName" = "Realm",
                          "ID" = "ID")
+
+rownames_display <- list("biodiversity" = "Biodiversity",
+                         "wilderness" = "Wilderness",
+                         "climatic_stability" = "Climatic stability",
+                         "land_use_stability" = "Land-use stability",
+                         "climate_protection" = "Climate protection",
+                         "area" = "Size")
 
 ## subset names to display a selection of the data
 choices = list("Global" = "Global", "Afrotropic" = "Afrotropic", "Australasia" = "Australasia", "Indomalaya" = "Indomalaya",
