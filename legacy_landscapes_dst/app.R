@@ -1,5 +1,6 @@
 
 library(shiny)
+library(shinyWidgets)
 source("app_functions.R")
 source("config.R")
 source("load_data.R")
@@ -97,12 +98,18 @@ ui <- fluidPage(
         objectives_figure4
       ),
       tabPanel("Ranking table",
-               Rtable_text,
-               tableOutput("table1")),
+               sidebarLayout(
+               sidebarPanel(width = 12, prettyRadioButtons("radio", label = h3("Select focal realm"),
+                            choices = choices, icon = icon("check"), animation = "pulse", status = "default", 
+                            inline = T)),
+               mainPanel(width = 12, Rtable_text)),
+               tableOutput("table1")
+               ),
       tabPanel("Ranking map",
                Rmap_text,
                textOutput("site_name"),
-               plotOutput("map1"))
+               plotOutput("map1"),
+               Rmap_disclaimer)
     ),
     width = 6
   )
@@ -116,19 +123,30 @@ server <- function(input, output) {
     return(calculate_weights(slider_values))
   })
 
+  get_selection <- reactive({
+    selected_extent <- input$radio
+    return(selected_extent)
+  })
+  
   weighing <- reactive({
     weights <- get_weights()
-    return(rank_data(weight_data, weights, n_top_sites))
+    selection <- get_selection()
+    return(rank_data(weight_data, weights, n_top_sites, selection)) 
   })
 
   plot_sites <- reactive({
     ranked_data <- weighing()
+    selection <- get_selection() #
+    if(selection == "Global"){
     selected_sites <- ranked_data[1:n_top_sites, ]
+    }else{
+    selected_sites <- ranked_data[1:n_top_sites_realm, ]
+    }
     selected_sites <- merge(selected_sites,
                                pa_centroids,
                                by = "International Name", # this needs to be changed - easier if each site has a unique ID
                                all.x = T)
-    return(plot_maps(selected_sites, pa_centroids, worldmap))
+    return(plot_maps(selected_sites, pa_centroids, worldmap, selection)) #
   })
 
   # # Show the changing percentages in an HTML table and annotate the table
