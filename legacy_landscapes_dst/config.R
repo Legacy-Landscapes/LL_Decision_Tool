@@ -92,8 +92,14 @@ Rmap_text <-
   p("The ranking map shows the location of the top 30 sites ranked by their suitability 
      based on the applied weights.")
 
+Rmap_disclaimer <- p("*The country boarders displayed in this map are derived from Natural Earth
+    (version 4.1.0) and do not imply the expression of any opinion concerning the legal status of any
+    country, area or territory or of its authorities, or concerning the delamination of its boarders.",
+    style = "font-size:10px")
 
-# displayed variable names
+
+#-#-# Set variable and subset names #-#-#
+## displayed variable names
 colnames_display <- list("int_name" = "International Name",
                          "RealmNr" = "RealmNr",
                          "biodiversity" = "Biodiversity",
@@ -105,6 +111,12 @@ colnames_display <- list("int_name" = "International Name",
                          "RealmName" = "Realm",
                          "ID" = "ID")
 
+## subset names to display a selection of the data
+choices = list("Global" = "Global", "Afrotropic" = "Afrotropic", "Australasia" = "Australasia", "Indomalaya" = "Indomalaya",
+               "Nearctic" = "Nearctic", "Neotropic" = "Neotropic", "Palearctic" = "Palearctic")
+
+
+
 #-#-# Define the filepaths for the figures and data #-#-#
 
 # data sources:
@@ -115,4 +127,5 @@ worldmap_file <- "AppData/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp"
 figure1 <- "Site_evaluation_concept.png"
 
 n_top_sites <- 30
+n_top_sites_realm <- 10
 
