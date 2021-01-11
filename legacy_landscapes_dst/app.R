@@ -8,7 +8,7 @@ source("load_data.R")
 
 # load data
 pa_centroids <- load_pa_centroids(centroids)
-weight_data <- load_weight_data(data_file) #removed positive negative columns
+weight_data <- load_weight_data(data_file) 
 worldmap <- load_worldmap(worldmap_file)
 
 
@@ -87,8 +87,6 @@ ui <- fluidPage(
         position="left"),
         mainPanel(img(src = figure1, height = 60, width = 60), ZGF_credits, width = 5),
         mainPanel(img(src = figure2, height = 50, width = 220), SGN_credits, width = 7)
-        # textOutput("heading"),
-        # textOutput("intro")
       ),
       tabPanel(
         "Conservation objectives",
@@ -155,21 +153,6 @@ server <- function(input, output) {
                                all.x = T)
     return(plot_maps(selected_sites, pa_centroids, worldmap, selection)) #
   })
-
-  # # Show the changing percentages in an HTML table and annotate the table
-  # output$heading <- renderText({
-  #   htmltools::HTML(intro_head)
-  # })
-  # 
-  # # This is the introduction text
-  # output$intro <- renderText({ 
-  #   htmltools::HTML(intro_text)
-  # })
-  # 
-  # # This is the explanation text above the table
-  # output$selected_var <- renderText({
-  #   htmltools::HTML(weight_text)
-  # })
 
   # This displays the changeable table
   output$values <- renderTable({
