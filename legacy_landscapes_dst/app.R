@@ -84,7 +84,9 @@ ui <- fluidPage(
         sidebarLayout(
         mainPanel(backround_mainpanel,width = 12),
         sidebarPanel(background_sidepanel,width = 12),
-        position="left")
+        position="left"),
+        mainPanel(img(src = figure1, height = 60, width = 60), ZGF_credits, width = 5),
+        mainPanel(img(src = figure2, height = 50, width = 220), SGN_credits, width = 7)
         # textOutput("heading"),
         # textOutput("intro")
       ),
@@ -94,7 +96,7 @@ ui <- fluidPage(
         sidebarPanel(objectives_weigting,width=6),
         mainPanel(tableOutput("values"),width=6)),
         objectives_strategy,
-        img(src = figure1, height = 340, width = 550),
+        img(src = figure4, height = 340, width = 550),
         objectives_figure4
       ),
       tabPanel("Ranking table",
