@@ -78,12 +78,12 @@ objectives_strategy <-
           found on the accompanying webpage")))
 
 objectives_figure4 <- 
-  p(strong("Conservation objectives and strategies"),
+  p(p(strong("Figure 2: Conservation objectives and strategies"),
     "The six different conservation objectives Biodiversity, Wilderness, Climatic 
      stability, Land-use stability, Climate protection and Size can be combined into 
      different conservation goals. These conservation goals allow to weigh the different 
      conservation objectives against each other, to set priorities when selecting suitable 
-     sites for the Legacy Landscapes fund.")
+     sites for the Legacy Landscapes fund."))
 
 ## Ranking table panel
 Rtable_text <- 
