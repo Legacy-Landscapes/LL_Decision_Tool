@@ -69,7 +69,7 @@ objectives_strategy <-
        conservation goals as laid out in the figure below. Using the sliders on the 
        left the conservation objectives can be combined by allocating a weight to 
        each objective. Objectives allocated a weight of 0 are excluded from the weighting. 
-       The according ranking based on the selected objectives and the allocated 
+       The resulting ranking based on the selected objectives and the allocated 
        importance (weight) ran be seen in the ‘Ranking Table’ tab. The location 
        of the top scoring sites can be seen in the ‘Ranking Map’ tab."),
     p(em("Details on the included variables, data sources and methods can be 
@@ -85,15 +85,22 @@ objectives_figure4 <-
 
 ## Ranking table panel
 Rtable_text <- 
-  p("The ranking table shows the overall ranking of the potential sites based on the applied weights.")
+  p("The ranking table shows the overall ranking of the potential sites based on the applied weights.
+    The values for the different conservation objectives are scaled across all sites included 
+    in the ranking. The values range from 0 to 1, with 0 being allocated to the site with the lowest score
+    and 1 being allocated to the site with the highest score for the conservation objective.",
+  p(em("The ranking table can be adjusted by using the sliders on the left hand side. Allocating 
+  different weights to the individual objectives will change the ranking of the sites. Using the 
+  Select focal realm buttons above the table can be subset to show the ranking for the 
+  individual realms or across all sites globally")))
 
 ## Ranking map panel
 Rmap_text <- 
   p("The map shows the location of the top sites ranked by their suitability based on the applied weights 
      across the six conservation objectives. Depending on the selection the map shows either the top 30 
-     sites globally or the top 10 sites for a biogeographic realm.",
-  p("The choice of biogeographic realm can be changed on the previous page by using the", em("Select focal realm"), 
-     "button. The white points show the locations for all sites included in the analysis. The red, orange and 
+     sites globally or the top 10 sites for a selected biogeographic realm.",
+  p("The choice of biogeographic realm can be changed by using the", em("Select focal realm"), 
+     "button on the previous page. The white points show the locations for all sites included in the analysis. The red, orange and 
      yellow points show the location of the top sites with red indication the sites of highest suitability.")
      )
      
