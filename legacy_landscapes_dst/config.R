@@ -5,10 +5,12 @@
 
 ## Background panel
 background_sidepanel <- 
-  p("Frankfurt Zoological Society",
-  p("Senckenberg Biodiversity and Climate Research Centre"),
-  p(h5("Contact")),
+  p(h5("Contact"),
   p(em("alke.voskamp@senckenberg.de")))
+
+ZGF_credits <- p("Frankfurt Zoological Society")
+
+SGN_credits <- p(p("Senckenberg Biodiversity and Climate Research Centre"))
 
 backround_mainpanel <-
   p(h4("Legacy Landscapes"),
@@ -144,7 +146,10 @@ centroids <- "AppData/Global_IUCN_WHS_KBA_centroids.csv" #centroid data path
 data_file <- "AppData/Final_dataset_IUCN_WHS_KBA_for_weighting_global.csv" # nolint
 #site_maps_file <- "AppData/Combined_data_global_IUCN_WHS_KBA.shp" # nolint
 worldmap_file <- "AppData/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp" # nolint
-figure1 <- "Site_evaluation_concept.png"
+figure1 <- "FZS_logo.png"
+figure2 <- "Senckenberg_logo.png"
+figure3 <- "Legacy_Landscapes_pillars.png"
+figure4 <- "Site_evaluation_concept.png"
 
 n_top_sites <- 30
 n_top_sites_realm <- 10
