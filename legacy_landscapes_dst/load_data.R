@@ -8,18 +8,25 @@ load_weight_data <- function(filename) {
                            "Wilderness" = "wilderness",
                            "ClimateStability" = "climatic_stability",
                            "LandUseStability" = "land_use_stability",
-                           "Area" = "area",
+                           "Size" = "area",
                            "ClimateProtection" = "climate_protection")
   data <- read.csv(filename)
   data <- data[names(colnames_mapping)]  # select columns
   colnames(data) <- colnames_mapping  # rename columns
+  data$RealmName <- 0
+  data$RealmName[data$RealmNr == 1] <- "Australasian"
+  data$RealmName[data$RealmNr == 3] <- "Afrotropic"
+  data$RealmName[data$RealmNr == 4] <- "Indomalaya"
+  data$RealmName[data$RealmNr == 5] <- "Nearctic"
+  data$RealmName[data$RealmNr == 6] <- "Neotropic"
+  data$RealmName[data$RealmNr == 8] <- "Palearctic"
   return(data)
 }
 
 
 load_pa_centroids <- function(filename) {  # load the centroid file
   data <- read.csv(filename)
-  colnames(data) <- c("C_ID", "int_name", "x", "y")
+  colnames(data) <- c("C_ID", "International Name", "x", "y")
   return(data)
 }
 
@@ -59,3 +66,4 @@ project_for_sf <- function(func, sf_data, ...) {
   sf_data <- sf::st_transform(sf_data, crs)
   return(sf_data)
 }
+

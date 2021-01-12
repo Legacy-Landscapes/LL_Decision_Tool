@@ -72,26 +72,35 @@ ui <- fluidPage(
       step = 0.1,
       ticks = F
     ),
-    width = 3
-  ),
+    width = 2),
 
   # Set the different tabs in the main panel
   mainPanel(
     tabsetPanel(
       type = "tabs",
       tabPanel(
-        "Conservation objectives",
-        textOutput("heading"),
-        textOutput("intro")
+        "Background",
+        sidebarLayout(
+        sidebarPanel(background_sidepanel,width = 4),
+        mainPanel(backround_mainpanel,width = 8),
+        position="right")
+        # textOutput("heading"),
+        # textOutput("intro")
       ),
       tabPanel(
-        "Weighting the objectives",
-        textOutput("selected_var"),
-        tableOutput("values")
+        "Conservation objectives",
+        sidebarLayout(
+        sidebarPanel(objectives_weigting,width=4),
+        mainPanel(tableOutput("values"))),
+        objectives_strategy,
+        img(src = figure1, height = 340, width = 550),
+        objectives_figure4
       ),
-      tabPanel("Ranking Table",
+      tabPanel("Ranking table",
+               Rtable_text,
                tableOutput("table1")),
       tabPanel("Ranking map",
+               Rmap_text,
                textOutput("site_name"),
                plotOutput("map1"))
     ),
@@ -117,25 +126,25 @@ server <- function(input, output) {
     selected_sites <- ranked_data[1:n_top_sites, ]
     selected_sites <- merge(selected_sites,
                                pa_centroids,
-                               by = "int_name",
+                               by = "International Name", # this needs to be changed - easier if each site has a unique ID
                                all.x = T)
     return(plot_maps(selected_sites, pa_centroids, worldmap))
   })
 
-  # Show the changing percentages in an HTML table and annotate the table
-  output$heading <- renderText({
-    htmltools::HTML(intro_head)
-  })
-
-  # This is the introduction text
-  output$intro <- renderText({
-    htmltools::HTML(intro_text)
-  })
-
-  # This is the explanation text above the table
-  output$selected_var <- renderText({
-    htmltools::HTML(weight_text)
-  })
+  # # Show the changing percentages in an HTML table and annotate the table
+  # output$heading <- renderText({
+  #   htmltools::HTML(intro_head)
+  # })
+  # 
+  # # This is the introduction text
+  # output$intro <- renderText({ 
+  #   htmltools::HTML(intro_text)
+  # })
+  # 
+  # # This is the explanation text above the table
+  # output$selected_var <- renderText({
+  #   htmltools::HTML(weight_text)
+  # })
 
   # This displays the changeable table
   output$values <- renderTable({
@@ -157,3 +166,4 @@ server <- function(input, output) {
 
 # run the app
 shinyApp(ui = ui, server = server)
+
