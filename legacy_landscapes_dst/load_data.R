@@ -50,14 +50,7 @@ simplify_polygons <- function(sf_data, tolerance = 0.1) {
 }
 
 
-
-
 #-#-# helper functions #-#-#
-
-# normalize <- function(df) {
-#   return(data.frame(lapply(df, function(x) scales::rescale(x, c(0, 1)))))
-# }
-
 
 project_for_sf <- function(func, sf_data, ...) {
   # sf can not correctly project longlat format, so we project to
