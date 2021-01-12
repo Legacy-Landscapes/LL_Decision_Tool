@@ -17,7 +17,7 @@ get_slider_values <- function(input) {
 }
 
 
-plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) { #
+plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) { 
   # split sites into three categories for coloring
   n_sites <- nrow(selected_sites)
   splits <- round(n_sites / 3)
@@ -38,7 +38,8 @@ plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) { #
                aes(x = x, y = y, color = Suitability),
                shape = 18,
                size = 2.5) +
-    scale_color_manual(name = "Suitability top sites:", values = c("Very high" = "red",
+    scale_color_manual(name = "Suitability top sites:", 
+                       values = c("Very high" = "red",
                                   "High" = "orange",
                                   "Good" = "gold")) +
     coord_sf(xlim = c(-170, 180), ylim = c(-60, 90), expand = FALSE) +
@@ -49,10 +50,10 @@ plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) { #
       linetype = "dashed"
     ) +
     #theme(legend.position = "none") +
-    theme(legend.key=element_blank(),legend.position="bottom",
-          legend.title = element_text(size=14, face="bold"),
-          legend.text=element_text(size=12)) +
-    guides(colour = guide_legend(override.aes = list(size=5))) +
+    theme(legend.key=element_blank(),legend.position = "bottom",
+          legend.title = element_text(size = 14, face = "bold"),
+          legend.text=element_text(size = 12)) +
+    guides(colour = guide_legend(override.aes = list(size = 5))) +
     theme(axis.title = element_text(size = 16)) +
     theme(panel.background = element_rect(fill = "white", colour = "white")) +
     labs(x = "", y = "", title = "") +
@@ -88,9 +89,9 @@ calculate_weights_table <- function(slider_values) {
 }
 
 #add selected realm value into function
-rank_data <- function(data_table, weights, max_sites, selection) { #
+rank_data <- function(data_table, weights, max_sites, selection) {
   ranked <- data_table
-  ranked$ID <- c(1:nrow(ranked)) # add ID to merge original values and ranking later
+  ranked$ID <- c(1:nrow(ranked)) # add ID to merge data later
   rankedOrigVals <- ranked # keep original values to display
   colnames(rankedOrigVals) <- colnames_display # add display names
   summed <- numeric(nrow(ranked)) # vector of zeros
@@ -101,13 +102,13 @@ rank_data <- function(data_table, weights, max_sites, selection) { #
     summed <- summed + ranked[, key]
   }
   ranked <- data.frame(ranked, total_weight = summed)
-  rankedOrigVals <- merge(rankedOrigVals,ranked[c("ID","total_weight")],by="ID") # merge original values with weight
+  rankedOrigVals <- merge(rankedOrigVals, ranked[c("ID", "total_weight")], by = "ID") # merge original values with weight
   rankedOrigVals <- rankedOrigVals[order(rankedOrigVals$total_weight, decreasing = TRUE), ] # order by weight
   rankedOrigVals$Rank <- seq(nrow(rankedOrigVals)) # add rank for display
-  rankedOrigVals <- rankedOrigVals[c(12,10,2,4,5,6,7,9,8)] # select order and columns to display
-  rankedOrigVals %>% mutate_if(is.numeric, ~round(., 2)) # round to 2 decimals to display 
+  rankedOrigVals <- rankedOrigVals[c(12, 10, 2, 4, 5, 6, 7, 9, 8)] # select order and columns to display
+  rankedOrigVals %>% mutate_if(is.numeric, ~round(., 2)) # round to 2 decimals to display
   
-  if(!selection == "Global"){
+  if (!selection == "Global"){
   rankedOrigVals <- subset(rankedOrigVals, Realm == selection)
   return(rankedOrigVals[1:max_sites, ])
   }
