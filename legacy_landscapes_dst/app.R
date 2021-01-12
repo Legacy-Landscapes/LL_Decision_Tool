@@ -89,9 +89,9 @@ ui <- fluidPage(
         sidebarPanel(background_sidepanel, width = 12),
         position = "left"),
         mainPanel(img(src = figure1, height = 60, width = 60),
-                  ZGF_credits, width = 5),
+                  zgf_credits, width = 5),
         mainPanel(img(src = figure2, height = 50, width = 220),
-                  SGN_credits, width = 7)
+                  sgn_credits, width = 7)
       ),
       tabPanel(
         "Conservation objectives",
@@ -130,7 +130,7 @@ server <- function(input, output) {
     slider_values <- get_slider_values(input = input)
     return(calculate_weights(slider_values))
   })
-  
+
   set_weights_table <- reactive({
     slider_values <- get_slider_values(input = input)
     return(calculate_weights_table(slider_values))
@@ -140,7 +140,7 @@ server <- function(input, output) {
     selected_extent <- input$radio
     return(selected_extent)
   })
-  
+
   weighing <- reactive({
     weights <- get_weights()
     selection <- get_selection()
