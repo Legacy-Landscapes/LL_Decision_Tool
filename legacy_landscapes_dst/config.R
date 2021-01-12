@@ -127,7 +127,7 @@ Rmap_text <-
   )
 
 Rmap_disclaimer <-
-  p("*The country boarders displayed in this map are derived from Natural Earth
+  p("The country boarders displayed in this map are derived from Natural Earth
     (version 4.1.0) and do not imply the expression of any opinion concerning
     the legal status of any country, area or territory or of its authorities,
     or concerning the delamination of its boarders.", style = "font-size:10px")
