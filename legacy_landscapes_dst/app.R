@@ -1,5 +1,6 @@
 
 library(shiny)
+library(shinyWidgets)
 source("app_functions.R")
 source("config.R")
 source("load_data.R")
@@ -7,7 +8,7 @@ source("load_data.R")
 
 # load data
 pa_centroids <- load_pa_centroids(centroids)
-weight_data <- load_weight_data(data_file) #removed positive negative columns
+weight_data <- load_weight_data(data_file) 
 worldmap <- load_worldmap(worldmap_file)
 
 
@@ -64,7 +65,7 @@ ui <- fluidPage(
       ticks = F
     ),
     sliderInput(
-      inputId = "area",
+      inputId = "area_weight",
       label = "Size",
       value = 0,
       min = 0,
@@ -81,28 +82,36 @@ ui <- fluidPage(
       tabPanel(
         "Background",
         sidebarLayout(
-        sidebarPanel(background_sidepanel,width = 4),
-        mainPanel(backround_mainpanel,width = 8),
-        position="right")
-        # textOutput("heading"),
-        # textOutput("intro")
+        mainPanel(backround_mainpanel,
+                  img(src = figure3, height = 350, width = 430),
+                  background_figure3, width = 12),
+        sidebarPanel(background_sidepanel,width = 12),
+        position="left"),
+        mainPanel(img(src = figure1, height = 60, width = 60), ZGF_credits, width = 5),
+        mainPanel(img(src = figure2, height = 50, width = 220), SGN_credits, width = 7)
       ),
       tabPanel(
         "Conservation objectives",
         sidebarLayout(
-        sidebarPanel(objectives_weigting,width=4),
-        mainPanel(tableOutput("values"))),
+        sidebarPanel(objectives_weigting,width=6),
+        mainPanel(tableOutput("values"),width=6)),
         objectives_strategy,
-        img(src = figure1, height = 340, width = 550),
+        img(src = figure4, height = 340, width = 550),
         objectives_figure4
       ),
       tabPanel("Ranking table",
-               Rtable_text,
-               tableOutput("table1")),
+               sidebarLayout(
+               sidebarPanel(width = 12, prettyRadioButtons("radio", label = h3("Select focal realm"),
+                            choices = choices, icon = icon("check"), animation = "pulse", status = "default", 
+                            inline = T)),
+               mainPanel(width = 12, Rtable_text)),
+               tableOutput("table1")
+               ),
       tabPanel("Ranking map",
                Rmap_text,
                textOutput("site_name"),
-               plotOutput("map1"))
+               plotOutput("map1"),
+               Rmap_disclaimer)
     ),
     width = 6
   )
@@ -115,41 +124,41 @@ server <- function(input, output) {
     slider_values <- get_slider_values(input = input)
     return(calculate_weights(slider_values))
   })
+  
+  set_weights_table <- reactive({
+    slider_values <- get_slider_values(input = input)
+    return(calculate_weights_table(slider_values))
+  })
 
+  get_selection <- reactive({
+    selected_extent <- input$radio
+    return(selected_extent)
+  })
+  
   weighing <- reactive({
     weights <- get_weights()
-    return(rank_data(weight_data, weights, n_top_sites))
+    selection <- get_selection()
+    return(rank_data(weight_data, weights, n_top_sites, selection)) 
   })
 
   plot_sites <- reactive({
     ranked_data <- weighing()
+    selection <- get_selection() #
+    if(selection == "Global"){
     selected_sites <- ranked_data[1:n_top_sites, ]
+    }else{
+    selected_sites <- ranked_data[1:n_top_sites_realm, ]
+    }
     selected_sites <- merge(selected_sites,
                                pa_centroids,
                                by = "International Name", # this needs to be changed - easier if each site has a unique ID
                                all.x = T)
-    return(plot_maps(selected_sites, pa_centroids, worldmap))
+    return(plot_maps(selected_sites, pa_centroids, worldmap, selection)) #
   })
-
-  # # Show the changing percentages in an HTML table and annotate the table
-  # output$heading <- renderText({
-  #   htmltools::HTML(intro_head)
-  # })
-  # 
-  # # This is the introduction text
-  # output$intro <- renderText({ 
-  #   htmltools::HTML(intro_text)
-  # })
-  # 
-  # # This is the explanation text above the table
-  # output$selected_var <- renderText({
-  #   htmltools::HTML(weight_text)
-  # })
 
   # This displays the changeable table
   output$values <- renderTable({
-      weights <- get_weights()
-      as.data.frame(weights)
+     set_weights_table()
   }, rownames = TRUE)
 
   # Show the changing ranks in an HTML table
