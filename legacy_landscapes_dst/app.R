@@ -9,7 +9,7 @@ source("load_data.R")
 
 # load data
 pa_centroids <- load_pa_centroids(centroids)
-weight_data <- load_weight_data(data_file) 
+weight_data <- load_weight_data(data_file)
 worldmap <- load_worldmap(worldmap_file)
 
 
@@ -88,9 +88,9 @@ ui <- fluidPage(
                   background_figure3, width = 12),
         sidebarPanel(background_sidepanel, width = 12),
         position = "left"),
-        mainPanel(img(src = figure1, height = 60, width = 60), 
+        mainPanel(img(src = figure1, height = 60, width = 60),
                   ZGF_credits, width = 5),
-        mainPanel(img(src = figure2, height = 50, width = 220), 
+        mainPanel(img(src = figure2, height = 50, width = 220),
                   SGN_credits, width = 7)
       ),
       tabPanel(
@@ -104,10 +104,10 @@ ui <- fluidPage(
       ),
       tabPanel("Ranking table",
                sidebarLayout(
-               sidebarPanel(width = 12, 
+               sidebarPanel(width = 12,
                             prettyRadioButtons("radio", label = h3("Select focal realm"),
-                            choices = choices, icon = icon("check"), animation = "pulse", 
-                            status = "default", 
+                            choices = choices, icon = icon("check"), animation = "pulse",
+                            status = "default",
                             inline = T)),
                mainPanel(width = 12, Rtable_text)),
                tableOutput("table1")
