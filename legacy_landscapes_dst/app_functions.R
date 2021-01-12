@@ -17,7 +17,7 @@ get_slider_values <- function(input) {
 }
 
 
-plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) { 
+plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) {
   # split sites into three categories for coloring
   n_sites <- nrow(selected_sites)
   splits <- round(n_sites / 3)
@@ -38,7 +38,7 @@ plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) {
                aes(x = x, y = y, color = Suitability),
                shape = 18,
                size = 2.5) +
-    scale_color_manual(name = "Suitability top sites:", 
+    scale_color_manual(name = "Suitability top sites:",
                        values = c("Very high" = "red",
                                   "High" = "orange",
                                   "Good" = "gold")) +
@@ -49,7 +49,6 @@ plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) {
       colour = "black",
       linetype = "dashed"
     ) +
-    #theme(legend.position = "none") +
     theme(legend.key=element_blank(),legend.position = "bottom",
           legend.title = element_text(size = 14, face = "bold"),
           legend.text=element_text(size = 12)) +
@@ -61,11 +60,9 @@ plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) {
       axis.ticks.y = element_blank(),
       axis.text.y = element_blank(),
       axis.ticks.x = element_blank(),
-      axis.text.x = element_blank()
-    ) +
+      axis.text.x = element_blank()) +
     ggtitle(paste("Location top", n_sites, "sites", selection)) +
     theme(plot.title = element_text(size = 21, face = "bold", hjust = 0))
-  
   return(plot)
 }
 
