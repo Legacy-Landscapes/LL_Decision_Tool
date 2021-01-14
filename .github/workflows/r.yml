@@ -3,7 +3,9 @@
 name: R
 
 on:
-  - push
+  push:
+    branches:
+      - main
 
 jobs:
   deployment:
