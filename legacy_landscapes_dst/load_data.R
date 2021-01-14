@@ -50,14 +50,7 @@ simplify_polygons <- function(sf_data, tolerance = 0.1) {
 }
 
 
-
-
 #-#-# helper functions #-#-#
-
-# normalize <- function(df) {
-#   return(data.frame(lapply(df, function(x) scales::rescale(x, c(0, 1)))))
-# }
-
 
 project_for_sf <- function(func, sf_data, ...) {
   # sf can not correctly project longlat format, so we project to
@@ -68,4 +61,7 @@ project_for_sf <- function(func, sf_data, ...) {
   sf_data <- sf::st_transform(sf_data, crs)
   return(sf_data)
 }
+
+#-#-# Set global variables ... whatever they do #-#-#
+utils::globalVariables(c("rownames_display", "colnames_display"))
 

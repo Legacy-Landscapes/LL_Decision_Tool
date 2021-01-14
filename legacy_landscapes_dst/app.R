@@ -1,6 +1,7 @@
 
 library(shiny)
 library(shinyWidgets)
+library(rmarkdown)
 source("app_functions.R")
 source("config.R")
 source("load_data.R")
@@ -8,7 +9,7 @@ source("load_data.R")
 
 # load data
 pa_centroids <- load_pa_centroids(centroids)
-weight_data <- load_weight_data(data_file) 
+weight_data <- load_weight_data(data_file)
 worldmap <- load_worldmap(worldmap_file)
 
 
@@ -85,24 +86,28 @@ ui <- fluidPage(
         mainPanel(backround_mainpanel,
                   img(src = figure3, height = 350, width = 430),
                   background_figure3, width = 12),
-        sidebarPanel(background_sidepanel,width = 12),
-        position="left"),
-        mainPanel(img(src = figure1, height = 60, width = 60), ZGF_credits, width = 5),
-        mainPanel(img(src = figure2, height = 50, width = 220), SGN_credits, width = 7)
+        sidebarPanel(background_sidepanel, width = 12),
+        position = "left"),
+        mainPanel(img(src = figure1, height = 60, width = 60),
+                  zgf_credits, width = 5),
+        mainPanel(img(src = figure2, height = 50, width = 220),
+                  sgn_credits, width = 7)
       ),
       tabPanel(
         "Conservation objectives",
         sidebarLayout(
-        sidebarPanel(objectives_weigting,width=6),
-        mainPanel(tableOutput("values"),width=6)),
+        sidebarPanel(objectives_weigting, width = 6),
+        mainPanel(tableOutput("values"), width = 6)),
         objectives_strategy,
         img(src = figure4, height = 340, width = 550),
         objectives_figure4
       ),
       tabPanel("Ranking table",
                sidebarLayout(
-               sidebarPanel(width = 12, prettyRadioButtons("radio", label = h3("Select focal realm"),
-                            choices = choices, icon = icon("check"), animation = "pulse", status = "default", 
+               sidebarPanel(width = 12,
+                            prettyRadioButtons("radio", label = h3("Select focal realm"),
+                            choices = choices, icon = icon("check"), animation = "pulse",
+                            status = "default",
                             inline = T)),
                mainPanel(width = 12, Rtable_text)),
                tableOutput("table1")
@@ -111,9 +116,10 @@ ui <- fluidPage(
                Rmap_text,
                textOutput("site_name"),
                plotOutput("map1"),
-               Rmap_disclaimer)
-    ),
-    width = 6
+               Rmap_disclaimer,
+               downloadButton("report", "Generate report"))
+      ),
+    width = 8
   )
 )
 
@@ -124,7 +130,7 @@ server <- function(input, output) {
     slider_values <- get_slider_values(input = input)
     return(calculate_weights(slider_values))
   })
-  
+
   set_weights_table <- reactive({
     slider_values <- get_slider_values(input = input)
     return(calculate_weights_table(slider_values))
@@ -134,17 +140,17 @@ server <- function(input, output) {
     selected_extent <- input$radio
     return(selected_extent)
   })
-  
+
   weighing <- reactive({
     weights <- get_weights()
     selection <- get_selection()
-    return(rank_data(weight_data, weights, n_top_sites, selection)) 
+    return(rank_data(weight_data, weights, n_top_sites, selection))
   })
 
   plot_sites <- reactive({
     ranked_data <- weighing()
     selection <- get_selection() #
-    if(selection == "Global"){
+    if (selection == "Global"){
     selected_sites <- ranked_data[1:n_top_sites, ]
     }else{
     selected_sites <- ranked_data[1:n_top_sites_realm, ]
@@ -170,6 +176,7 @@ server <- function(input, output) {
   output$map1 <- renderPlot({
     plot_sites()
   })
+  
 }
 
 
