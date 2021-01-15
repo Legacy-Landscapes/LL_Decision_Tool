@@ -108,6 +108,7 @@ rank_data <- function(data_table, weights, selection) {
   
   if (!selection == "Global") {
     ranked_orig_vals <- subset(ranked_orig_vals, Realm == selection)
+    ranked_orig_vals$Rank <- c(1:nrow(ranked_orig_vals))
   return(ranked_orig_vals)
   }
 
