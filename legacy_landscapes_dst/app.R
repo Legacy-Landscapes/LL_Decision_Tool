@@ -144,7 +144,7 @@ server <- function(input, output) {
   weighing <- reactive({
     weights <- get_weights()
     selection <- get_selection()
-    return(rank_data(weight_data, weights, n_top_sites, selection))
+    return(rank_data(weight_data, weights, selection))
   })
 
   plot_sites <- reactive({
