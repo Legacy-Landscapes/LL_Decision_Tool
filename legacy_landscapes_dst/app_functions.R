@@ -86,7 +86,7 @@ calculate_weights_table <- function(slider_values) {
 }
 
 #add selected realm value into function
-rank_data <- function(data_table, weights, max_sites, selection) {
+rank_data <- function(data_table, weights, selection) {
   ranked <- data_table
   ranked$ID <- c(1:nrow(ranked)) # add ID to merge data later
   ranked_orig_vals <- ranked # keep original values to display
@@ -108,9 +108,11 @@ rank_data <- function(data_table, weights, max_sites, selection) {
   
   if (!selection == "Global") {
     ranked_orig_vals <- subset(ranked_orig_vals, Realm == selection)
-  return(ranked_orig_vals[1:max_sites, ])
+    ranked_orig_vals$Rank <- c(1:nrow(ranked_orig_vals))
+
+    return(ranked_orig_vals)
   }
 
-  return(ranked_orig_vals[1:max_sites, ])
+    return(ranked_orig_vals)
 }
 
