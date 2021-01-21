@@ -96,7 +96,8 @@ rank_data <- function(data_table, weights, selection) {
   for (key in keys) {
     value <- weights[key, ]
     ranked[, key] <- ranked[, key] * value
-    summed <- summed + ranked[, key]
+    summed <- rowSums(cbind(summed,ranked[, key]), na.rm=TRUE)
+    #summed <- summed + ranked[, key]
   }
   ranked <- data.frame(ranked, total_weight = summed)
   ranked_orig_vals <- merge(ranked_orig_vals, ranked[c("ID", "total_weight")], by = "ID") # merge original values with weight
