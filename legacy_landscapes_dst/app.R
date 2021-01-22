@@ -83,9 +83,10 @@ ui <- fluidPage(
       tabPanel(
         "Background",
         sidebarLayout(
-        mainPanel(backround_mainpanel,
+        mainPanel(backround_mainpanel_part_1,
                   img(src = figure3, height = 350, width = 430),
-                  background_figure3, width = 12),
+                  background_figure3,
+                  backround_mainpanel_part_2, width = 12),
         sidebarPanel(background_sidepanel, width = 12),
         position = "left"),
         mainPanel(img(src = figure1, height = 60, width = 60),
