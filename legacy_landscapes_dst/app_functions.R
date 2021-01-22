@@ -92,13 +92,17 @@ rank_data <- function(data_table, weights, selection) {
   ranked_orig_vals <- ranked # keep original values to display
   colnames(ranked_orig_vals) <- colnames_display # add display names
   summed <- numeric(nrow(ranked)) # vector of zeros
-  keys <- rownames(weights)
+  keys <- rownames(weights) # vector of conservation objective names
+  ## Multiply scaled values by allocated weights
   for (key in keys) {
     value <- weights[key, ]
     ranked[, key] <- ranked[, key] * value
-    summed <- summed + ranked[, key]
+    #summed <- rowSums(cbind(summed,ranked[, key]), na.rm=TRUE)
+    summed <- cbind(summed,ranked[, key])
   }
-  ranked <- data.frame(ranked, total_weight = summed)
+  summed <- as.data.frame(as.matrix(summed))
+  summed <- rowMeans(summed[2:ncol(summed)], na.rm=TRUE) # take mean value of each site
+  ranked <- data.frame(ranked, total_weight = summed) # add final weights to table
   ranked_orig_vals <- merge(ranked_orig_vals, ranked[c("ID", "total_weight")], by = "ID") # merge original values with weight
   ranked_orig_vals <-
     ranked_orig_vals[order(ranked_orig_vals$total_weight, decreasing = TRUE), ] # order by weight

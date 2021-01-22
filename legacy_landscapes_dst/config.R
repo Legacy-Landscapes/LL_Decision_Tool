@@ -12,28 +12,35 @@ zgf_credits <- p("Frankfurt Zoological Society")
 
 sgn_credits <- p(p("Senckenberg Biodiversity and Climate Research Centre"))
 
-backround_mainpanel <-
+backround_mainpanel_part_1 <-
   p(h4("Legacy Landscapes"),
   p("Legacy Landscapes is a new international public-private initiative,
      led by the German   Government, to develop and implement a conservation
      and financing strategy for the safeguarding of selected protected areas.
-     Legacy Landscapes will significantly contribute to the ‘post-2020
-     Biodiversity-Framework’ of the COP 15 at the CBD in 2020."),
-  p(h5("The Legacy Landscapes concept is based on three pillars:")),
-  p(strong("1."), "Permanent, stable and performance-based funding ensured by
-     a combination of private donors and public funds of about one
-     million $ per site per year"),
-  p(strong("2."), "Effective and efficient management that will be caried
-     out in cooperation with national authorities and an NGO, with the annual
-     disbursement of funds being controlled by an independent platform,
-     and based on the fulfillment of certain indicators, the ‘key
-     performance indicators’."),
-  p(strong("3."), "Strategic site selection"),
-  p("This app has been developed in cooperation between the Frankfurt
+     Legacy Landscapes has a terrestrial focus and will significantly
+     contribute to the ‘post-2020 Biodiversity-Framework’ of the COP 15 at
+     the CBD in 2020.",
+    h5("The Legacy Landscapes concept is based on three pillars:"),
+  p(strong("1."), "Permanent, stable and performance-based", 
+    strong("funding"),"ensured by a combination of private donors and public 
+    funds of about one million $ per site per year"),
+  p(strong("2."), "Effective and efficient", strong("management"), "that will
+    be caried out in cooperation with national authorities and an NGO, with
+    the annual disbursement of funds being controlled by an independent platform,
+    and based on the fulfillment of certain indicators, the ‘key
+    performance indicators’."),
+    p(strong("3."), "Strategic site selection, based on the", 
+    strong("biogeography"),"of the site")))
+
+backround_mainpanel_part_2 <-
+  p(p("This app has been developed in cooperation between the Frankfurt
      Zoological Society and the Senckenberg Biodiversity and Climate
      Research Centre to support the selection of suitable sites for the
-     Legacy Landscapes fund. The app facilitates the ranking of sites based
-     on their performance across six different conservation objectives:"),
+     Legacy Landscapes fund. The app enables the comparison of potential sites
+     based on macro-ecological variables and thus falls under the
+     ‘Biogeography’ cornerstone of the Legacy Landscapes concept. It
+     facilitates the ranking of sites based on their performance across
+     six different conservation objectives:"),
      strong("Biodiversity, Wilderness, Climatic stability, Land-use
      stability, Climate protection and Size.")
   )
@@ -105,13 +112,23 @@ Rtable_text <-
     objectives are scaled across all sites included in the ranking. The values
     range from 0 to 1, with 0 being allocated to the site with the lowest score
     and 1 being allocated to the site with the highest score for the
-    conservation objective.",
+    conservation objective. The scaled ranks are shown for each conservation
+    objective, for each site on the right hand site of the table and remain the
+    same independent of the weighting. This means the scaled value that a site has
+    for a certain conservation objective indicates the overall ranking position 
+    of that site for that objective, as the following example shows:",
+  p(strong("If the weight for Biodiversity and Size are both set to 50%, you
+    will see that the Changtang Plateau is the top site. This is because it
+    is by far the biggest site, with a Size score of 1. But it has a quite low
+    Biodiversity score of 0.05. Parque Nacional Cayambe -Coca, on the other hand,
+    has outstanding biodiversity indicated by the Biodiversity score of 1 but 
+    is very small indicated by the Size score of 0.01.", style = "color:green"),
   p(em("The ranking table can be adjusted by using the sliders on the left
     hand side. Allocating different weights to the individual objectives will
     change the ranking of the sites. Using the"),
   em(strong("Select focal realm")), em("buttons above the table, the ranking
     table can be subset to show the resulting ranking for the individual
-    realms or across all sites globally.")))
+    realms or across all sites globally."))))
 
 ## Ranking map panel
 Rmap_text <-
