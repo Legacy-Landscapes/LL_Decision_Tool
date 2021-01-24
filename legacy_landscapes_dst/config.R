@@ -121,7 +121,7 @@ Rtable_text <-
     will see that the 'Talamanca Range' is the top site. This is because it
     has the second highest biodiversity among the included sites, with a 'Biodiversity'
     score of 0.99. But it also has a clear human footprint, indicated by the 'Wilderness'
-    score of 0.71. In comparison the combined site Manu - Alto Purus ranks third
+    score of 0.71. In comparison the combined site 'Manu - Alto Purus' ranks third
     globally with a very good 'Biodiversity' score of 0.70 but additionally it is also
     very pristine with a very high 'Wilderness' score of 0.93.", style = "color:green"),
   p(em("The ranking table can be adjusted by using the sliders on the left
