@@ -115,14 +115,15 @@ Rtable_text <-
     conservation objective. The scaled ranks are shown for each conservation
     objective, for each site on the right hand site of the table and remain the
     same independent of the weighting. This means the scaled value that a site has
-    for a certain conservation objective indicates the overall ranking position 
+    for a certain conservation objective indicates the overall ranking position
     of that site for that objective, as the following example shows:",
-  p(strong("If the weight for Biodiversity and Size are both set to 50%, you
-    will see that the Changtang Plateau is the top site. This is because it
-    is by far the biggest site, with a Size score of 1. But it has a quite low
-    Biodiversity score of 0.05. Parque Nacional Cayambe -Coca, on the other hand,
-    has outstanding biodiversity indicated by the Biodiversity score of 1 but 
-    is very small indicated by the Size score of 0.01.", style = "color:green"),
+  p(strong("If the weights for 'Biodiversity' and 'Wilderness' are both set to 50%, you
+    will see that the 'Talamanca Range' is the top site. This is because it
+    has the second highest biodiversity among the included sites, with a 'Biodiversity'
+    score of 0.99. But it also has a clear human footprint, indicated by the 'Wilderness'
+    score of 0.71. In comparison the combined site Manu - Alto Purus ranks third
+    globally with a very good 'Biodiversity' score of 0.70 but additionally it is also
+    very pristine with a very high 'Wilderness' score of 0.93.", style = "color:green"),
   p(em("The ranking table can be adjusted by using the sliders on the left
     hand side. Allocating different weights to the individual objectives will
     change the ranking of the sites. Using the"),
