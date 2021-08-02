@@ -1,7 +1,7 @@
 
 library(ggplot2)
 library(dplyr) # dplyr added to the functions
-
+library(DT) # DT is used in the app script
 
 get_slider_values <- function(input) {
   return(
