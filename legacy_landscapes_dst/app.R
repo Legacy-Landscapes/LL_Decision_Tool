@@ -111,7 +111,7 @@ ui <- fluidPage(
                             status = "default",
                             inline = T)),
                mainPanel(width = 12, Rtable_text)),
-               tableOutput("table1")
+               DT::dataTableOutput("table1") ## Change data table test
                ),
       tabPanel("Ranking map",
                Rmap_text,
@@ -168,10 +168,11 @@ server <- function(input, output) {
      set_weights_table()
   }, rownames = TRUE)
 
-  # Show the changing ranks in an HTML table
-  output$table1 <- renderTable({
+  
+  output$table1 = DT::renderDataTable({
     weighing()
-  })
+   })
+  
 
   # Show the top sites in a global map
   output$map1 <- renderPlot({
