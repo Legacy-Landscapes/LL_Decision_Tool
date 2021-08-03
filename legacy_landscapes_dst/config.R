@@ -53,10 +53,10 @@ background_figure3 <-
 
 ## Conservation objectives panel
 objectives_weigting <-
-  p("Use the sliders on the left to change the importance of the different
+  p("Use the sliders above to change the importance of the different
      conservation objectives in the site ranking. The percentage weight
      allocated to the different conservation objectives can be seen in the
-     table on the right.",
+     table below.",
     p(em(strong("Note that combined allocated weights of the different
      conservation objectives always sum up to 100%.")), style = "color:red"),
     style = "color:red")
