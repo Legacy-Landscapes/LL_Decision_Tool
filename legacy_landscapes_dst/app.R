@@ -20,6 +20,8 @@ ui <- fluidPage(
 
   # Set the slider options in the side bar panel
   sidebarPanel(
+    #setSliderColor(c("green", "salmon", "#FFD700", "sandybrown","#87CEFF","#8B5A2B"),c(1,2,3,4,5,6)),
+    #setSliderColor(c("green", "green", "green", "green","green","green"),c(1,2,3,4,5,6)),
     sliderInput(
       inputId = "biodiversity_weight",
       label = "Biodiversity",
@@ -74,7 +76,9 @@ ui <- fluidPage(
       step = 0.05,
       ticks = F
     ),
-    width = 2),
+    objectives_weigting,
+    tableOutput("values"),
+    width = 3),
 
   # Set the different tabs in the main panel
   mainPanel(
@@ -96,9 +100,9 @@ ui <- fluidPage(
       ),
       tabPanel(
         "Conservation objectives",
-        sidebarLayout(
-        sidebarPanel(objectives_weigting, width = 6),
-        mainPanel(tableOutput("values"), width = 6)),
+        #sidebarLayout(
+        #sidebarPanel(objectives_weigting, width = 6),
+        #mainPanel(tableOutput("values"), width = 6)),
         objectives_strategy,
         img(src = figure4, height = 340, width = 550),
         objectives_figure4
