@@ -23,14 +23,14 @@ backround_mainpanel_part_1 <-
     h5("The Legacy Landscapes concept is based on three pillars:"),
   p(strong("1."), "Permanent, stable and performance-based", 
     strong("funding"),"ensured by a combination of private donors and public 
-    funds of about one million $ per site per year"),
+    funds of about one million $ per site per year", style = "text-align: justify;"),
   p(strong("2."), "Effective and efficient", strong("management"), "that will
     be caried out in cooperation with national authorities and an NGO, with
     the annual disbursement of funds being controlled by an independent platform,
     and based on the fulfillment of certain indicators, the ‘key
-    performance indicators’."),
+    performance indicators’.", style = "text-align: justify;"),
     p(strong("3."), "Strategic site selection, based on the", 
-    strong("biogeography"),"of the site")))
+    strong("biogeography"),"of the site", style = "text-align: justify;"), style = "text-align: justify;"))
 
 backround_mainpanel_part_2 <-
   p(p("This app has been developed in cooperation between the Frankfurt
@@ -40,16 +40,16 @@ backround_mainpanel_part_2 <-
      based on macro-ecological variables and thus falls under the
      ‘Biogeography’ cornerstone of the Legacy Landscapes concept. It
      facilitates the ranking of sites based on their performance across
-     six different conservation objectives:"),
+     six different conservation objectives:", style = "text-align: justify;"),
      strong("Biodiversity, Wilderness, Climatic stability, Land-use
-     stability, Climate protection and Size.")
+     stability, Climate protection and Size."), style = "text-align: justify;"
   )
 
 background_figure3 <-
   p(p(strong("Figure 1: The three cornerstones of the Legacy
              Landscapes concept"), "permanent, stable and performance-based
              funding; effective and efficient management and strategic site
-             selection."))
+             selection.", style = "text-align: justify;"))
 
 ## Conservation objectives panel
 objectives_weigting <-
@@ -58,8 +58,8 @@ objectives_weigting <-
      allocated to the different conservation objectives can be seen in the
      table below.",
     p(em(strong("Note that combined allocated weights of the different
-     conservation objectives always sum up to 100%.")), style = "color:red"),
-    style = "color:red")
+     conservation objectives always sum up to 100%.")), style = "text-align: justify;",style = "color:red"),
+     style = "text-align: justify;", style = "color:red")
 
 objectives_strategy <-
   p(h4("The conservation objectives"),
@@ -69,22 +69,24 @@ objectives_strategy <-
      assessment based on the size of the site, the biodiversity it contains,
      its intactness and its potential for future persistence. Each of the
      conservation objectives is measured based on one or more macro-ecological
-     variables as described below:"),
+     variables as described below:", style = "text-align: justify;"),
     p(strong("Biodiversity:"), "includes the richness, endemism and diversity
       of species comprising four different taxa (mammals, birds, reptiles and
-      amphibians)"),
+      amphibians)", style = "text-align: justify;"),
     p(strong("Wilderness:"), "includes the Biodiversity Intactness Index (BII),
       the human footprint and the observed change from biome to anthrome
-      in the area over the past 20 years"),
+      in the area over the past 20 years", style = "text-align: justify;"),
     p(strong("Climatic stability:"), "includes the projected stability of
       ecological communities (mammals, birds, reptiles and amphibians) and
       the projected change in tree cover by the mid of the century under a
-      medium warming scenario"),
+      medium warming scenario", style = "text-align: justify;"),
     p(strong("Land-use stability:"),"includes the projected change in land-use
-      in the buffer zone around the site"),
+      in the buffer zone around the site", style = "text-align: justify;"),
     p(strong("Climate protection:"), "includes the amount of baseline,
-      vulnerable and irreplaceable carbon storage within the site"),
-    p(strong("Size of the site:"), "is the extent of the site in km2"),
+      vulnerable and irreplaceable carbon storage within the site", 
+      style = "text-align: justify;"),
+    p(strong("Size of the site:"), "is the extent of the site in km2", 
+      style = "text-align: justify;"),
     p("The six different conservation objectives can be combined into different
        conservation goals as laid out in the figure below. Using the sliders on
        the left the conservation objectives can be combined by allocating a
@@ -92,7 +94,7 @@ objectives_strategy <-
        excluded from the weighting. The resulting ranking based on the selected
        objectives and the allocated importance (weight) can be seen in the",
        strong(em("Ranking Table")), "tab. The location of the top scoring sites
-        can be seen in the", strong(em("Ranking Map")), "tab."),
+        can be seen in the", strong(em("Ranking Map")), "tab.", style = "text-align: justify;"),
     p(em("Details on the included variables, data sources and methods can be
           found on the accompanying webpage")))
 
@@ -103,7 +105,7 @@ objectives_figure4 <-
     be combined into different conservation goals. These conservation goals
     allow to weigh the different conservation objectives against each other,
     to set priorities when selecting suitable sites for the Legacy Landscapes
-    fund."))
+    fund.", style = "text-align: justify;"))
 
 ## Ranking table panel
 Rtable_text <-
@@ -129,7 +131,8 @@ Rtable_text <-
     change the ranking of the sites. Using the"),
   em(strong("Select focal realm")), em("buttons above the table, the ranking
     table can be subset to show the resulting ranking for the individual
-    realms or across all sites globally."))))
+    realms or across all sites globally."), style = "text-align: justify;"), 
+    style = "text-align: justify;"), style = "text-align: justify;")
 
 ## Ranking map panel
 Rmap_text <-
@@ -141,14 +144,16 @@ Rmap_text <-
     The red, orange and yellow points show the location of the top sites with
     red indicating the sites of highest suitability.",
   p(em("The choice of biogeographic realm can be changed by using the"),
-    strong(em("Select focal realm")), "button on the previous page."))
-  )
+    strong(em("Select focal realm")), "button on the previous page.", 
+    style = "text-align: justify;"), style = "text-align: justify;"),
+    style = "text-align: justify;")
 
 Rmap_disclaimer <-
   p("The country boarders displayed in this map are derived from Natural Earth
     (version 4.1.0) and do not imply the expression of any opinion concerning
     the legal status of any country, area or territory or of its authorities,
-    or concerning the delamination of its boarders.", style = "font-size:10px")
+    or concerning the delamination of its boarders.", style = "font-size:10px",
+    style = "text-align: justify;")
 
 
 #-#-# Set variable and subset names #-#-#
