@@ -21,10 +21,8 @@ ui <- fluidPage(
 
   # Set the slider options in the side bar panel
   sidebarPanel(
-  prettyRadioButtons("radio", label = h3("Select focal realm"),
-                      choices = choices, icon = icon("check"), animation = "pulse",
-                      status = "default",
-                      inline = F),
+  header_weighting,
+  objectives_weigting,
     #setSliderColor(c("green", "salmon", "#FFD700", "sandybrown","#87CEFF","#8B5A2B"),c(1,2,3,4,5,6)),
     sliderInput(
       inputId = "biodiversity_weight",
@@ -80,8 +78,12 @@ ui <- fluidPage(
       step = 0.05,
       ticks = F
     ),
-    objectives_weigting,
     tableOutput("values"),
+    objectives_table_disclaimer,
+    prettyRadioButtons("radio", label = h3("Select focal realm"),
+                     choices = choices, icon = icon("check"), animation = "pulse",
+                     status = "default",
+                     inline = F),
     width = 3),
 
   # Set the different tabs in the main panel
