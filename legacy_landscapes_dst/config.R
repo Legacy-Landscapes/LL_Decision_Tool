@@ -53,14 +53,15 @@ background_figure3 <-
 
 ## Conservation objectives panel
 header_weighting <- p("Weigh the objectives",style = "font-size:150%")
+header_weighting <- h3("Weigh the objectives")
 objectives_weigting <-
   p("Use the sliders above to change the importance of the different
      conservation objectives in the site ranking. The percentage weight
      allocated to the different conservation objectives can be seen in the
-     table below.",style = "text-align: justify;", style = "color:red")
+     table below.",style = "text-align: justify;")
  objectives_table_disclaimer <-    
     p(em(strong("Note that combined allocated weights of the different
-     conservation objectives always sum up to 100%.")), style = "text-align: justify;",style = "color:red")
+     conservation objectives always sum up to 100%.")), style = "text-align: justify;")
 
 objectives_strategy <-
   p(h4("The conservation objectives"),
@@ -94,8 +95,8 @@ objectives_strategy <-
        weight to each objective. Objectives allocated a weight of 0 are
        excluded from the weighting. The resulting ranking based on the selected
        objectives and the allocated importance (weight) can be seen in the",
-       strong(em("Ranking Table")), "tab. The location of the top scoring sites
-        can be seen in the", strong(em("Ranking Map")), "tab.", style = "text-align: justify;"),
+       strong(em("Site evaluation")), "tab. The location of the top scoring sites
+        can be seen in the", strong(em("Site Map")), "tab.", style = "text-align: justify;"),
     p(em("Details on the included variables, data sources and methods can be
           found on the accompanying webpage")))
 
