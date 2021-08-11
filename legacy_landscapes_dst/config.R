@@ -198,7 +198,7 @@ worldmap_file <- "AppData/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp"
 figure1 <- "FZS_logo.png" # nolint
 figure2 <- "Senckenberg_logo.png" # nolint
 figure3 <- "Legacy_Landscapes_pillars.png" # nolint
-figure4 <- "Site_evaluation_concept.png" # nolint
+figure4 <- "Concept_figure_site_selection.png" # nolint
 
 n_top_sites <- 30
 n_top_sites_realm <- 10
