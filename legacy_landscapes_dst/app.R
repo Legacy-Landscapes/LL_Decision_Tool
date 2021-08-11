@@ -15,13 +15,17 @@ worldmap <- load_worldmap(worldmap_file)
 
 # layout definition
 ui <- fluidPage(
+  
   headerPanel("Setting priorities for longterm conservation"),
   ## This is the overall header
 
   # Set the slider options in the side bar panel
   sidebarPanel(
+  prettyRadioButtons("radio", label = h3("Select focal realm"),
+                      choices = choices, icon = icon("check"), animation = "pulse",
+                      status = "default",
+                      inline = F),
     #setSliderColor(c("green", "salmon", "#FFD700", "sandybrown","#87CEFF","#8B5A2B"),c(1,2,3,4,5,6)),
-    #setSliderColor(c("green", "green", "green", "green","green","green"),c(1,2,3,4,5,6)),
     sliderInput(
       inputId = "biodiversity_weight",
       label = "Biodiversity",
@@ -107,17 +111,18 @@ ui <- fluidPage(
         img(src = figure4, height = 340, width = 550),
         objectives_figure4
       ),
-      tabPanel("Ranking table",
-               sidebarLayout(
-               sidebarPanel(width = 12,
-                            prettyRadioButtons("radio", label = h3("Select focal realm"),
-                            choices = choices, icon = icon("check"), animation = "pulse",
-                            status = "default",
-                            inline = T)),
-               mainPanel(width = 12, Rtable_text)),
+      tabPanel("Site evaluation",
+               # sidebarLayout(
+               # sidebarPanel(width = 12,
+               #              prettyRadioButtons("radio", label = h3("Select focal realm"),
+               #              choices = choices, icon = icon("check"), animation = "pulse",
+               #              status = "default",
+               #              inline = T)),
+               # mainPanel(width = 12, Rtable_text)),
+               Rtable_text,
                DT::dataTableOutput("table1") ## Change data table test
                ),
-      tabPanel("Ranking map",
+      tabPanel("Site map",
                Rmap_text,
                textOutput("site_name"),
                plotOutput("map1"),
