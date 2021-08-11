@@ -110,7 +110,7 @@ ui <- fluidPage(
         #sidebarPanel(objectives_weigting, width = 6),
         #mainPanel(tableOutput("values"), width = 6)),
         objectives_strategy,
-        img(src = figure4, height = 340, width = 550),
+        img(src = figure4, height = 600, width = 800),
         objectives_figure4
       ),
       tabPanel("Site evaluation",
@@ -127,7 +127,7 @@ ui <- fluidPage(
       tabPanel("Site map",
                Rmap_text,
                textOutput("site_name"),
-               plotOutput("map1"),
+               plotOutput("map1", height = 550, width = 900),
                Rmap_disclaimer,
                downloadButton("report", "Generate report"))
       ),
