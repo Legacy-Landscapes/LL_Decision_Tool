@@ -52,14 +52,15 @@ background_figure3 <-
              selection.", style = "text-align: justify;"))
 
 ## Conservation objectives panel
+header_weighting <- p("Weigh the objectives",style = "font-size:150%")
 objectives_weigting <-
   p("Use the sliders above to change the importance of the different
      conservation objectives in the site ranking. The percentage weight
      allocated to the different conservation objectives can be seen in the
-     table below.",
+     table below.",style = "text-align: justify;", style = "color:red")
+ objectives_table_disclaimer <-    
     p(em(strong("Note that combined allocated weights of the different
-     conservation objectives always sum up to 100%.")), style = "text-align: justify;",style = "color:red"),
-     style = "text-align: justify;", style = "color:red")
+     conservation objectives always sum up to 100%.")), style = "text-align: justify;",style = "color:red")
 
 objectives_strategy <-
   p(h4("The conservation objectives"),
