@@ -52,7 +52,6 @@ background_figure3 <-
              selection.", style = "text-align: justify;"))
 
 ## Conservation objectives panel
-header_weighting <- p("Weigh the objectives",style = "font-size:150%")
 header_weighting <- h3("Weigh the objectives")
 objectives_weigting <-
   p("Use the sliders above to change the importance of the different
@@ -151,11 +150,10 @@ Rmap_text <-
     style = "text-align: justify;")
 
 Rmap_disclaimer <-
-  p("The country boarders displayed in this map are derived from Natural Earth
+  p(h6(tags$i("The country boarders displayed in this map are derived from Natural Earth
     (version 4.1.0) and do not imply the expression of any opinion concerning
     the legal status of any country, area or territory or of its authorities,
-    or concerning the delamination of its boarders.", style = "font-size:10px",
-    style = "text-align: justify;")
+    or concerning the delamination of its boarders.")), style = "text-align: justify;")
 
 
 #-#-# Set variable and subset names #-#-#
