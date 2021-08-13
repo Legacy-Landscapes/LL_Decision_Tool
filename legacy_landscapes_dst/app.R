@@ -174,21 +174,36 @@ server <- function(input, output) {
     return(plot_maps(selected_sites, pa_centroids, worldmap, selection)) #
   })
 
-  # This displays the changeable table
+  # This displays the weighting table
   output$values <- renderTable({
      set_weights_table()
   }, rownames = TRUE)
 
-  
+  # This displays the site evaluation table
   output$table1 = DT::renderDataTable({
     weighing()
    })
   
-
-  # Show the top sites in a global map
+  # This displays the top sites in a global map
   output$map1 <- renderPlot({
     plot_sites()
   })
+  
+  # Create downloadable report
+  output$report <- downloadHandler(
+    filename <-  "Site_evaluation.html",
+    content = function(file) {
+      tempReport <- file.path(tempdir(), "report.Rmd")
+      file.copy("../report.Rmd", tempReport, overwrite = TRUE)
+      params <- list(
+        plot_sites = plot_sites())
+      rmarkdown::render(tempReport, 
+                        output_file = file,
+                        params = params,
+                        envir = new.env(parent = globalenv())
+      )
+    }
+  )
   
 }
 
