@@ -1,0 +1,21 @@
+---
+title: "Site evaluation"
+author:
+  - name: Alke Voskamp
+date: "2021-08-12"
+output: html_document
+params: 
+    plot_sites: NA
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Sites evaluated based on macroecological indicators
+
+The table shows....
+
+```{r plot_sites, echo=FALSE}
+plot(params$plot_sites)
+```
