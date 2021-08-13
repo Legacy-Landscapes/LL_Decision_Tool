@@ -124,14 +124,17 @@ ui <- fluidPage(
                # mainPanel(width = 12, Rtable_text)),
                Rtable_text,
                DT::dataTableOutput("table1") ## Change data table test
-               ),
+      ),
       tabPanel("Site map",
                Rmap_text,
                textOutput("site_name"),
                plotOutput("map1", height = 550, width = 900),
                Rmap_disclaimer,
-               downloadButton("report", "Generate report"))
+               downloadButton("report", "Generate report")
       ),
+      tabPanel("How to use",
+              Uncertainty_text,
+      )),
     width = 8
   )
 )
