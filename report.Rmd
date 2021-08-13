@@ -5,7 +5,9 @@ author:
 date: "2021-08-12"
 output: html_document
 params: 
+    set_weights_table: NA
     plot_sites: NA
+    weighing: NA
 ---
 
 ```{r setup, include=FALSE}
@@ -14,8 +16,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Sites evaluated based on macroecological indicators
 
-The table shows....
+Results of the site evaluation based on the weighted objectives.
+```{r set_weights_table, echo=FALSE}
+kable(params$set_weights_table)
+```
 
 ```{r plot_sites, echo=FALSE}
 plot(params$plot_sites)
 ```
+
+```{r weighting, echo=FALSE}
+kable(params$weighing[1:30,])
+```
+
+
+
+## How to interpret the evaluation results
+The different objectives included have varying error margins...
