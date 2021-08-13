@@ -192,7 +192,7 @@ server <- function(input, output) {
   
   # Create downloadable report
   output$report <- downloadHandler(
-    filename <-  "Site_evaluation.html",
+    filename <-  "Site_evaluation.pdf", # or html
     content = function(file) {
       tempReport <- file.path(tempdir(), "report.Rmd")
       file.copy("../report.Rmd", tempReport, overwrite = TRUE)
