@@ -201,5 +201,4 @@ figure4 <- "Concept_figure_site_selection.png" # nolint
 n_top_sites <- 30
 n_top_sites_realm <- 10
 
-#-#-# Content download report 
-Table_intro <- p("This table shows...")
+
