@@ -27,13 +27,13 @@ plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) {
 
   # plot
   plot <- ggplot(selected_sites) +
-    geom_sf(data = worldmap, fill = "black", color = "grey60", size = 0.2) +
+    geom_sf(data = worldmap, fill = "black", color = "white", size = 0.2) +
     # Four types of points to show all and selected sites
     geom_point(data = pa_centroids,
                aes(x = x, y = y),
                shape = 16,
-               size = 0.2,
-               colour = "grey90") +
+               size = 0.4,
+               colour = "grey80") +
     geom_point(data = selected_sites,
                aes(x = x, y = y, color = suitability),
                shape = 18,
