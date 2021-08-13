@@ -2,6 +2,7 @@
 library(shiny)
 library(shinyWidgets)
 library(rmarkdown)
+library(knitr)
 source("app_functions.R")
 source("config.R")
 source("load_data.R")
@@ -195,8 +196,11 @@ server <- function(input, output) {
     content = function(file) {
       tempReport <- file.path(tempdir(), "report.Rmd")
       file.copy("../report.Rmd", tempReport, overwrite = TRUE)
+      # params contains all objects that are passed on to markdown
       params <- list(
-        plot_sites = plot_sites())
+        set_weights_table = set_weights_table(),
+        plot_sites = plot_sites(),
+        weighing = weighing())
       rmarkdown::render(tempReport, 
                         output_file = file,
                         params = params,
