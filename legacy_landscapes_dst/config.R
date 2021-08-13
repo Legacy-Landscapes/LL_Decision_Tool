@@ -3,7 +3,7 @@
 
 #-#-# Define text to be added to the different panels #-#-#
 
-## Background panel
+#-#-# Background panel #-#-#
 background_sidepanel <-
   p(h5("Contact"),
   p(em("alke.voskamp@senckenberg.de")))
@@ -51,7 +51,7 @@ background_figure3 <-
              funding; effective and efficient management and strategic site
              selection.", style = "text-align: justify;"))
 
-## Conservation objectives panel
+#-#-# Conservation objectives panel #-#-#
 header_weighting <- h3("Weigh the objectives")
 objectives_weigting <-
   p("Use the sliders above to change the importance of the different
@@ -108,8 +108,9 @@ objectives_figure4 <-
     to set priorities when selecting suitable sites for the Legacy Landscapes
     fund.", style = "text-align: justify;"))
 
-## Ranking table panel
+#-#-# Site evaluation panel #-#-#
 Rtable_text <-
+  p(h4("Site evaluation based on weighted objectives"),
   p("The ranking table shows the overall ranking of the potential sites based
     on the applied weights. The values for the different conservation
     objectives are scaled across all sites included in the ranking. The values
@@ -133,10 +134,11 @@ Rtable_text <-
   em(strong("Select focal realm")), em("buttons above the table, the ranking
     table can be subset to show the resulting ranking for the individual
     realms or across all sites globally."), style = "text-align: justify;"), 
-    style = "text-align: justify;"), style = "text-align: justify;")
+    style = "text-align: justify;"), style = "text-align: justify;"))
 
-## Ranking map panel
+#-#-# Site map panel #-#-#
 Rmap_text <-
+  p(h4("Location of the selected sites"),
   p("The map shows the location of the top sites ranked by their suitability
     based on the applied weights across the six conservation objectives.
     Depending on the selection the map shows either the top 30 sites globally
@@ -147,7 +149,7 @@ Rmap_text <-
   p(em("The choice of biogeographic realm can be changed by using the"),
     strong(em("Select focal realm")), "button on the previous page.", 
     style = "text-align: justify;"), style = "text-align: justify;"),
-    style = "text-align: justify;")
+    style = "text-align: justify;"))
 
 Rmap_disclaimer <-
   p(h6(tags$i("The country boarders displayed in this map are derived from Natural Earth
@@ -155,6 +157,11 @@ Rmap_disclaimer <-
     the legal status of any country, area or territory or of its authorities,
     or concerning the delamination of its boarders.")), style = "text-align: justify;")
 
+#-#-# How to use panel #-#-#
+Uncertainty_text <-
+  p(h4("Interpreting the evaluation results"),
+  p("The different objectives come with different potential error margins which need
+     to be kept in mind when interpreting the evaluation results."))
 
 #-#-# Set variable and subset names #-#-#
 ## displayed variable names table
