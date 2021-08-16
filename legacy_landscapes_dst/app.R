@@ -85,7 +85,9 @@ ui <- fluidPage(
                      choices = choices, icon = icon("check"), animation = "pulse",
                      status = "default",
                      inline = F),
-    width = 3),
+  h3("Select official development assistance (ODA) countries"),
+   actionButton("action", "ODA only"),
+   width = 3),
 
   # Set the different tabs in the main panel
   mainPanel(
