@@ -24,7 +24,7 @@ ui <- fluidPage(
   sidebarPanel(
   header_weighting,
   objectives_weigting,
-    #setSliderColor(c("green", "salmon", "#FFD700", "sandybrown","#87CEFF","#8B5A2B"),c(1,2,3,4,5,6)),
+    setSliderColor(c("green", "orange", "red", "red","green","green"),c(1,2,3,4,5,6)), # Colour coding certainty
     sliderInput(
       inputId = "biodiversity_weight",
       label = "Biodiversity",
