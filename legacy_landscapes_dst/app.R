@@ -17,7 +17,7 @@ worldmap <- load_worldmap(worldmap_file)
 # layout definition
 ui <- fluidPage(
   
-  headerPanel("Setting priorities for longterm conservation"),
+  headerPanel("Setting global priorities for longterm conservation"),
   ## This is the overall header
 
   # Set the slider options in the side bar panel
@@ -114,7 +114,10 @@ ui <- fluidPage(
         #mainPanel(tableOutput("values"), width = 6)),
         objectives_strategy,
         img(src = figure4, height = 600, width = 800),
-        objectives_figure4
+        objectives_figure4,
+        tags$iframe(style="height:400px; width:100%; scrolling=yes", 
+                    src="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf")
+
       ),
       tabPanel("Site evaluation",
                # sidebarLayout(
