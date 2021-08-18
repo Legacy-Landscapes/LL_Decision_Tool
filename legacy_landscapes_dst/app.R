@@ -115,8 +115,8 @@ ui <- fluidPage(
         objectives_strategy,
         img(src = figure4, height = 600, width = 800),
         objectives_figure4,
-        tags$iframe(style="height:400px; width:100%; scrolling=yes", 
-                    src="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf")
+        tags$iframe(style="height:500px; width:100%; scrolling=yes", 
+                    src= layer_description)
 
       ),
       tabPanel("Site evaluation",
@@ -139,6 +139,8 @@ ui <- fluidPage(
       ),
       tabPanel("How to use",
               Uncertainty_text,
+              tags$iframe(style ="height:600px; width:100%; scrolling=yes", 
+                          src = user_manual)
       )),
     width = 8
   )
