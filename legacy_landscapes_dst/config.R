@@ -1,9 +1,9 @@
 # This script only contains configurable values for the app
 
 
-#-#-# Define text to be added to the different panels #-#-#
+#-----# Define text to be added to the different panels #-----#
 
-#-#-# Background panel #-#-#
+#-#-# Background panel texts #-#-#
 background_sidepanel <-
   p(h5("Contact"),
   p(em("alke.voskamp@senckenberg.de")))
@@ -51,17 +51,8 @@ background_figure3 <-
              funding; effective and efficient management and strategic site
              selection.", style = "text-align: justify;"))
 
-#-#-# Conservation objectives panel #-#-#
-header_weighting <- h3("Weigh the objectives")
-objectives_weigting <-
-  p("Use the sliders above to change the importance of the different
-     conservation objectives in the site ranking. The percentage weight
-     allocated to the different conservation objectives can be seen in the
-     table below.",style = "text-align: justify;")
- objectives_table_disclaimer <-    
-    p(em(strong("Note that combined allocated weights of the different
-     conservation objectives always sum up to 100%.")), style = "text-align: justify;")
 
+#-#-# Conservation objectives panel texts #-#-#
 objectives_strategy <-
   p(h4("The conservation objectives"),
     p("Six conservation objectives were selected to enable the comparison
@@ -96,8 +87,8 @@ objectives_strategy <-
        objectives and the allocated importance (weight) can be seen in the",
        strong(em("Site evaluation")), "tab. The location of the top scoring sites
         can be seen in the", strong(em("Site Map")), "tab.", style = "text-align: justify;"),
-    p(em("Details on the included variables, data sources and methods can be
-          found on the accompanying webpage")))
+    p(em("Details on the included variables and data sources and can be
+          found in the text box at the bottom of the page.")))
 
 objectives_figure4 <-
   p(p(strong("Figure 2: Conservation objectives and strategies"),
@@ -105,10 +96,10 @@ objectives_figure4 <-
     Climatic stability, Land-use stability, Climate protection and Size can
     be combined into different conservation goals. These conservation goals
     allow to weigh the different conservation objectives against each other,
-    to set priorities when selecting suitable sites for the Legacy Landscapes
-    fund.", style = "text-align: justify;"))
+    to set priorities when evaluation sites for conservation.", style = "text-align: justify;"))
 
-#-#-# Site evaluation panel #-#-#
+
+#-#-# Site evaluation panel texts #-#-#
 Rtable_text <-
   p(h4("Site evaluation based on weighted objectives"),
   p("The ranking table shows the overall ranking of the potential sites based
@@ -136,7 +127,8 @@ Rtable_text <-
     realms or across all sites globally."), style = "text-align: justify;"), 
     style = "text-align: justify;"), style = "text-align: justify;"))
 
-#-#-# Site map panel #-#-#
+
+#-#-# Site map panel texts #-#-#
 Rmap_text <-
   p(h4("Location of the selected sites"),
   p("The map shows the location of the top sites ranked by their suitability
@@ -157,14 +149,36 @@ Rmap_disclaimer <-
     the legal status of any country, area or territory or of its authorities,
     or concerning the delamination of its boarders.")), style = "text-align: justify;")
 
-#-#-# How to use panel #-#-#
+
+#-#-# How to use panel texts #-#-#
 Uncertainty_text <-
   p(h4("Interpreting the evaluation results"),
-  p("The different objectives come with different potential error margins which need
-     to be kept in mind when interpreting the evaluation results."))
+  p("The different conservation objectives are underly different sources of uncertainty,
+    which need to be taken into account when using the decision support tool and 
+    interpreting the evaluation results. See text box below for a brief description of 
+    the uncertainty associate with each conservation indicator and additional literature."))
 
-#-#-# Set variable and subset names #-#-#
-## displayed variable names table
+
+#-#-# Side panel texts #-#-#
+header_weighting <- h3("Weigh the objectives")
+objectives_weigting <-
+  p("Use the sliders to change the importance of the different
+     conservation objectives in the site ranking.", style = "text-align: justify;",
+     p(em("The colour code indicates the expected error margin, ranging from", 
+       strong("green (high certainty)", style = "color:green"), "to", 
+       strong("red (uncertain).", style = "color:red"), 
+       "An objective can be left out of the site evaluation by leaving 
+       its slider at 0."), style = "text-align: justify;"),
+       p(em("The percentage weight allocated to the different conservation 
+       objectives can be seen in the table below."), style = "text-align: justify;"))
+objectives_table_disclaimer <-    
+  p(em(strong("Note that combined allocated weights of the different
+     conservation objectives always sum up to 100%.")), style = "text-align: justify;")
+
+
+#-----# Set variable and subset names #-----#
+
+#-#-# Displayed variable names table #-#-#
 colnames_display <- list("int_name" = "International Name",
                          "RealmNr" = "RealmNr",
                          "biodiversity" = "Biodiversity",
@@ -183,7 +197,7 @@ rownames_display <- list("biodiversity" = "Biodiversity",
                          "climate_protection" = "Climate protection",
                          "area" = "Size")
 
-## subset names to display a selection of the data
+#-#-# Subset names to display a selection of the data #-#-#
 choices <- list("Global" = "Global",
                "Afrotropic" = "Afrotropic",
                "Australasia" = "Australasia",
@@ -193,10 +207,9 @@ choices <- list("Global" = "Global",
                "Palearctic" = "Palearctic")
 
 
+#-----# Define the filepaths for the figures and data #-----#
 
-#-#-# Define the filepaths for the figures and data #-#-#
-
-# data sources:
+#-#-# Data sources #-#-#
 centroids <- "AppData/Global_IUCN_WHS_KBA_centroids.csv" # nolint
 data_file <- "AppData/Final_dataset_IUCN_WHS_KBA_for_weighting_global.csv" # nolint
 worldmap_file <- "AppData/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp" # nolint
@@ -204,7 +217,11 @@ figure1 <- "FZS_logo.png" # nolint
 figure2 <- "Senckenberg_logo.png" # nolint
 figure3 <- "Legacy_Landscapes_pillars.png" # nolint
 figure4 <- "Concept_figure_site_selection.png" # nolint
+layer_description <- "Layer_descriptions.pdf" # nolint
+user_manual <- "How to use the app.pdf" # nolint
 
+
+#-#-# Set number of top sites displayed #-#-#
 n_top_sites <- 30
 n_top_sites_realm <- 10
 
