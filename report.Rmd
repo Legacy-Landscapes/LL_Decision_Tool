@@ -15,21 +15,31 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Sites evaluated based on macroecological indicators
+Results of the site evaluation based on the weighted objectives. The percentage table shows the 
+allocated percentages for each objective that resulted in the site ranking. 
 
-Results of the site evaluation based on the weighted objectives.
 ```{r set_weights_table, echo=FALSE}
 kable(params$set_weights_table)
 ```
 
+The map shows the location of the top protected areas according to the applied weighting.
 ```{r plot_sites, echo=FALSE}
 plot(params$plot_sites)
 ```
 
+The data table shows the ranking of the protected areas (PAs) based on the allocated weights. The values
+shown under the individual conservation objectives are the scaled scores for each PA.
 ```{r weighting, echo=FALSE}
 kable(params$weighing[1:30,])
 ```
 
 
-
 ## How to interpret the evaluation results
-The different objectives included have varying error margins...
+The different objectives included have varying error margins and can lead to uncertainty around the
+allocated ranks. Ranks resulting from an evaluation that include the biodiversity, climate protection
+or size objective only are more certain than ranks that result from an evaluation that included also the 
+wilderness objective. The highest uncertainty in the allocated ranks comes from the climate stability and
+land-use objectives.
+The resulting ranking is supposed to give an overview which sites score highly under the chosen objectives 
+on a global or realm scale. They cannot replace a thorough on the ground assessment of the sites but help
+to narrow the number candidate sites for further evaluation down.
