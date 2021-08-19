@@ -12,6 +12,24 @@ zgf_credits <- p("Frankfurt Zoological Society")
 
 sgn_credits <- p(p("Senckenberg Biodiversity and Climate Research Centre"))
 
+backround_mainpanel_part_0 <-
+  p(h4("The decision support tool"),
+    p("The establishment and maintenance of protected areas (PAs) is viewed as a 
+    key action in delivering post 2020 biodiversity targets and reaching the 
+    sustainable development goals. PAs are expected to meet a wide range of 
+    objectives, ranging from biodiversity protection to ecosystem service provision 
+    and climate change mitigation. As available land and conservation funding are 
+    limited, optimizing resources by selecting the most beneficial PAs is 
+    therefore vital.", style = "text-align: justify;"), 
+    p("This decision support tool enables a flexible approach to PA selection on a 
+    global scale, which allows different conservation objectives to be weighted 
+    and prioritized. It is meant to facilitate a first evaluation of the potential 
+    of PAs for long term conservation before following up with detailed on the 
+    ground assessments of the candidate sites.", style = "text-align: justify;"),
+    p("The current version of the decision support tool contains a set of 1300 PAs.
+    The included PAs were selected as a case study subset based loosely on the 
+    criteria of the Legacy Landscapes Fund.", style = "text-align: justify;"))
+
 backround_mainpanel_part_1 <-
   p(h4("Legacy Landscapes"),
   p("Legacy Landscapes is a new international public-private initiative,
@@ -56,8 +74,8 @@ background_figure3 <-
 objectives_strategy <-
   p(h4("The conservation objectives"),
     p("Six conservation objectives were selected to enable the comparison
-     between eligible sites for the Legacy Landscapes fund based on
-     macroecological data. The objectives were chosen to allow a first
+     protected areas and evaluate their potential for long term conservation 
+     based on macroecological data. The objectives were chosen to allow a first
      assessment based on the size of the site, the biodiversity it contains,
      its intactness and its potential for future persistence. Each of the
      conservation objectives is measured based on one or more macro-ecological
@@ -156,7 +174,7 @@ Uncertainty_text <-
   p("The different conservation objectives are underly different sources of uncertainty,
     which need to be taken into account when using the decision support tool and 
     interpreting the evaluation results. See text box below for a brief description of 
-    the uncertainty associate with each conservation indicator and additional literature."))
+    the uncertainty associated with each conservation indicator.", style = "text-align: justify;"))
 
 
 #-#-# Side panel texts #-#-#
