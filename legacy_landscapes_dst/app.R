@@ -87,6 +87,8 @@ ui <- fluidPage(
                      inline = F),
   h3("Select official development assistance (ODA) countries"),
    actionButton("action", "ODA only"),
+  h3("Download report of the evaluation results"),
+   downloadButton("report", "Generate report"),
    width = 3),
 
   # Set the different tabs in the main panel
@@ -134,8 +136,7 @@ ui <- fluidPage(
                Rmap_text,
                textOutput("site_name"),
                plotOutput("map1", height = 550, width = 900),
-               Rmap_disclaimer,
-               downloadButton("report", "Generate report")
+               Rmap_disclaimer
       ),
       tabPanel("How to use",
               Uncertainty_text,
