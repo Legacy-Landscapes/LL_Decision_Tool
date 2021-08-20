@@ -26,7 +26,7 @@ backround_mainpanel_part_0 <-
     and prioritized. It is meant to facilitate a first evaluation of the potential 
     of PAs for long term conservation before following up with detailed on the 
     ground assessments of the candidate sites.", style = "text-align: justify;"),
-    p("The current version of the decision support tool contains a set of 1300 PAs.
+    p("The current version of the decision support tool contains a set of 1347 PAs.
     The included PAs were selected as a case study subset based loosely on the 
     criteria of the Legacy Landscapes Fund.", style = "text-align: justify;"))
 
