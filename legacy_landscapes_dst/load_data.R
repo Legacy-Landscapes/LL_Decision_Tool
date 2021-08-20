@@ -65,3 +65,4 @@ project_for_sf <- function(func, sf_data, ...) {
 #-#-# Set global variables ... whatever they do #-#-#
 utils::globalVariables(c("rownames_display", "colnames_display"))
 
+

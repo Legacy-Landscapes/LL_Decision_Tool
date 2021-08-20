@@ -2,6 +2,7 @@
 library(shiny)
 library(shinyWidgets)
 library(rmarkdown)
+library(knitr)
 source("app_functions.R")
 source("config.R")
 source("load_data.R")
@@ -15,11 +16,15 @@ worldmap <- load_worldmap(worldmap_file)
 
 # layout definition
 ui <- fluidPage(
-  headerPanel("Setting priorities for longterm conservation"),
+  
+  headerPanel("Setting global priorities for longterm conservation"),
   ## This is the overall header
 
   # Set the slider options in the side bar panel
   sidebarPanel(
+  header_weighting,
+  objectives_weigting,
+    setSliderColor(c("green", "orange", "red", "red","green","green"),c(1,2,3,4,5,6)), # Colour coding certainty
     sliderInput(
       inputId = "biodiversity_weight",
       label = "Biodiversity",
@@ -74,7 +79,17 @@ ui <- fluidPage(
       step = 0.05,
       ticks = F
     ),
-    width = 2),
+    tableOutput("values"),
+    objectives_table_disclaimer,
+    prettyRadioButtons("radio", label = h3("Select focal realm"),
+                     choices = choices, icon = icon("check"), animation = "pulse",
+                     status = "default",
+                     inline = F),
+  h3("Select official development assistance (ODA) countries"),
+   actionButton("action", "ODA only"),
+  h3("Download report of the evaluation results"),
+   downloadButton("report", "Generate report"),
+   width = 3),
 
   # Set the different tabs in the main panel
   mainPanel(
@@ -83,7 +98,8 @@ ui <- fluidPage(
       tabPanel(
         "Background",
         sidebarLayout(
-        mainPanel(backround_mainpanel_part_1,
+        mainPanel(backround_mainpanel_part_0,
+                  backround_mainpanel_part_1,
                   img(src = figure3, height = 350, width = 430),
                   background_figure3,
                   backround_mainpanel_part_2, width = 12),
@@ -96,30 +112,38 @@ ui <- fluidPage(
       ),
       tabPanel(
         "Conservation objectives",
-        sidebarLayout(
-        sidebarPanel(objectives_weigting, width = 6),
-        mainPanel(tableOutput("values"), width = 6)),
+        #sidebarLayout(
+        #sidebarPanel(objectives_weigting, width = 6),
+        #mainPanel(tableOutput("values"), width = 6)),
         objectives_strategy,
-        img(src = figure4, height = 340, width = 550),
-        objectives_figure4
+        img(src = figure4, height = 600, width = 800),
+        objectives_figure4,
+        tags$iframe(style="height:500px; width:100%; scrolling=yes", 
+                    src= layer_description)
+
       ),
-      tabPanel("Ranking table",
-               sidebarLayout(
-               sidebarPanel(width = 12,
-                            prettyRadioButtons("radio", label = h3("Select focal realm"),
-                            choices = choices, icon = icon("check"), animation = "pulse",
-                            status = "default",
-                            inline = T)),
-               mainPanel(width = 12, Rtable_text)),
+      tabPanel("Site evaluation",
+               # sidebarLayout(
+               # sidebarPanel(width = 12,
+               #              prettyRadioButtons("radio", label = h3("Select focal realm"),
+               #              choices = choices, icon = icon("check"), animation = "pulse",
+               #              status = "default",
+               #              inline = T)),
+               # mainPanel(width = 12, Rtable_text)),
+               Rtable_text,
                DT::dataTableOutput("table1") ## Change data table test
-               ),
-      tabPanel("Ranking map",
+      ),
+      tabPanel("Site map",
                Rmap_text,
                textOutput("site_name"),
-               plotOutput("map1"),
-               Rmap_disclaimer,
-               downloadButton("report", "Generate report"))
+               plotOutput("map1", height = 550, width = 900),
+               Rmap_disclaimer
       ),
+      tabPanel("How to use",
+              Uncertainty_text,
+              tags$iframe(style ="height:600px; width:100%; scrolling=yes", 
+                          src = user_manual)
+      )),
     width = 8
   )
 )
@@ -163,21 +187,39 @@ server <- function(input, output) {
     return(plot_maps(selected_sites, pa_centroids, worldmap, selection)) #
   })
 
-  # This displays the changeable table
+  # This displays the weighting table
   output$values <- renderTable({
      set_weights_table()
   }, rownames = TRUE)
 
-  
+  # This displays the site evaluation table
   output$table1 = DT::renderDataTable({
     weighing()
    })
   
-
-  # Show the top sites in a global map
+  # This displays the top sites in a global map
   output$map1 <- renderPlot({
     plot_sites()
   })
+  
+  # Create downloadable report
+  output$report <- downloadHandler(
+    filename <-  "Site_evaluation.html", # or pdf
+    content = function(file) {
+      tempReport <- file.path(tempdir(), "report.Rmd")
+      file.copy("../report.Rmd", tempReport, overwrite = TRUE)
+      # params contains all objects that are passed on to markdown
+      params <- list(
+        set_weights_table = set_weights_table(),
+        plot_sites = plot_sites(),
+        weighing = weighing())
+      rmarkdown::render(tempReport, 
+                        output_file = file,
+                        params = params,
+                        envir = new.env(parent = globalenv())
+      )
+    }
+  )
   
 }
 
