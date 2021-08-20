@@ -223,6 +223,8 @@ server <- function(input, output) {
   
 }
 
+## This line can be added to view the log files in Rstudio and trace errors
+#rsconnect::showLogs(appName="legacy_landscapes_dst",streaming=TRUE)
 
 # run the app
 shinyApp(ui = ui, server = server)
