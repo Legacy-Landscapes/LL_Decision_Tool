@@ -36,7 +36,7 @@ backround_mainpanel_part_1 <-
      led by the German   Government, to develop and implement a conservation
      and financing strategy for the safeguarding of selected protected areas.
      Legacy Landscapes has a terrestrial focus and will significantly
-     contribute to the ‘post-2020 Biodiversity-Framework’ of the COP 15 at
+     contribute to the post-2020 Biodiversity-Framework of the COP 15 at
      the CBD in 2020.",
     h5("The Legacy Landscapes concept is based on three pillars:"),
   p(strong("1."), "Permanent, stable and performance-based", 
@@ -45,8 +45,8 @@ backround_mainpanel_part_1 <-
   p(strong("2."), "Effective and efficient", strong("management"), "that will
     be caried out in cooperation with national authorities and an NGO, with
     the annual disbursement of funds being controlled by an independent platform,
-    and based on the fulfillment of certain indicators, the ‘key
-    performance indicators’.", style = "text-align: justify;"),
+    and based on the fulfillment of certain indicators, the key
+    performance indicators.", style = "text-align: justify;"),
     p(strong("3."), "Strategic site selection, based on the", 
     strong("biogeography"),"of the site", style = "text-align: justify;"), style = "text-align: justify;"))
 
