@@ -31,19 +31,19 @@ backround_mainpanel_part_0 <-
     criteria of the Legacy Landscapes Fund.", style = "text-align: justify;"))
 
 backround_mainpanel_part_1 <-
-  p(h4("Legacy Landscapes"),
+  p(h4("Legacy Landscapes Fund"),
   p("Legacy Landscapes is a new international public-private initiative,
      led by the German   Government, to develop and implement a conservation
      and financing strategy for the safeguarding of selected protected areas.
-     Legacy Landscapes has a terrestrial focus and will significantly
+     The Legacy Landscapes Fund has a terrestrial focus and will significantly
      contribute to the post-2020 Biodiversity-Framework of the COP 15 at
      the CBD in 2020.",
-    h5("The Legacy Landscapes concept is based on three pillars:"),
+    h5("The Legacy Landscapes Fund concept is based on three pillars:"),
   p(strong("1."), "Permanent, stable and performance-based", 
     strong("funding"),"ensured by a combination of private donors and public 
     funds of about one million $ per site per year", style = "text-align: justify;"),
   p(strong("2."), "Effective and efficient", strong("management"), "that will
-    be caried out in cooperation with national authorities and an NGO, with
+    be caried out in cooperation with national authorities, local communities and an NGO, with
     the annual disbursement of funds being controlled by an independent platform,
     and based on the fulfillment of certain indicators, the key
     performance indicators.", style = "text-align: justify;"),
@@ -51,21 +51,21 @@ backround_mainpanel_part_1 <-
     strong("biogeography"),"of the site", style = "text-align: justify;"), style = "text-align: justify;"))
 
 backround_mainpanel_part_2 <-
-  p(p("This app has been developed in cooperation between the Frankfurt
-     Zoological Society and the Senckenberg Biodiversity and Climate
+  p(p("This decision support tool has been developed in cooperation between the 
+     Frankfurt Zoological Society and the Senckenberg Biodiversity and Climate
      Research Centre to support the selection of suitable sites for the
-     Legacy Landscapes fund. The app enables the comparison of potential sites
+     Legacy Landscapes Fund. The tool enables the comparison of potential sites
      based on macro-ecological variables and thus falls under the
-     ‘Biogeography’ cornerstone of the Legacy Landscapes concept. It
+     ‘Biogeography’ cornerstone of the Legacy Landscapes Fund concept. It
      facilitates the ranking of sites based on their performance across
      six different conservation objectives:", style = "text-align: justify;"),
-     strong("Biodiversity, Wilderness, Climatic stability, Land-use
+     strong("Biodiversity, Ecosystem integrity, Climatic stability, Land-use
      stability, Climate protection and Size."), style = "text-align: justify;"
   )
 
 background_figure3 <-
   p(p(strong("Figure 1: The three cornerstones of the Legacy
-             Landscapes concept"), "permanent, stable and performance-based
+             Landscapes Fund concept"), "permanent, stable and performance-based
              funding; effective and efficient management and strategic site
              selection.", style = "text-align: justify;"))
 
@@ -83,7 +83,7 @@ objectives_strategy <-
     p(strong("Biodiversity:"), "includes the richness, endemism and diversity
       of species comprising four different taxa (mammals, birds, reptiles and
       amphibians)", style = "text-align: justify;"),
-    p(strong("Wilderness:"), "includes the Biodiversity Intactness Index (BII),
+    p(strong("Ecosystem integrity:"), "includes the Biodiversity Intactness Index (BII),
       the human footprint and the observed change from biome to anthrome
       in the area over the past 20 years", style = "text-align: justify;"),
     p(strong("Climatic stability:"), "includes the projected stability of
@@ -110,7 +110,7 @@ objectives_strategy <-
 
 objectives_figure4 <-
   p(p(strong("Figure 2: Conservation objectives and strategies"),
-    "The six different conservation objectives Biodiversity, Wilderness,
+    "The six different conservation objectives Biodiversity, Ecosystem integrity,
     Climatic stability, Land-use stability, Climate protection and Size can
     be combined into different conservation goals. These conservation goals
     allow to weigh the different conservation objectives against each other,
@@ -130,13 +130,13 @@ Rtable_text <-
     same independent of the weighting. This means the scaled value that a site has
     for a certain conservation objective indicates the overall ranking position
     of that site for that objective, as the following example shows:",
-  p(strong("If the weights for 'Biodiversity' and 'Wilderness' are both set to 50%, you
+  p(strong("If the weights for 'Biodiversity' and 'Ecosystem integrity' are both set to 50%, you
     will see that the 'Talamanca Range' is the top site. This is because it
     has the second highest biodiversity among the included sites, with a 'Biodiversity'
-    score of 0.99. But it also has a clear human footprint, indicated by the 'Wilderness'
+    score of 0.99. But it also has a clear human footprint, indicated by the 'Ecosystem integrity'
     score of 0.71. In comparison the combined site 'Manu - Alto Purus' ranks third
     globally with a very good 'Biodiversity' score of 0.70 but additionally it is also
-    very pristine with a very high 'Wilderness' score of 0.93.", style = "color:green"),
+    very pristine with a very high 'Ecosystem integrity' score of 0.93.", style = "color:green"),
   p(em("The ranking table can be adjusted by using the sliders on the left
     hand side. Allocating different weights to the individual objectives will
     change the ranking of the sites. Using the"),
@@ -200,7 +200,7 @@ objectives_table_disclaimer <-
 colnames_display <- list("int_name" = "International Name",
                          "RealmNr" = "RealmNr",
                          "biodiversity" = "Biodiversity",
-                         "wilderness" = "Wilderness",
+                         "wilderness" = "Ecosystem integrity",
                          "climatic_stability" = "Climatic stability",
                          "land_use_stability" = "Land-use stability",
                          "area" = "Size",
@@ -209,7 +209,7 @@ colnames_display <- list("int_name" = "International Name",
                          "ID" = "ID")
 
 rownames_display <- list("biodiversity" = "Biodiversity",
-                         "wilderness" = "Wilderness",
+                         "wilderness" = "Ecosystem integrity",
                          "climatic_stability" = "Climatic stability",
                          "land_use_stability" = "Land-use stability",
                          "climate_protection" = "Climate protection",
