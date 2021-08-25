@@ -36,7 +36,7 @@ ui <- fluidPage(
     ),
     sliderInput(
       inputId = "wilderness_weight",
-      label = "Wilderness",
+      label = "Ecosystem integrity",
       value = 0,
       min = 0,
       max = 1,
