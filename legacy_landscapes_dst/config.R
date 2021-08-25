@@ -236,7 +236,7 @@ figure2 <- "Senckenberg_logo.png" # nolint
 figure3 <- "Legacy_Landscapes_pillars.png" # nolint
 figure4 <- "Concept_figure_site_selection.png" # nolint
 layer_description <- "Layer_descriptions.pdf" # nolint
-user_manual <- "How to use the app.pdf" # nolint
+user_manual <- "How_to_use_the_app.pdf" # nolint
 
 
 #-#-# Set number of top sites displayed #-#-#
