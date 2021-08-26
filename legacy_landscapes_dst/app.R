@@ -36,7 +36,7 @@ ui <- fluidPage(
     ),
     sliderInput(
       inputId = "wilderness_weight",
-      label = "Wilderness",
+      label = "Ecosystem integrity",
       value = 0,
       min = 0,
       max = 1,
@@ -223,6 +223,8 @@ server <- function(input, output) {
   
 }
 
+## This line can be added to view the log files in Rstudio and trace errors
+#rsconnect::showLogs(appName="legacy_landscapes_dst",streaming=TRUE)
 
 # run the app
 shinyApp(ui = ui, server = server)
