@@ -231,7 +231,7 @@ choices <- list("Global" = "Global",
 centroids <- "AppData/Global_IUCN_WHS_KBA_centroids.csv" # nolint
 data_file <- "AppData/Final_dataset_IUCN_WHS_KBA_for_weighting_global.csv" # nolint
 worldmap_file <- "AppData/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp" # nolint
-figure1 <- "FZS_logo.png" # nolint
+figure1 <- "FZS_logo.jpg" # nolint
 figure2 <- "Senckenberg_logo.png" # nolint
 figure3 <- "Legacy_Landscapes_pillars.png" # nolint
 figure4 <- "Concept_figure_site_selection.png" # nolint
