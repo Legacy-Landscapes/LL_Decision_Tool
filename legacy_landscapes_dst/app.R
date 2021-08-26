@@ -105,7 +105,7 @@ ui <- fluidPage(
                   backround_mainpanel_part_2, width = 12),
         sidebarPanel(background_sidepanel, width = 12),
         position = "left"),
-        mainPanel(img(src = figure1, height = 60, width = 60),
+        mainPanel(img(src = figure1, height = 80, width = 80),
                   zgf_credits, width = 5),
         mainPanel(img(src = figure2, height = 50, width = 220),
                   sgn_credits, width = 7)
