@@ -107,10 +107,11 @@ ui <- fluidPage(
                   background_figure3,
                   backround_mainpanel_part_2, width = 12),
         sidebarPanel(background_sidepanel, width = 12),
+        position = "left"),
         mainPanel(img(src = figure1, height = 150, width = 150),
                   zgf_credits, width = 5),
         mainPanel(img(src = figure2, height = 70, width = 450),
-                  sgn_credits, width = 7))
+                  sgn_credits, width = 7)
       ),
       tabPanel(
         "Conservation objectives",
@@ -142,6 +143,7 @@ ui <- fluidPage(
                Rmap_disclaimer
       ),
       tabPanel("How to use",
+              General_use_text,
               Uncertainty_text,
               tags$iframe(style ="height:600px; width:100%; scrolling=yes", 
                           src = user_manual)
