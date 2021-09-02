@@ -81,7 +81,7 @@ calculate_weights_table <- function(slider_values) {
   weights_table <- slider_values / one_percent
   weights_table <- as.data.frame(weights_table)
   row.names(weights_table) <- rownames_display
-  colnames(weights_table) <- "Percentage weight"
+  colnames(weights_table) <- "Resulting weight"
   return(weights_table)
 }
 
