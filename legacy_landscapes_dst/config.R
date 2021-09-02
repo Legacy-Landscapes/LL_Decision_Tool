@@ -37,18 +37,18 @@ backround_mainpanel_part_1 <-
      and financing strategy for the safeguarding of selected protected areas.
      The Legacy Landscapes Fund has a terrestrial focus and will significantly
      contribute to the post-2020 Biodiversity-Framework of the COP 15 at
-     the CBD in 2020.",
+     the CBD in 2021.",
     h5("The Legacy Landscapes Fund concept is based on three pillars:"),
   p(strong("1."), "Permanent, stable and performance-based", 
     strong("funding"),"ensured by a combination of private donors and public 
-    funds of about one million $ per site per year", style = "text-align: justify;"),
+    funds of about one million $ per site per year.", style = "text-align: justify;"),
   p(strong("2."), "Effective and efficient", strong("management"), "that will
     be caried out in cooperation with national authorities, local communities and an NGO, with
     the annual disbursement of funds being controlled by an independent platform,
     and based on the fulfillment of certain indicators, the key
     performance indicators.", style = "text-align: justify;"),
     p(strong("3."), "Strategic site selection, based on the", 
-    strong("biogeography"),"of the site", style = "text-align: justify;"), style = "text-align: justify;"))
+    strong("biogeography"),"of the site.", style = "text-align: justify;"), style = "text-align: justify;"))
 
 backround_mainpanel_part_2 <-
   p(p("This decision support tool has been developed in cooperation between the 
@@ -56,7 +56,7 @@ backround_mainpanel_part_2 <-
      Research Centre to support the selection of suitable sites for the
      Legacy Landscapes Fund. The tool enables the comparison of potential sites
      based on macro-ecological variables and thus falls under the
-     ‘Biogeography’ cornerstone of the Legacy Landscapes Fund concept. It
+     Biogeography cornerstone of the Legacy Landscapes Fund concept. It
      facilitates the ranking of sites based on their performance across
      six different conservation objectives:", style = "text-align: justify;"),
      strong("Biodiversity, Ecosystem integrity, Climatic stability, Land-use
@@ -65,35 +65,34 @@ backround_mainpanel_part_2 <-
 
 background_figure3 <-
   p(p(strong("Figure 1: The three cornerstones of the Legacy
-             Landscapes Fund concept"), "permanent, stable and performance-based
-             funding; effective and efficient management and strategic site
-             selection.", style = "text-align: justify;"))
+             Landscapes Fund concept"), style = "text-align: justify;"))
 
 
 #-#-# Conservation objectives panel texts #-#-#
 objectives_strategy <-
   p(h4("The conservation objectives"),
-    p("Six conservation objectives were selected to enable the comparison
+    p("Six conservation objectives were selected to enable the comparison of
      protected areas and evaluate their potential for long term conservation 
      based on macroecological data. The objectives were chosen to allow a first
      assessment based on the size of the site, the biodiversity it contains,
      its intactness and its potential for future persistence. Each of the
      conservation objectives is measured based on one or more macro-ecological
      variables as described below:", style = "text-align: justify;"),
-    p(strong("Biodiversity:"), "includes the richness, endemism and diversity
+    p(strong("Biodiversity:"), "includes the richness, endemism and evolutionary diversity
       of species comprising four different taxa (mammals, birds, reptiles and
       amphibians)", style = "text-align: justify;"),
     p(strong("Ecosystem integrity:"), "includes the Biodiversity Intactness Index (BII),
-      the human footprint and the observed change from biome to anthrome
-      in the area over the past 20 years", style = "text-align: justify;"),
-    p(strong("Climatic stability:"), "includes the projected stability of
-      ecological communities (mammals, birds, reptiles and amphibians) and
-      the projected change in tree cover by the mid of the century under a
+      the human footprint and the observed change from biome to anthrome (change from natural to
+      human modified landcover) in the area over the past 20 years", style = "text-align: justify;"),
+    p(strong("Climatic stability:"), "includes the projected impacts of climate change on the 
+      stability of ecological communities (mammals, birds, reptiles and amphibians) and
+      the change in tree cover by the mid of the century under a
       medium warming scenario", style = "text-align: justify;"),
     p(strong("Land-use stability:"),"includes the projected change in land-use
       in the buffer zone around the site", style = "text-align: justify;"),
     p(strong("Climate protection:"), "includes the amount of baseline,
-      vulnerable and irreplaceable carbon storage within the site", 
+      vulnerable and irrecoverable carbon storage within the site, indicating the 
+      contribution of the site to climate protection by binding carbon dioxide.", 
       style = "text-align: justify;"),
     p(strong("Size of the site:"), "is the extent of the site in km2", 
       style = "text-align: justify;"),
@@ -112,9 +111,9 @@ objectives_figure4 <-
   p(p(strong("Figure 2: Conservation objectives and strategies"),
     "The six different conservation objectives Biodiversity, Ecosystem integrity,
     Climatic stability, Land-use stability, Climate protection and Size can
-    be combined into different conservation goals. These conservation goals
+    be combined into different conservation scenarioes. These conservation scenarioes
     allow to weigh the different conservation objectives against each other,
-    to set priorities when evaluation sites for conservation.", style = "text-align: justify;"))
+    to set priorities when evaluating sites for conservation.", style = "text-align: justify;"))
 
 
 #-#-# Site evaluation panel texts #-#-#
@@ -152,12 +151,13 @@ Rmap_text <-
   p("The map shows the location of the top sites ranked by their suitability
     based on the applied weights across the six conservation objectives.
     Depending on the selection the map shows either the top 30 sites globally
-    or the top 10 sites for a selected biogeographic realm.",
-  p("The white points show the locations for all sites included in the analysis.
-    The red, orange and yellow points show the location of the top sites with
+    or the top 10 sites for a selected biogeographic realm. For full table of all
+    sites see the", strong(em("Site evaluation")), "tab",
+  p("The small white points show the locations for all sites included in the analysis.
+    The large red, orange and yellow points show the location of the top sites with
     red indicating the sites of highest suitability.",
   p(em("The choice of biogeographic realm can be changed by using the"),
-    strong(em("Select focal realm")), "button on the previous page.", 
+    strong(em("Select focal realm")), em("button in the panel on the left."), 
     style = "text-align: justify;"), style = "text-align: justify;"),
     style = "text-align: justify;"))
 
@@ -169,6 +169,32 @@ Rmap_disclaimer <-
 
 
 #-#-# How to use panel texts #-#-#
+General_use_text <-
+  p(h4("Using the decision support tool for site evaluation"),
+    p("A short step by step instruction can be found at the top of the side panel on the left. 
+      Following these instructions the sites included in the decision support tool can be 
+      compared based on six different conservation objectives:", style = "text-align: justify;"),
+    p(strong("Biodiversity:"), "includes the richness, endemism and evolutionary diversity
+      of species comprising four different taxa (mammals, birds, reptiles and
+      amphibians)", style = "text-align: justify;"),
+    p(strong("Ecosystem integrity:"), "includes the Biodiversity Intactness Index (BII),
+      the human footprint and the observed change from biome to anthrome (change from natural to
+      human modified land cover) in the area over the past 20 years", style = "text-align: justify;"),
+    p(strong("Climatic stability:"), "includes the projected impacts of climate change on the 
+      stability of ecological communities (mammals, birds, reptiles and amphibians) and
+      the change in tree cover by the mid of the century under a
+      medium warming scenario", style = "text-align: justify;"),
+    p(strong("Land-use stability:"),"includes the projected change in land-use
+      in the buffer zone around the site", style = "text-align: justify;"),
+    p(strong("Climate protection:"), "includes the amount of baseline,
+      vulnerable and irrecoverable carbon storage within the site, indicating the 
+      contribution of the site to climate protection by binding carbon dioxide.", 
+      style = "text-align: justify;"),
+    p(strong("Size of the site:"), "is the extent of the site in km2", 
+      style = "text-align: justify;"),
+    p("A more detailed description of the six conservation objectives and the included 
+      indicators can be found at the bottom of the", strong(em("Conservation objectives")), "tab."))
+
 Uncertainty_text <-
   p(h4("Interpreting the evaluation results"),
   p("The different conservation objectives are underly different sources of uncertainty,
@@ -178,6 +204,18 @@ Uncertainty_text <-
 
 
 #-#-# Side panel texts #-#-#
+header_sidepanel <- h3("SET PRIORITIES")
+explanation_sidepanel <- 
+  p("Here you can define the settings for the site selection, by using the sliders and buttons below. 
+    Follow these steps to evaluate the sites based on your priorities:",style = "text-align: justify;",
+    p("1. Weigh the objectives"),
+    p("2. Select global or realm ranking"),
+    p("3. Set to ODA subset (if applicable)"),
+    p("4. Check the", em("Site evaluation"), "&", em("Site map"), "tabs"),
+    p("5. Print evaluation report"),
+    p("More details on using the app can be found under the", em("How to use"), "tab"))
+
+
 header_weighting <- h3("Weigh the objectives")
 objectives_weigting <-
   p("Use the sliders to change the importance of the different
@@ -186,12 +224,12 @@ objectives_weigting <-
        strong("green (high certainty)", style = "color:green"), "to", 
        strong("red (uncertain).", style = "color:red"), 
        "An objective can be left out of the site evaluation by leaving 
-       its slider at 0."), style = "text-align: justify;"),
-       p(em("The percentage weight allocated to the different conservation 
-       objectives can be seen in the table below."), style = "text-align: justify;"))
+       its slider at 0."), style = "text-align: justify;"))
 objectives_table_disclaimer <-    
   p(em(strong("Note that combined allocated weights of the different
      conservation objectives always sum up to 100%.")), style = "text-align: justify;")
+objectives_table_explanation <- p(em("The percentage weight allocated to the different conservation 
+       objectives can be seen in the table below."), style = "text-align: justify;")
 
 
 #-----# Set variable and subset names #-----#
