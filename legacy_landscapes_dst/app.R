@@ -22,8 +22,11 @@ ui <- fluidPage(
 
   # Set the slider options in the side bar panel
   sidebarPanel(
+  header_sidepanel,
+  explanation_sidepanel,
   header_weighting,
   objectives_weigting,
+  objectives_table_disclaimer,
     setSliderColor(c("green", "orange", "red", "red","green","green"),c(1,2,3,4,5,6)), # Colour coding certainty
     sliderInput(
       inputId = "biodiversity_weight",
@@ -79,15 +82,15 @@ ui <- fluidPage(
       step = 0.05,
       ticks = F
     ),
+    objectives_table_explanation,
     tableOutput("values"),
-    objectives_table_disclaimer,
     prettyRadioButtons("radio", label = h3("Select focal realm"),
                      choices = choices, icon = icon("check"), animation = "pulse",
                      status = "default",
                      inline = F),
-  h3("Select official development assistance (ODA) countries"),
+  h3("Select official development assistance (ODA) countries (coming soon)"),
    actionButton("action", "ODA only"),
-  h3("Download report of the evaluation results"),
+  h3("Download report of the evaluation results (coming soon)"),
    downloadButton("report", "Generate report"),
    width = 3),
 
@@ -104,11 +107,10 @@ ui <- fluidPage(
                   background_figure3,
                   backround_mainpanel_part_2, width = 12),
         sidebarPanel(background_sidepanel, width = 12),
-        position = "left"),
-        mainPanel(img(src = figure1, height = 80, width = 80),
+        mainPanel(img(src = figure1, height = 150, width = 150),
                   zgf_credits, width = 5),
-        mainPanel(img(src = figure2, height = 50, width = 220),
-                  sgn_credits, width = 7)
+        mainPanel(img(src = figure2, height = 70, width = 450),
+                  sgn_credits, width = 7))
       ),
       tabPanel(
         "Conservation objectives",
