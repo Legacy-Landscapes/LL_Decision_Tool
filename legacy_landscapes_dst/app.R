@@ -12,7 +12,7 @@ source("load_data.R")
 pa_centroids <- load_pa_centroids(centroids)
 weight_data <- load_weight_data(data_file)
 worldmap <- load_worldmap(worldmap_file)
-
+realmmap <- load_realmmap(realmmap_file)
 
 # layout definition
 ui <- fluidPage(
@@ -88,8 +88,10 @@ ui <- fluidPage(
                      choices = choices, icon = icon("check"), animation = "pulse",
                      status = "default",
                      inline = F),
-  h3("Select official development assistance (ODA) countries (coming soon)"),
-   actionButton("action", "ODA only"),
+    prettyRadioButtons("radioII", label = h3("Select official development assistance (ODA) countries"),
+                     choices = choices_oda, icon = icon("check"), animation = "pulse",
+                     status = "default",
+                     inline = F),
   h3("Download report of the evaluation results (coming soon)"),
    downloadButton("report", "Generate report"),
    width = 3),
@@ -115,9 +117,6 @@ ui <- fluidPage(
       ),
       tabPanel(
         "Conservation objectives",
-        #sidebarLayout(
-        #sidebarPanel(objectives_weigting, width = 6),
-        #mainPanel(tableOutput("values"), width = 6)),
         objectives_strategy,
         img(src = figure4, height = 600, width = 800),
         objectives_figure4,
@@ -126,15 +125,8 @@ ui <- fluidPage(
 
       ),
       tabPanel("Site evaluation",
-               # sidebarLayout(
-               # sidebarPanel(width = 12,
-               #              prettyRadioButtons("radio", label = h3("Select focal realm"),
-               #              choices = choices, icon = icon("check"), animation = "pulse",
-               #              status = "default",
-               #              inline = T)),
-               # mainPanel(width = 12, Rtable_text)),
                Rtable_text,
-               DT::dataTableOutput("table1") ## Change data table test
+               DT::dataTableOutput("table1") ## Change data table
       ),
       tabPanel("Site map",
                Rmap_text,
@@ -165,20 +157,26 @@ server <- function(input, output) {
     return(calculate_weights_table(slider_values))
   })
 
-  get_selection <- reactive({
+  get_selection_realm <- reactive({
     selected_extent <- input$radio
     return(selected_extent)
+  })
+  
+  get_selection_oda <- reactive({
+    selected_countries <- input$radioII
+    return(selected_countries)
   })
 
   weighing <- reactive({
     weights <- get_weights()
-    selection <- get_selection()
-    return(rank_data(weight_data, weights, selection))
+    selection <- get_selection_realm()
+    selection_oda <- get_selection_oda()          #!
+    return(rank_data(weight_data, weights, selection, selection_oda))  #!
   })
 
   plot_sites <- reactive({
     ranked_data <- weighing()
-    selection <- get_selection() #
+    selection <- get_selection_realm() 
     if (selection == "Global"){
     selected_sites <- ranked_data[1:n_top_sites, ]
     }else{
