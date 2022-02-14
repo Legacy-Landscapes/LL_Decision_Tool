@@ -153,7 +153,7 @@ Rmap_text <-
     Depending on the selection the map shows either the top 30 sites globally
     or the top 10 sites for a selected biogeographic realm. For full table of all
     sites see the", strong(em("Site evaluation")), "tab",
-  p("The small white points show the locations for all sites included in the analysis.
+  p("The small green points show the locations for all sites included in the analysis.
     The large red, orange and yellow points show the location of the top sites with
     red indicating the sites of highest suitability.",
   p(em("The choice of biogeographic realm can be changed by using the"),
@@ -237,6 +237,9 @@ objectives_table_explanation <- p(em("The percentage weight allocated to the dif
 #-#-# Displayed variable names table #-#-#
 colnames_display <- list("int_name" = "International Name",
                          "RealmNr" = "RealmNr",
+                         "PA_type" = "PA type",
+                         "COUNTRY" = "Country",
+                         "ODA" = "ODA status",
                          "biodiversity" = "Biodiversity",
                          "wilderness" = "Ecosystem integrity",
                          "climatic_stability" = "Climatic stability",
@@ -262,13 +265,17 @@ choices <- list("Global" = "Global",
                "Neotropic" = "Neotropic",
                "Palearctic" = "Palearctic")
 
+choices_oda <- list("All" = "all",
+                    "ODA only" = "ODA")
+
 
 #-----# Define the filepaths for the figures and data #-----#
 
 #-#-# Data sources #-#-#
-centroids <- "AppData/Global_IUCN_WHS_KBA_centroids.csv" # nolint
-data_file <- "AppData/Final_dataset_IUCN_WHS_KBA_for_weighting_global.csv" # nolint
+centroids <- "AppData/Global_IUCN_WHS_KBA_centroids_robinson.csv" # nolint
+data_file <- "AppData/Final_dataset_IUCN_WHS_KBA_for_weighting_Global.csv" # nolint
 worldmap_file <- "AppData/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp" # nolint
+realmmap_file <- "AppData/WWF_Realms_gridded_05.Rdata"
 figure1 <- "FZS_logo.jpg" # nolint
 figure2 <- "Senckenberg_logo.png" # nolint
 figure3 <- "Legacy_Landscapes_pillars.png" # nolint
