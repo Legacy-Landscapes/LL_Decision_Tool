@@ -2,6 +2,8 @@
 library(ggplot2)
 library(dplyr) # dplyr added to the functions
 library(DT) # DT is used in the app script
+library(sf)
+library(raster)
 
 get_slider_values <- function(input) {
   return(
@@ -24,25 +26,41 @@ plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) {
   selected_sites$suitability <- c(rep("Very high", splits),
                                rep("High", splits),
                                rep("Good", n_sites - (2 * splits)))
-
+  
   # plot
   plot <- ggplot(selected_sites) +
-    geom_sf(data = worldmap, fill = "black", color = "white", size = 0.2) +
-    # Four types of points to show all and selected sites
+    geom_raster(data = realmraster_df, aes( x = x, y = y, fill = as.factor(RealmName))) +
+    scale_fill_manual(name = "Realm",
+                      breaks = c("Nearctic","Palearctic",
+                                 "Indomalaya","Neotropic",
+                                 "Afrotropic","Australasia"),
+                      values = alpha(c("Nearctic" = "darkolivegreen3",
+                                       "Palearctic" = "brown",
+                                       "Indomalaya" = "navajowhite3",
+                                       "Neotropic" = "plum4",
+                                       "Afrotropic" = "orange3",
+                                       "Australasia" = "steelblue3",
+                                       "0" = "white"), 0.2)) +
+    geom_sf(data = worldmap, fill = NA, color = "black", size = 0.2) +
+    #Four types of points to show all and selected sites
     geom_point(data = pa_centroids,
                aes(x = x, y = y),
                shape = 16,
                size = 0.4,
-               colour = "grey80") +
+               colour = "darkgreen") +
     geom_point(data = selected_sites,
                aes(x = x, y = y, color = suitability),
                shape = 18,
-               size = 2.5) +
+               size = 4) +
+    geom_point(data = selected_sites,
+               aes(x = x, y = y, color = "black"),
+               shape = 5,
+               size = 3) +
     scale_color_manual(name = "Suitability top sites:",
                        values = c("Very high" = "red",
                                   "High" = "orange",
                                   "Good" = "gold")) +
-    coord_sf(xlim = c(-170, 180), ylim = c(-60, 90), expand = FALSE) +
+    coord_sf(xlim = c(-17262571, 17275829),ylim = c(-6137346, 8575154), datum = sf::st_crs("ESRI:54030")) +
     # Add shortened equator line
     geom_segment(
       aes(x = -180, xend = 180, y = 0, yend = 0),
@@ -86,8 +104,11 @@ calculate_weights_table <- function(slider_values) {
 }
 
 #add selected realm value into function
-rank_data <- function(data_table, weights, selection) {
+rank_data <- function(data_table, weights, selection, selection_oda) {
   ranked <- data_table
+  if(selection_oda == "ODA"){
+  ranked <- subset(ranked,ODA_status == "yes")
+  }
   ranked$ID <- c(1:nrow(ranked)) # add ID to merge data later
   ranked_orig_vals <- ranked # keep original values to display
   colnames(ranked_orig_vals) <- colnames_display # add display names
@@ -107,8 +128,8 @@ rank_data <- function(data_table, weights, selection) {
   ranked_orig_vals <-
     ranked_orig_vals[order(ranked_orig_vals$total_weight, decreasing = TRUE), ] # order by weight
   ranked_orig_vals$Rank <- seq(nrow(ranked_orig_vals)) # add rank for display
-  ranked_orig_vals <- ranked_orig_vals[c(12, 10, 2, 4, 5, 6, 7, 9, 8)] # select order and columns to display
-  ranked_orig_vals %>% mutate_if(is.numeric, ~round(., 2)) # round to 2 decimals to display
+  ranked_orig_vals <- ranked_orig_vals[c(15, 13, 2, 4, 5, 6, 7, 8, 9, 10, 12, 11)] # select order and columns to display
+  ranked_orig_vals <- ranked_orig_vals %>% mutate_if(is.numeric, round, digits = 3) # round to 3 decimals to display
   
   if (!selection == "Global") {
     ranked_orig_vals <- subset(ranked_orig_vals, Realm == selection)
