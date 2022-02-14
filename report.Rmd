@@ -23,7 +23,7 @@ kable(params$set_weights_table)
 ```
 
 The map shows the location of the top protected areas according to the applied weighting.
-```{r plot_sites, echo=FALSE}
+```{r plot_sites, echo=FALSE, warning = FALSE}
 plot(params$plot_sites)
 ```
 
