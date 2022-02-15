@@ -8,13 +8,15 @@ source("config.R")
 source("load_data.R")
 
 
-# load data
+#-#-# Shiny app #-#-#
+
+# Load all needed data files
 pa_centroids <- load_pa_centroids(centroids)
 weight_data <- load_weight_data(data_file)
 worldmap <- load_worldmap(worldmap_file)
 realmmap <- load_realmmap(realmmap_file)
 
-# layout definition
+# Layout definition
 ui <- fluidPage(
   
   headerPanel("Setting global priorities for longterm conservation"),
@@ -145,7 +147,7 @@ ui <- fluidPage(
 )
 
 
-# logic definition
+# Logic definition
 server <- function(input, output) {
   get_weights <- reactive({
     slider_values <- get_slider_values(input = input)
@@ -189,17 +191,17 @@ server <- function(input, output) {
     return(plot_maps(selected_sites, pa_centroids, worldmap, selection)) #
   })
 
-  # This displays the weighting table
+  # Displays the weighting table
   output$values <- renderTable({
      set_weights_table()
   }, rownames = TRUE)
 
-  # This displays the site evaluation table
+  # Displays the site evaluation table
   output$table1 = DT::renderDataTable({
     weighing()
    })
   
-  # This displays the top sites in a global map
+  # Displays the top sites in a global map
   output$map1 <- renderPlot({
     plot_sites()
   })
@@ -228,6 +230,6 @@ server <- function(input, output) {
 ## This line can be added to view the log files in Rstudio and trace errors
 #rsconnect::showLogs(appName="legacy_landscapes_dst",streaming=TRUE)
 
-# run the app
+# Run the app
 shinyApp(ui = ui, server = server)
 
