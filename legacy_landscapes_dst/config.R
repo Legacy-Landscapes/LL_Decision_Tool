@@ -273,7 +273,7 @@ choices_oda <- list("All" = "all",
 
 #-#-# Data sources #-#-#
 centroids <- "AppData/Global_IUCN_WHS_KBA_centroids_robinson.csv" # nolint
-data_file <- "AppData/Final_dataset_IUCN_WHS_KBA_for_weighting_Global.csv" # nolint
+data_file <- "AppData/Final_dataset_IUCN_WHS_KBA_for_weighting_global.csv" # nolint
 worldmap_file <- "AppData/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp" # nolint
 realmmap_file <- "AppData/WWF_Realms_gridded_05.Rdata"
 figure1 <- "FZS_logo.jpg" # nolint
