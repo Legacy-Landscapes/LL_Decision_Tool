@@ -4,6 +4,7 @@ library(dplyr) # dplyr added to the functions
 library(DT) # DT is used in the app script
 library(sf)
 library(raster)
+library(rgdal)
 
 get_slider_values <- function(input) {
   return(
