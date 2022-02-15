@@ -1,11 +1,13 @@
-
 library(ggplot2)
-library(dplyr) # dplyr added to the functions
-library(DT) # DT is used in the app script
+library(dplyr) 
+library(DT) 
 library(sf)
 library(raster)
 library(rgdal)
 
+#-#-# Set app functions #-#-#
+
+# Function to return values from displayed sliders
 get_slider_values <- function(input) {
   return(
     c(
@@ -20,6 +22,7 @@ get_slider_values <- function(input) {
 }
 
 
+# Reactive map of top sites
 plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) {
   # split sites into three categories for coloring
   n_sites <- nrow(selected_sites)
@@ -30,7 +33,7 @@ plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) {
   
   # plot
   plot <- ggplot(selected_sites) +
-    geom_raster(data = realmraster_df, aes( x = x, y = y, fill = as.factor(RealmName))) +
+    geom_raster(data = realmmap, aes( x = x, y = y, fill = as.factor(RealmName))) +
     scale_fill_manual(name = "Realm",
                       breaks = c("Nearctic","Palearctic",
                                  "Indomalaya","Neotropic",
@@ -43,7 +46,7 @@ plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) {
                                        "Australasia" = "steelblue3",
                                        "0" = "white"), 0.2)) +
     geom_sf(data = worldmap, fill = NA, color = "black", size = 0.2) +
-    #Four types of points to show all and selected sites
+    # four types of points to show all and selected sites
     geom_point(data = pa_centroids,
                aes(x = x, y = y),
                shape = 16,
@@ -62,12 +65,13 @@ plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) {
                                   "High" = "orange",
                                   "Good" = "gold")) +
     coord_sf(xlim = c(-17262571, 17275829),ylim = c(-6137346, 8575154), datum = sf::st_crs("ESRI:54030")) +
-    # Add shortened equator line
+    # add shortened equator line
     geom_segment(
       aes(x = -180, xend = 180, y = 0, yend = 0),
       colour = "black",
       linetype = "dashed"
     ) +
+    # set layout for plot
     theme(legend.key = element_blank(), legend.position = "bottom",
           legend.title = element_text(size = 14, face = "bold"),
           legend.text = element_text(size = 12)) +
@@ -86,6 +90,7 @@ plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) {
 }
 
 
+# Function to derive weights per objective from slider values
 calculate_weights <- function(slider_values) {
   total <- sum(slider_values)
   one_percent <- total / 100
@@ -94,6 +99,8 @@ calculate_weights <- function(slider_values) {
   return(weights)
 }
 
+
+# Reactive values for the displayed weights table
 calculate_weights_table <- function(slider_values) {
   total <- sum(slider_values)
   one_percent <- total / 100
@@ -104,7 +111,8 @@ calculate_weights_table <- function(slider_values) {
   return(weights_table)
 }
 
-#add selected realm value into function
+
+# Function to rank the sites based on the allocated values 
 rank_data <- function(data_table, weights, selection, selection_oda) {
   ranked <- data_table
   if(selection_oda == "ODA"){
@@ -119,7 +127,6 @@ rank_data <- function(data_table, weights, selection, selection_oda) {
   for (key in keys) {
     value <- weights[key, ]
     ranked[, key] <- ranked[, key] * value
-    #summed <- rowSums(cbind(summed,ranked[, key]), na.rm=TRUE)
     summed <- cbind(summed,ranked[, key])
   }
   summed <- as.data.frame(as.matrix(summed))
@@ -130,7 +137,7 @@ rank_data <- function(data_table, weights, selection, selection_oda) {
     ranked_orig_vals[order(ranked_orig_vals$total_weight, decreasing = TRUE), ] # order by weight
   ranked_orig_vals$Rank <- seq(nrow(ranked_orig_vals)) # add rank for display
   ranked_orig_vals <- ranked_orig_vals[c(15, 13, 2, 4, 5, 6, 7, 8, 9, 10, 12, 11)] # select order and columns to display
-  ranked_orig_vals <- ranked_orig_vals %>% mutate_if(is.numeric, round, digits = 3) # round to 3 decimals to display
+  ranked_orig_vals <- ranked_orig_vals %>% mutate_if(is.numeric, round, digits = 2) # round to 3 decimals to display
   
   if (!selection == "Global") {
     ranked_orig_vals <- subset(ranked_orig_vals, Realm == selection)
