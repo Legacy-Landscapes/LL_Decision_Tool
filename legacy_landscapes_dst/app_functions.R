@@ -33,18 +33,18 @@ plot_maps <- function(selected_sites, pa_centroids, worldmap, selection) {
   
   # plot
   plot <- ggplot(selected_sites) +
-    geom_raster(data = realmmap, aes( x = x, y = y, fill = as.factor(RealmName))) +
-    scale_fill_manual(name = "Realm",
-                      breaks = c("Nearctic","Palearctic",
-                                 "Indomalaya","Neotropic",
-                                 "Afrotropic","Australasia"),
-                      values = alpha(c("Nearctic" = "darkolivegreen3",
-                                       "Palearctic" = "brown",
-                                       "Indomalaya" = "navajowhite3",
-                                       "Neotropic" = "plum4",
-                                       "Afrotropic" = "orange3",
-                                       "Australasia" = "steelblue3",
-                                       "0" = "white"), 0.2)) +
+    # geom_raster(data = realmmap, aes( x = x, y = y, fill = as.factor(RealmName))) +
+    # scale_fill_manual(name = "Realm",
+    #                   breaks = c("Nearctic","Palearctic",
+    #                              "Indomalaya","Neotropic",
+    #                              "Afrotropic","Australasia"),
+    #                   values = alpha(c("Nearctic" = "darkolivegreen3",
+    #                                    "Palearctic" = "brown",
+    #                                    "Indomalaya" = "navajowhite3",
+    #                                    "Neotropic" = "plum4",
+    #                                    "Afrotropic" = "orange3",
+    #                                    "Australasia" = "steelblue3",
+    #                                    "0" = "white"), 0.2)) +
     geom_sf(data = worldmap, fill = NA, color = "black", size = 0.2) +
     # four types of points to show all and selected sites
     geom_point(data = pa_centroids,
