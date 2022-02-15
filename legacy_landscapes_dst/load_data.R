@@ -1,6 +1,7 @@
 
-#-#-# load data functions #-#-#
+#-#-# Set load data functions #-#-#
 
+# Function to load site data table 
 load_weight_data <- function(filename) {
   colnames_mapping <- list("Int_Name" = "int_name",
                            "RealmNr" = "RealmNr",
@@ -28,6 +29,7 @@ load_weight_data <- function(filename) {
 }
 
 
+# Function to load the site centroid coordinates file
 load_pa_centroids <- function(filename) {  # load the centroid file
   data <- read.csv(filename)
   colnames(data) <- c("C_ID", "International Name", "x", "y")
@@ -35,6 +37,7 @@ load_pa_centroids <- function(filename) {  # load the centroid file
 }
 
 
+# Function to load the country boarders shapefile
 load_worldmap <- function(filename) {
   worldmap <- sf::st_read(filename, layer = "ne_50m_admin_0_countries")
   worldmap <- st_transform(worldmap, "ESRI:54030")
@@ -42,6 +45,8 @@ load_worldmap <- function(filename) {
   return(worldmap)
 }
 
+
+# Function to load and format the realm layer for the map
 load_realmmap <- function(filename) {
   realmmap <- get(load(filename))
   realmmap <- subset(realmmap, y > -60)
@@ -69,6 +74,9 @@ load_realmmap <- function(filename) {
   return(realmraster_df)
 }
 
+#-#-# helper functions #-#-#
+
+# Function to simplify polygon layers and speed up displaying the map
 simplify_polygons <- function(sf_data, tolerance = 0.1) {
   return(
     project_for_sf(
@@ -81,8 +89,7 @@ simplify_polygons <- function(sf_data, tolerance = 0.1) {
 }
 
 
-#-#-# helper functions #-#-#
-
+# Function to transform data projection
 project_for_sf <- function(func, sf_data, ...) {
   # sf can not correctly project longlat format, so we project to
   # mercator, simplify and then project back to longlat
@@ -93,7 +100,7 @@ project_for_sf <- function(func, sf_data, ...) {
   return(sf_data)
 }
 
-#-#-# Set global variables ... whatever they do #-#-#
+#-#-# Set global variables #-#-#
 utils::globalVariables(c("rownames_display", "colnames_display"))
 
 

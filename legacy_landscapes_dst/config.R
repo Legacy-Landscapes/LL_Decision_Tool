@@ -132,10 +132,10 @@ Rtable_text <-
   p(strong("If the weights for 'Biodiversity' and 'Ecosystem integrity' are both set to 50%, you
     will see that the 'Talamanca Range' is the top site. This is because it
     has the second highest biodiversity among the included sites, with a 'Biodiversity'
-    score of 0.99. But it also has a clear human footprint, indicated by the 'Ecosystem integrity'
-    score of 0.71. In comparison the combined site 'Manu - Alto Purus' ranks third
-    globally with a very good 'Biodiversity' score of 0.70 but additionally it is also
-    very pristine with a very high 'Ecosystem integrity' score of 0.93.", style = "color:green"),
+    score of 1. But it also has a clear human footprint, indicated by the 'Ecosystem integrity'
+    score of 0.71. In comparison the combined site 'del Manu' ranks third
+    globally with a very good 'Biodiversity' score of 0.68 but additionally it is also
+    very pristine with a very high 'Ecosystem integrity' score of 0.89.", style = "color:green"),
   p(em("The ranking table can be adjusted by using the sliders on the left
     hand side. Allocating different weights to the individual objectives will
     change the ranking of the sites. Using the"),
