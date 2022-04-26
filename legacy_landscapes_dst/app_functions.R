@@ -113,10 +113,13 @@ calculate_weights_table <- function(slider_values) {
 
 
 # Function to rank the sites based on the allocated values 
-rank_data <- function(data_table, weights, selection, selection_oda) {
+rank_data <- function(data_table, weights, selection, selection_oda, selection_PA) {
   ranked <- data_table
   if(selection_oda == "ODA"){
   ranked <- subset(ranked,ODA_status == "yes")
+  }
+  if(selection_PA == "IUCN"){
+    ranked <- subset(ranked,PA_type == "IUCN")
   }
   ranked$ID <- c(1:nrow(ranked)) # add ID to merge data later
   ranked_orig_vals <- ranked # keep original values to display

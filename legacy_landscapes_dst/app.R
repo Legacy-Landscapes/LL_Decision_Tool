@@ -94,6 +94,10 @@ ui <- fluidPage(
                      choices = choices_oda, icon = icon("check"), animation = "pulse",
                      status = "default",
                      inline = F),
+    prettyRadioButtons("radioIII", label = h3("Select protection status"),
+                     choices = choices_PA, icon = icon("check"), animation = "pulse",
+                     status = "default",
+                     inline = F),
   h3("Download report of the evaluation results (coming soon)"),
    downloadButton("report", "Generate report"),
    width = 3),
@@ -168,12 +172,18 @@ server <- function(input, output) {
     selected_countries <- input$radioII
     return(selected_countries)
   })
+  
+  get_selection_PA <- reactive({
+    selected_protection <- input$radioIII
+    return(selected_protection)
+  })
 
   weighing <- reactive({
     weights <- get_weights()
     selection <- get_selection_realm()
     selection_oda <- get_selection_oda()          #!
-    return(rank_data(weight_data, weights, selection, selection_oda))  #!
+    selection_PA <- get_selection_PA()            #!
+    return(rank_data(weight_data, weights, selection, selection_oda, selection_PA))  #!
   })
 
   plot_sites <- reactive({
