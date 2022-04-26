@@ -268,6 +268,9 @@ choices <- list("Global" = "Global",
 choices_oda <- list("All" = "all",
                     "ODA only" = "ODA")
 
+choices_PA <- list("All" = "all",
+                   "IUCN only" = "IUCN")
+
 
 #-----# Define the filepaths for the figures and data #-----#
 
